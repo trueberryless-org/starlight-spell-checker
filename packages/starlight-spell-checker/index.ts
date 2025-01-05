@@ -1,21 +1,70 @@
 import type { StarlightPlugin } from "@astrojs/starlight/types";
+import { AstroError } from "astro/errors";
+import {
+  validateConfig,
+  type StarlightSpellCheckerConfig,
+  type StarlightSpellCheckerUserConfig,
+} from "./libs/config";
+// import { clearContentLayerCache } from "./libs/astro";
+import { logErrors, validateTexts } from "./libs/validation";
 
-export default function starlightSpellChecker(): StarlightPlugin {
+export { type StarlightSpellCheckerConfig };
+
+export default function starlightSpellChecker(
+  userConfig?: StarlightSpellCheckerUserConfig
+): StarlightPlugin {
+  const config = validateConfig(userConfig);
+
   return {
     name: "starlight-spell-checker",
     hooks: {
-      setup({ logger }) {
-        /**
-         * This is the entry point of your Starlight plugin.
-         * The `setup` hook is called when Starlight is initialized (during the Astro `astro:config:setup` integration
-         * hook).
-         * To learn more about the Starlight plugin API and all available options in this hook, check the Starlight
-         * plugins reference.
-         *
-         * @see https://starlight.astro.build/reference/plugins/
-         */
-        logger.info("Hello from the starlight-spell-checker plugin!");
+      setup({ addIntegration, astroConfig, config: starlightConfig, logger }) {
+        addIntegration({
+          name: "starlight-spell-checker-integration",
+          hooks: {
+            // "astro:config:setup": async ({ command, updateConfig }) => {
+            //   if (command !== "build") {
+            //     return;
+            //   }
+
+            //   await clearContentLayerCache(astroConfig, logger);
+
+            //   updateConfig({
+            //     markdown: {
+            //       remarkPlugins: [
+            //         [
+            //           remarkStarlightLinksValidator,
+            //           { base: astroConfig.base, srcDir: astroConfig.srcDir },
+            //         ],
+            //       ],
+            //     },
+            //   });
+            // },
+            "astro:build:done": ({ dir, pages }) => {
+              const misspellings = validateTexts(
+                pages,
+                dir,
+                astroConfig,
+                starlightConfig,
+                config
+              );
+
+              logErrors(logger, misspellings);
+
+              if (misspellings.size > 0) {
+                throwPluginError("Spelling validation failed.");
+              }
+            },
+          },
+        });
       },
     },
   };
+}
+
+function throwPluginError(message: string): never {
+  throw new AstroError(
+    message,
+    `See the error report above for more informations.\n\nIf you believe this is a bug, please file an issue at https://github.com/trueberryless-org/starlight-spell-checker/issues/new`
+  );
 }

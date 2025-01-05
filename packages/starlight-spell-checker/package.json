@@ -27,5 +27,22 @@
     "url": "https://github.com/trueberryless-org/starlight-spell-checker.git",
     "directory": "packages/starlight-spell-checker"
   },
-  "bugs": "https://github.com/trueberryless-org/starlight-spell-checker/issues"
+  "bugs": "https://github.com/trueberryless-org/starlight-spell-checker/issues",
+  "dependencies": {
+    "dictionary-da": "^6.0.0",
+    "dictionary-de": "^3.0.0",
+    "dictionary-en": "^4.0.0",
+    "dictionary-es": "^4.0.0",
+    "dictionary-fr": "^3.0.0",
+    "dictionary-it": "^2.0.0",
+    "dictionary-ko": "^2.0.0",
+    "dictionary-pl": "^2.0.0",
+    "dictionary-pt": "^4.0.0",
+    "dictionary-ru": "^3.0.0",
+    "kleur": "^4.1.5",
+    "node": "^23.5.0",
+    "picomatch": "^4.0.2",
+    "remark-retext": "^6.0.0",
+    "retext-spell": "^6.1.0"
+  }
 }
