@@ -1,0 +1,31 @@
+{
+  "name": "starlight-spell-checker",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "Check your documentation for spelling mistakes; multilingual support.",
+  "author": "trueberryless-org",
+  "type": "module",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "devDependencies": {
+    "@astrojs/starlight": "^0.30.3",
+    "astro": "^5.1.2"
+  },
+  "peerDependencies": {
+    "@astrojs/starlight": ">=0.30"
+  },
+  "engines": {
+    "node": "^18.17.1 || ^20.3.0 || >=21.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/trueberryless-org/starlight-spell-checker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trueberryless-org/starlight-spell-checker.git",
+    "directory": "packages/starlight-spell-checker"
+  },
+  "bugs": "https://github.com/trueberryless-org/starlight-spell-checker/issues"
+}
