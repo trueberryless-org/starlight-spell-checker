@@ -1,19 +1,28 @@
 {
   "name": "starlight-spell-checker-monorepo",
   "version": "0.0.1",
-  "license": "MIT",
-  "description": "Check your documentation for spelling mistakes; multilingual support.",
-  "author": "trueberryless-org",
-  "type": "module",
-  "engines": {
-    "node": "^18.17.1 || ^20.3.0 || >=21.0.0"
-  },
-  "packageManager": "pnpm@9.6.0",
   "private": true,
+  "description": "Check your documentation for spelling mistakes; multilingual support.",
   "homepage": "https://github.com/trueberryless-org/starlight-spell-checker",
+  "bugs": {
+    "url": "https://github.com/trueberryless-org/starlight-spell-checker/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/trueberryless-org/starlight-spell-checker.git"
   },
-  "bugs": "https://github.com/trueberryless-org/starlight-spell-checker/issues"
+  "license": "MIT",
+  "author": "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)",
+  "type": "module",
+  "scripts": {
+    "version": "pnpm changeset version && pnpm i --no-frozen-lockfile"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.11"
+  },
+  "packageManager": "pnpm@9.6.0",
+  "engines": {
+    "node": "^18.17.1 || ^20.3.0 || >=21.0.0"
+  }
 }

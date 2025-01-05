@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: starlight-spell-checker
+  namespace: starlight-spell-checker
+  labels:
+    app: starlight-spell-checker
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: starlight-spell-checker
+  template:
+    metadata:
+      labels:
+        app: starlight-spell-checker
+    spec:
+      containers:
+        - name: starlight-spell-checker
+          image: "trueberryless/starlight-spell-checker"
+          imagePullPolicy: Always

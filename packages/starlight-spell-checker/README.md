@@ -10,6 +10,6 @@ Check out the `starlight-spell-checker` getting started guide.
 
 ## License
 
-Licensed under the MIT License, Copyright © trueberryless-org.
+Licensed under the MIT license, Copyright © trueberryless.
 
-See [LICENSE](https://github.com/trueberryless-org/starlight-spell-checker/blob/main/LICENSE) for more information.
+See [LICENSE](/LICENSE) for more information.
