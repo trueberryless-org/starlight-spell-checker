@@ -1,8 +1,8 @@
-import type { StarlightPlugin } from '@astrojs/starlight/types'
+import type { StarlightPlugin } from "@astrojs/starlight/types";
 
 export default function starlightSpellChecker(): StarlightPlugin {
   return {
-    name: 'starlight-spell-checker',
+    name: "starlight-spell-checker",
     hooks: {
       setup({ logger }) {
         /**
@@ -14,8 +14,8 @@ export default function starlightSpellChecker(): StarlightPlugin {
          *
          * @see https://starlight.astro.build/reference/plugins/
          */
-        logger.info('Hello from the starlight-spell-checker plugin!')
+        logger.info("Hello from the starlight-spell-checker plugin!");
       },
     },
-  }
+  };
 }
