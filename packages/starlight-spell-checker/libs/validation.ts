@@ -23,6 +23,8 @@ import path from "path";
 import type { Root } from "mdast";
 import { getLocaleConfig, getLocaleDictionary } from "./i18n";
 import { ensureTrailingSlash, stripLeadingSlash } from "./path";
+import { reporter } from "vfile-reporter";
+import { getValidationData } from "./remark";
 
 export async function validateTexts(
   pages: PageData[],
@@ -33,65 +35,25 @@ export async function validateTexts(
 ) {
   process.stdout.write(`\n${bgGreen(black(` validating spelling `))}\n`);
 
-  const processor = unified()
-    .use(remarkParse) // Parse Markdown to MDAST
-    .use(remarkRehype) // Convert MDAST to HAST for easier text processing
-    .use(rehypeStringify); // Optionally stringify back to HTML (for debugging)
-
-  const localeConfig = getLocaleConfig(starlightConfig);
-
-  const allPages: Pages = new Set(
-    pages.map((page) =>
-      ensureTrailingSlash(
-        astroConfig.base === "/"
-          ? stripLeadingSlash(page.pathname)
-          : posix.join(stripLeadingSlash(astroConfig.base), page.pathname)
-      )
-    )
-  );
+  const { contents } = getValidationData();
 
   const errors = new Map();
 
-  // Iterate through all pages
-  for (const page of allPages) {
-    console.log(page);
-    if (!isValidAsset(page, astroConfig, outputDir)) {
-      continue;
-    }
-    let dictionary;
-
-    if (localeConfig) {
-      dictionary = getLocaleDictionary(page, localeConfig);
-    }
-    if (!dictionary) {
-      dictionary = dictionaryEn;
-    }
-
-    console.log(dictionary);
+  for (const [filePath, content] of contents) {
+    let dictionary = getLocaleDictionary(filePath, starlightConfig);
 
     let retextProcessor = retext()
       .use(retextSpell, {
         dictionary,
       })
-      .use(retextReadability, { age: 22 }) // Customize readability target age
+      .use(retextReadability, { age: 22 })
       .use(retextIndefiniteArticle);
 
-    const filePath = path.join(outputDir.pathname, page);
-    const content = await fs.readFile(filePath, "utf-8");
-
     try {
-      // Parse the Markdown content
-      const parsed = processor.parse(content);
+      const file = await retextProcessor.process(content);
 
-      // Extract plain text from Markdown
-      const plainText = extractText(parsed);
-
-      // Analyze text with retext
-      const file = await retextProcessor.process(plainText);
-
-      // Collect messages (errors/warnings)
       if (file.messages.length > 0) {
-        errors.set(filePath, file.messages);
+        errors.set(filePath, reporter(file));
       }
     } catch (err) {
       console.error(`Error processing file ${filePath}:`, err);
@@ -99,17 +61,6 @@ export async function validateTexts(
   }
 
   return errors;
-}
-
-/**
- * Extract plain text from MDAST nodes.
- */
-function extractText(ast: Root) {
-  let text = "";
-  visit(ast, "text", (node) => {
-    text += node.value + " ";
-  });
-  return text.trim();
 }
 
 export function logErrors(
@@ -139,13 +90,15 @@ export function logErrors(
   for (const [file, validationErrors] of errors) {
     logger.info(`${red("▶")} ${blue(file)}`);
 
-    for (const [index, validationError] of validationErrors.entries()) {
-      logger.info(
-        `  ${blue(`${index < validationErrors.length - 1 ? "├" : "└"}─`)} ${
-          validationError.link
-        }${dim(` - ${validationError.type}`)}`
-      );
-    }
+    logger.info(validationErrors);
+
+    // for (const [index, validationError] of validationErrors.entries()) {
+    //   logger.info(
+    //     `  ${blue(`${index < validationErrors.length - 1 ? "├" : "└"}─`)} ${
+    //       validationError.link
+    //     }${dim(` - ${validationError.type}`)}`
+    //   );
+    // }
   }
 
   process.stdout.write("\n");
@@ -168,7 +121,7 @@ function isValidAsset(path: string, astroConfig: AstroConfig, outputDir: URL) {
   try {
     const filePath = fileURLToPath(new URL(path, outputDir));
     const stats = statSync(filePath);
-    console.log(stats.isFile());
+    console.log(filePath);
 
     return stats.isFile();
   } catch {

@@ -9,6 +9,16 @@ export default defineConfig({
         baseUrl:
           "https://github.com/trueberryless-org/starlight-spell-checker/edit/main/docs/",
       },
+      locales: {
+        root: {
+          lang: "en",
+          label: "English",
+        },
+        de: {
+          lang: "de",
+          label: "Deutsch",
+        },
+      },
       plugins: [starlightSpellChecker()],
       sidebar: [
         {

@@ -11,10 +11,12 @@ import dictionaryPl from "dictionary-pl";
 import dictionaryPt from "dictionary-pt";
 import dictionaryRu from "dictionary-ru";
 
-export function getLocaleConfig(
-  config: StarlightUserConfig
-): LocaleConfig | undefined {
-  if (!config.locales || Object.keys(config.locales).length === 0) return;
+export function getLocaleConfig(config: StarlightUserConfig): LocaleConfig {
+  if (!config.locales || Object.keys(config.locales).length === 0)
+    return {
+      defaultLocale: "",
+      locales: [],
+    };
 
   let defaultLocale = config.defaultLocale;
   const locales: string[] = [];
@@ -31,7 +33,11 @@ export function getLocaleConfig(
     locales.push(dir);
   }
 
-  if (defaultLocale === undefined) return;
+  if (defaultLocale === undefined)
+    return {
+      defaultLocale: "",
+      locales: [],
+    };
 
   return {
     defaultLocale,
@@ -58,14 +64,18 @@ const dictionaryMapper: Record<string, any> = {
 
 export function getLocaleDictionary(
   path: string,
-  localeConfig: LocaleConfig
-): Dictionary | undefined {
+  starlightConfig: StarlightUserConfig
+): Dictionary {
+  const localeConfig = getLocaleConfig(starlightConfig);
+
   const pathLocale = getLocale(path, localeConfig);
 
   if (pathLocale) {
     return dictionaryMapper[pathLocale];
   }
-  return;
+  return dictionaryMapper[
+    localeConfig.defaultLocale !== "" ? localeConfig.defaultLocale : "en"
+  ];
 }
 
 function getLocale(path: string, localeConfig: LocaleConfig) {
