@@ -1,65 +1,120 @@
+import { fileURLToPath } from "node:url";
 import { statSync } from "node:fs";
 import { posix } from "node:path";
-import { fileURLToPath } from "node:url";
 
 import type { StarlightUserConfig as StarlightUserConfigWithPlugins } from "@astrojs/starlight/types";
 import type { AstroConfig, AstroIntegrationLogger } from "astro";
 import { bgGreen, black, blue, dim, green, red } from "kleur/colors";
-import picomatch from "picomatch";
 
 import type { StarlightSpellCheckerConfig } from "../libs/config";
 
-import { getLocaleConfig, type LocaleConfig } from "./i18n";
+import { unified } from "unified";
+import remarkParse from "remark-parse";
+import remarkRehype from "remark-rehype";
+import rehypeStringify from "rehype-stringify";
+import { retext } from "retext";
+import retextSpell from "retext-spell";
+import dictionaryEn from "dictionary-en";
+import retextReadability from "retext-readability";
+import retextIndefiniteArticle from "retext-indefinite-article";
+import { visit } from "unist-util-visit";
+import { promises as fs } from "fs";
+import path from "path";
+import type { Root } from "mdast";
+import { getLocaleConfig, getLocaleDictionary } from "./i18n";
 import { ensureTrailingSlash, stripLeadingSlash } from "./path";
 
-export const ValidationErrorType = {
-  MisspelledWord: "misspelled word",
-} as const;
-
-export function validateTexts(
+export async function validateTexts(
   pages: PageData[],
   outputDir: URL,
   astroConfig: AstroConfig,
   starlightConfig: StarlightUserConfig,
   options: StarlightSpellCheckerConfig
-): ValidationErrors {
+) {
   process.stdout.write(`\n${bgGreen(black(` validating spelling `))}\n`);
 
+  const processor = unified()
+    .use(remarkParse) // Parse Markdown to MDAST
+    .use(remarkRehype) // Convert MDAST to HAST for easier text processing
+    .use(rehypeStringify); // Optionally stringify back to HTML (for debugging)
+
   const localeConfig = getLocaleConfig(starlightConfig);
+
   const allPages: Pages = new Set(
-    pages
-      .map((page) =>
-        ensureTrailingSlash(
-          astroConfig.base === "/"
-            ? stripLeadingSlash(page.pathname)
-            : posix.join(stripLeadingSlash(astroConfig.base), page.pathname)
-        )
+    pages.map((page) =>
+      ensureTrailingSlash(
+        astroConfig.base === "/"
+          ? stripLeadingSlash(page.pathname)
+          : posix.join(stripLeadingSlash(astroConfig.base), page.pathname)
       )
-      .filter((page) => !isExcludedPage(page, options.exclude))
+    )
   );
 
-  const errors: ValidationErrors = new Map();
+  const errors = new Map();
 
+  // Iterate through all pages
   for (const page of allPages) {
-    const validationContext: ValidationContext = {
-      astroConfig,
-      errors,
-      localeConfig,
-      options,
-      outputDir,
-      pages: allPages,
-      currentPage: page,
-    };
+    console.log(page);
+    if (!isValidAsset(page, astroConfig, outputDir)) {
+      continue;
+    }
+    let dictionary;
 
-    validateText(validationContext);
+    if (localeConfig) {
+      dictionary = getLocaleDictionary(page, localeConfig);
+    }
+    if (!dictionary) {
+      dictionary = dictionaryEn;
+    }
+
+    console.log(dictionary);
+
+    let retextProcessor = retext()
+      .use(retextSpell, {
+        dictionary,
+      })
+      .use(retextReadability, { age: 22 }) // Customize readability target age
+      .use(retextIndefiniteArticle);
+
+    const filePath = path.join(outputDir.pathname, page);
+    const content = await fs.readFile(filePath, "utf-8");
+
+    try {
+      // Parse the Markdown content
+      const parsed = processor.parse(content);
+
+      // Extract plain text from Markdown
+      const plainText = extractText(parsed);
+
+      // Analyze text with retext
+      const file = await retextProcessor.process(plainText);
+
+      // Collect messages (errors/warnings)
+      if (file.messages.length > 0) {
+        errors.set(filePath, file.messages);
+      }
+    } catch (err) {
+      console.error(`Error processing file ${filePath}:`, err);
+    }
   }
 
   return errors;
 }
 
+/**
+ * Extract plain text from MDAST nodes.
+ */
+function extractText(ast: Root) {
+  let text = "";
+  visit(ast, "text", (node) => {
+    text += node.value + " ";
+  });
+  return text.trim();
+}
+
 export function logErrors(
   pluginLogger: AstroIntegrationLogger,
-  errors: ValidationErrors
+  errors: Map<string, any>
 ) {
   const logger = pluginLogger.fork("");
 
@@ -97,63 +152,46 @@ export function logErrors(
 }
 
 /**
- * Validate a page.
+ * Check if a link is a valid asset in the build output directory.
  */
-function validateText(context: ValidationContext) {
-  const { astroConfig, errors, localeConfig, options, pages } = context;
+function isValidAsset(path: string, astroConfig: AstroConfig, outputDir: URL) {
+  if (astroConfig.base !== "/") {
+    const base = stripLeadingSlash(astroConfig.base);
 
-  return;
-}
+    if (path.startsWith(base)) {
+      path = path.replace(new RegExp(`^${stripLeadingSlash(base)}/?`), "");
+    } else {
+      return false;
+    }
+  }
 
-/**
- * Check if a page is excluded from validation by the user.
- */
-function isExcludedPage(page: string, exclude: string[]) {
-  return picomatch(exclude)(page);
-}
+  try {
+    const filePath = fileURLToPath(new URL(path, outputDir));
+    const stats = statSync(filePath);
+    console.log(stats.isFile());
 
-function stripQueryString(path: string): string {
-  return path.split("?")[0] ?? path;
-}
-
-function addError(errors: ValidationErrors, type: ValidationErrorType) {
-  const fileErrors = errors.get(filePath) ?? [];
-  fileErrors.push({ link, type });
-
-  errors.set(filePath, fileErrors);
+    return stats.isFile();
+  } catch {
+    return false;
+  }
 }
 
 function pluralize(count: number, singular: string) {
   return count === 1 ? singular : `${singular}s`;
 }
 
-// The validation errors keyed by file path.
-type ValidationErrors = Map<string, ValidationError[]>;
-
-export type ValidationErrorType =
-  (typeof ValidationErrorType)[keyof typeof ValidationErrorType];
-
-interface ValidationError {
-  word: string;
-  type: ValidationErrorType;
-  suggestions: string[];
-}
+/**
+ * Check if a page is excluded from validation by the user.
+ */
+// function isExcludedPage(page: string, exclude: string[]) {
+//   return picomatch(exclude)(page);
+// }
 
 interface PageData {
   pathname: string;
 }
 
-type Page = PageData["pathname"];
-type Pages = Set<Page>;
-
-interface ValidationContext {
-  astroConfig: AstroConfig;
-  errors: ValidationErrors;
-  localeConfig: LocaleConfig | undefined;
-  options: StarlightSpellCheckerConfig;
-  outputDir: URL;
-  pages: Pages;
-}
+type Pages = Set<PageData["pathname"]>;
 
 export type StarlightUserConfig = Omit<
   StarlightUserConfigWithPlugins,

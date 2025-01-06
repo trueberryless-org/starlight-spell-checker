@@ -5,7 +5,6 @@ import {
   type StarlightSpellCheckerConfig,
   type StarlightSpellCheckerUserConfig,
 } from "./libs/config";
-// import { clearContentLayerCache } from "./libs/astro";
 import { logErrors, validateTexts } from "./libs/validation";
 
 export { type StarlightSpellCheckerConfig };
@@ -22,26 +21,8 @@ export default function starlightSpellChecker(
         addIntegration({
           name: "starlight-spell-checker-integration",
           hooks: {
-            // "astro:config:setup": async ({ command, updateConfig }) => {
-            //   if (command !== "build") {
-            //     return;
-            //   }
-
-            //   await clearContentLayerCache(astroConfig, logger);
-
-            //   updateConfig({
-            //     markdown: {
-            //       remarkPlugins: [
-            //         [
-            //           remarkStarlightLinksValidator,
-            //           { base: astroConfig.base, srcDir: astroConfig.srcDir },
-            //         ],
-            //       ],
-            //     },
-            //   });
-            // },
-            "astro:build:done": ({ dir, pages }) => {
-              const misspellings = validateTexts(
+            "astro:build:done": async ({ dir, pages }) => {
+              const misspellings = await validateTexts(
                 pages,
                 dir,
                 astroConfig,

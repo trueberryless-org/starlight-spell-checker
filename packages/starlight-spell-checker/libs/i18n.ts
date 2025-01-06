@@ -2,7 +2,7 @@ import { ensureLeadingSlash, ensureTrailingSlash } from "./path";
 import type { StarlightUserConfig } from "./validation";
 
 import dictionaryDe from "dictionary-de";
-import dictionaryEn from "dictionary-en";
+import dictionaryEn, { type Dictionary } from "dictionary-en";
 import dictionaryEs from "dictionary-es";
 import dictionaryFr from "dictionary-fr";
 import dictionaryIt from "dictionary-it";
@@ -56,10 +56,16 @@ const dictionaryMapper: Record<string, any> = {
   "zh-tw": undefined,
 };
 
-export function getLocaleDictionary(path: string, localeConfig: LocaleConfig) {
+export function getLocaleDictionary(
+  path: string,
+  localeConfig: LocaleConfig
+): Dictionary | undefined {
   const pathLocale = getLocale(path, localeConfig);
 
-  return dictionaryMapper[pathLocale];
+  if (pathLocale) {
+    return dictionaryMapper[pathLocale];
+  }
+  return;
 }
 
 function getLocale(path: string, localeConfig: LocaleConfig) {
