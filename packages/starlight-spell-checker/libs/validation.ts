@@ -4,7 +4,7 @@ import { posix } from "node:path";
 
 import type { StarlightUserConfig as StarlightUserConfigWithPlugins } from "@astrojs/starlight/types";
 import type { AstroConfig, AstroIntegrationLogger } from "astro";
-import { bgGreen, black, blue, dim, green, red } from "kleur/colors";
+import { $, bgGreen, black, blue, dim, green, red } from "kleur/colors";
 
 import type { StarlightSpellCheckerConfig } from "../libs/config";
 
@@ -26,6 +26,10 @@ import { ensureTrailingSlash, stripLeadingSlash } from "./path";
 import { reporter } from "vfile-reporter";
 import { getValidationData } from "./remark";
 
+export const ValidationErrorType = {
+  Misspelling: "Misspelling",
+} as const;
+
 export async function validateTexts(
   pages: PageData[],
   outputDir: URL,
@@ -37,24 +41,31 @@ export async function validateTexts(
 
   const { contents } = getValidationData();
 
-  const errors = new Map();
+  const errors: ValidationErrors = new Map();
 
   for (const [filePath, content] of contents) {
     let dictionary = getLocaleDictionary(filePath, starlightConfig);
 
-    let retextProcessor = retext()
-      .use(retextSpell, {
-        dictionary,
-      })
-      .use(retextReadability, { age: 22 })
-      .use(retextIndefiniteArticle);
+    let retextProcessor = retext().use(retextSpell, {
+      dictionary,
+    });
+    // .use(retextReadability, { age: 22 })
+    // .use(retextIndefiniteArticle);
 
     try {
       const file = await retextProcessor.process(content);
 
-      if (file.messages.length > 0) {
-        errors.set(filePath, reporter(file));
+      let fileErrors: ValidationError[] = [];
+
+      for (const error of file.messages.values()) {
+        fileErrors.push({
+          word: error.actual ?? "",
+          type: ValidationErrorType.Misspelling,
+          suggestions: error.expected ?? [],
+        });
       }
+
+      errors.set(filePath, fileErrors);
     } catch (err) {
       console.error(`Error processing file ${filePath}:`, err);
     }
@@ -90,15 +101,19 @@ export function logErrors(
   for (const [file, validationErrors] of errors) {
     logger.info(`${red("▶")} ${blue(file)}`);
 
-    logger.info(validationErrors);
-
-    // for (const [index, validationError] of validationErrors.entries()) {
-    //   logger.info(
-    //     `  ${blue(`${index < validationErrors.length - 1 ? "├" : "└"}─`)} ${
-    //       validationError.link
-    //     }${dim(` - ${validationError.type}`)}`
-    //   );
-    // }
+    for (const [index, validationError] of validationErrors.entries()) {
+      logger.info(
+        `  ${blue(`${index < validationErrors.length - 1 ? "├" : "└"}─`)} ${
+          validationError.word
+        }${dim(` - ${validationError.type}`)}${
+          validationError.suggestions
+            ? validationError.suggestions.length > 0
+              ? ` (${validationError.suggestions.join(", ")})`
+              : " no suggestions"
+            : ""
+        }`
+      );
+    }
   }
 
   process.stdout.write("\n");
@@ -139,6 +154,17 @@ function pluralize(count: number, singular: string) {
 // function isExcludedPage(page: string, exclude: string[]) {
 //   return picomatch(exclude)(page);
 // }
+
+type ValidationErrors = Map<string, ValidationError[]>;
+
+export type ValidationErrorType =
+  (typeof ValidationErrorType)[keyof typeof ValidationErrorType];
+
+interface ValidationError {
+  word: string;
+  type: ValidationErrorType;
+  suggestions?: string[];
+}
 
 interface PageData {
   pathname: string;
