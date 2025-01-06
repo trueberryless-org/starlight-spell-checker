@@ -1,6 +1,5 @@
 import { fileURLToPath } from "node:url";
 import { statSync } from "node:fs";
-import { posix } from "node:path";
 
 import type { StarlightUserConfig as StarlightUserConfigWithPlugins } from "@astrojs/starlight/types";
 import type { AstroConfig, AstroIntegrationLogger } from "astro";
@@ -8,26 +7,50 @@ import { $, bgGreen, black, blue, dim, green, red } from "kleur/colors";
 
 import type { StarlightSpellCheckerConfig } from "../libs/config";
 
-import { unified } from "unified";
-import remarkParse from "remark-parse";
-import remarkRehype from "remark-rehype";
-import rehypeStringify from "rehype-stringify";
 import { retext } from "retext";
-import retextSpell from "retext-spell";
-import dictionaryEn from "dictionary-en";
-import retextReadability from "retext-readability";
-import retextIndefiniteArticle from "retext-indefinite-article";
-import { visit } from "unist-util-visit";
-import { promises as fs } from "fs";
-import path from "path";
-import type { Root } from "mdast";
-import { getLocaleConfig, getLocaleDictionary } from "./i18n";
-import { ensureTrailingSlash, stripLeadingSlash } from "./path";
-import { reporter } from "vfile-reporter";
+import { getLocaleDictionary } from "./i18n";
+import { stripLeadingSlash } from "./path";
 import { getValidationData } from "./remark";
 
+import retextAssuming from "retext-assuming";
+import retextCasePolice from "retext-case-police";
+import retextCliches from "retext-cliches";
+import retextContractions from "retext-contractions";
+import retextDiacritics from "retext-diacritics";
+import retextEquality from "retext-equality";
+import retextIndefiniteArticle from "retext-indefinite-article";
+import retextIntensify from "retext-intensify";
+import retextOveruse from "retext-overuse";
+import retextPassive from "retext-passive";
+import retextProfanities from "retext-profanities";
+import retextReadability from "retext-readability";
+import retextRedundantAcronyms from "retext-redundant-acronyms";
+import retextRepeatedWords from "retext-repeated-words";
+import retextSimplify from "retext-simplify";
+import retextSpell from "retext-spell";
+import retextUsage from "retext-usage";
+import retextQuotes from "retext-quotes";
+
 export const ValidationErrorType = {
-  Misspelling: "Misspelling",
+  Assuming: "unhelpful phrase",
+  CasePolice: "popular names casing",
+  Cliches: "cliché",
+  Contractions: "apostrophe use in contractions",
+  Diacritics: "diacritics",
+  Equality: "insensitive, inconsiderate language",
+  IndefiniteArticle: "indefinite article",
+  Intensify: "weak, mitigating wording",
+  Overuse: "overused word",
+  Passive: "passive voice",
+  Profanities: "profane, vulgar wording",
+  Readability: "readability",
+  RedundantAcronyms: "redundant acronym",
+  RepeatedWords: "repeated word",
+  Simplify: "simpler alternative",
+  Spell: "misspelled word",
+  Usage: "incorrect English usage",
+  Quotes: "quote and apostrophe usage",
+  Other: "other",
 } as const;
 
 export async function validateTexts(
@@ -46,11 +69,27 @@ export async function validateTexts(
   for (const [filePath, content] of contents) {
     let dictionary = getLocaleDictionary(filePath, starlightConfig);
 
-    let retextProcessor = retext().use(retextSpell, {
-      dictionary,
-    });
-    // .use(retextReadability, { age: 22 })
-    // .use(retextIndefiniteArticle);
+    let retextProcessor = retext()
+      .use(retextAssuming)
+      .use(retextCasePolice)
+      .use(retextCliches)
+      .use(retextContractions)
+      .use(retextDiacritics)
+      .use(retextEquality)
+      .use(retextIndefiniteArticle)
+      .use(retextIntensify)
+      .use(retextOveruse)
+      .use(retextPassive)
+      .use(retextProfanities)
+      .use(retextReadability)
+      .use(retextRedundantAcronyms)
+      .use(retextRepeatedWords)
+      .use(retextSimplify)
+      .use(retextSpell, {
+        dictionary,
+      })
+      .use(retextUsage)
+      .use(retextQuotes);
 
     try {
       const file = await retextProcessor.process(content);
@@ -60,7 +99,7 @@ export async function validateTexts(
       for (const error of file.messages.values()) {
         fileErrors.push({
           word: error.actual ?? "",
-          type: ValidationErrorType.Misspelling,
+          type: validationErrorTypeMapper[error.source ?? "other"],
           suggestions: error.expected ?? [],
         });
       }
@@ -165,6 +204,28 @@ interface ValidationError {
   type: ValidationErrorType;
   suggestions?: string[];
 }
+
+const validationErrorTypeMapper: Record<string, any> = {
+  "retext-assuming": ValidationErrorType.Assuming,
+  "retext-case-police": ValidationErrorType.CasePolice,
+  "retext-cliches": ValidationErrorType.Cliches,
+  "retext-contractions": ValidationErrorType.Contractions,
+  "retext-diacritics": ValidationErrorType.Diacritics,
+  "retext-equality": ValidationErrorType.Equality,
+  "retext-indefinite-article": ValidationErrorType.IndefiniteArticle,
+  "retext-intensify": ValidationErrorType.Intensify,
+  "retext-overuse": ValidationErrorType.Overuse,
+  "retext-passive": ValidationErrorType.Passive,
+  "retext-profanities": ValidationErrorType.Profanities,
+  "retext-readability": ValidationErrorType.Readability,
+  "retext-redundant-acronyms": ValidationErrorType.RedundantAcronyms,
+  "retext-repeated-words": ValidationErrorType.RepeatedWords,
+  "retext-simplify": ValidationErrorType.Simplify,
+  "retext-spell": ValidationErrorType.Spell,
+  "retext-usage": ValidationErrorType.Usage,
+  "retext-quotes": ValidationErrorType.Quotes,
+  other: ValidationErrorType.Other,
+};
 
 interface PageData {
   pathname: string;
