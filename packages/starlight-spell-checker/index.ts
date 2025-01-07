@@ -5,9 +5,10 @@ import {
   type StarlightSpellCheckerConfig,
   type StarlightSpellCheckerUserConfig,
 } from "./libs/config";
-import { logErrors, validateTexts } from "./libs/validation";
+import { logErrors, logWarnings, validateTexts } from "./libs/validation";
 import { clearContentLayerCache } from "./libs/astro";
 import { remarkStarlightSpellChecker } from "./libs/remark";
+import { green } from "kleur/colors";
 
 export { type StarlightSpellCheckerConfig };
 
@@ -42,7 +43,7 @@ export default function starlightSpellChecker(
               });
             },
             "astro:build:done": async ({ dir, pages }) => {
-              const misspellings = await validateTexts(
+              const { warnings, errors } = await validateTexts(
                 pages,
                 dir,
                 astroConfig,
@@ -50,9 +51,14 @@ export default function starlightSpellChecker(
                 config
               );
 
-              logErrors(logger, misspellings);
+              logWarnings(logger, warnings);
+              logErrors(logger, errors);
 
-              if (misspellings.size > 0) {
+              if (warnings.size <= 0 && errors.size <= 0) {
+                logger.info(green("✓ All words spelled correctly.\n"));
+              }
+
+              if (errors.size > 0) {
                 throwPluginError("Spelling validation failed.");
               }
             },

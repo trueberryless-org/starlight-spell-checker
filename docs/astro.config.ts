@@ -19,7 +19,16 @@ export default defineConfig({
           label: "Deutsch",
         },
       },
-      plugins: [starlightSpellChecker()],
+      plugins: [
+        starlightSpellChecker({
+          usage: {
+            enabled: true,
+          },
+          spell: {
+            ignore: ["astro.config.mjs"],
+          },
+        }),
+      ],
       sidebar: [
         {
           label: "Start Here",
