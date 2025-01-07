@@ -14,7 +14,7 @@ import { getValidationData } from "./remark";
 
 import retextAssuming from "retext-assuming";
 import retextCasePolice from "retext-case-police";
-import retextCliches from "retext-cliches";
+// import retextCliches from "retext-cliches";
 import retextContractions from "retext-contractions";
 import retextDiacritics from "retext-diacritics";
 import retextEquality from "retext-equality";
@@ -71,14 +71,13 @@ export async function validateTexts(
 
     let retextProcessor = retext()
       .use(retextAssuming)
-      .use(retextCasePolice)
-      .use(retextCliches)
+      // .use(retextCliches)
       .use(retextContractions)
       .use(retextDiacritics)
       .use(retextEquality)
       .use(retextIndefiniteArticle)
       .use(retextIntensify)
-      .use(retextOveruse)
+      // .use(retextOveruse)
       .use(retextPassive)
       .use(retextProfanities)
       .use(retextReadability)
@@ -89,7 +88,8 @@ export async function validateTexts(
         dictionary,
       })
       .use(retextUsage)
-      .use(retextQuotes);
+      .use(retextQuotes)
+      .use(retextCasePolice);
 
     try {
       const file = await retextProcessor.process(content);
