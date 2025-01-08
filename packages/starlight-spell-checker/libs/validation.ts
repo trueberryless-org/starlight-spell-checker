@@ -68,12 +68,8 @@ export async function validateTexts(
   const errors: ValidationErrors = new Map();
   const warnings: ValidationErrors = new Map();
 
-  for (const [filePath, content] of contents) {
-    if (isExcludedPage(filePath, options.exclude)) {
-      continue;
-    }
-
-    let dictionary = getLocaleDictionary(filePath, starlightConfig);
+  for (const [locale, files] of contents) {
+    let dictionary = getLocaleDictionary(locale);
 
     let retextProcessor = createProcessor(retext())
       .use(retextAssuming, options.assuming.enabled, {
@@ -107,42 +103,47 @@ export async function validateTexts(
       .use(retextQuotes, options.quotes.enabled)
       .use(retextCasePolice, options.casePolice.enabled)
       .build();
+    for (const [filePath, content] of files) {
+      if (isExcludedPage(filePath, options.exclude)) {
+        continue;
+      }
 
-    try {
-      const file = await retextProcessor.process(content);
+      try {
+        const file = await retextProcessor.process(content);
 
-      let fileErrors: ValidationError[] = [];
-      let fileWarnings: ValidationError[] = [];
+        let fileErrors: ValidationError[] = [];
+        let fileWarnings: ValidationError[] = [];
 
-      for (const error of file.messages.values()) {
-        const throwError = getThrowErrorForType(
-          validationErrorTypeMapper[error.source ?? "other"],
-          options
-        );
+        for (const error of file.messages.values()) {
+          const throwError = getThrowErrorForType(
+            validationErrorTypeMapper[error.source ?? "other"],
+            options
+          );
 
-        if (throwError) {
-          fileErrors.push({
-            word: error.actual ?? "",
-            type: validationErrorTypeMapper[error.source ?? "other"],
-            suggestions: error.expected ?? [],
-          });
-        } else {
-          fileWarnings.push({
-            word: error.actual ?? "",
-            type: validationErrorTypeMapper[error.source ?? "other"],
-            suggestions: error.expected ?? [],
-          });
+          if (throwError) {
+            fileErrors.push({
+              word: error.actual ?? "",
+              type: validationErrorTypeMapper[error.source ?? "other"],
+              suggestions: error.expected ?? [],
+            });
+          } else {
+            fileWarnings.push({
+              word: error.actual ?? "",
+              type: validationErrorTypeMapper[error.source ?? "other"],
+              suggestions: error.expected ?? [],
+            });
+          }
         }
-      }
 
-      if (fileErrors.length > 0) {
-        errors.set(filePath, fileErrors);
+        if (fileErrors.length > 0) {
+          errors.set(filePath, fileErrors);
+        }
+        if (fileWarnings.length > 0) {
+          warnings.set(filePath, fileWarnings);
+        }
+      } catch (err) {
+        console.error(`Error processing file ${filePath}:`, err);
       }
-      if (fileWarnings.length > 0) {
-        warnings.set(filePath, fileWarnings);
-      }
-    } catch (err) {
-      console.error(`Error processing file ${filePath}:`, err);
     }
   }
 

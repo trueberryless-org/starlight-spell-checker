@@ -12,14 +12,16 @@ import { unified, type Plugin } from "unified";
 import { visit } from "unist-util-visit";
 
 import { ensureTrailingSlash, stripLeadingSlash } from "./path";
+import { getLocaleConfig, getLocale } from "./i18n";
+import type { StarlightUserConfig } from "./validation";
 
-// All the text content keyed by file path.
+// All the text content keyed by locale, then keyed by file path.
 const contents: Contents = new Map();
 
 export const remarkStarlightSpellChecker: Plugin<
-  [{ base: string; srcDir: URL }],
+  [{ base: string; srcDir: URL; starlightConfig: StarlightUserConfig }],
   Root
-> = function ({ base, srcDir }) {
+> = function ({ base, srcDir, starlightConfig }) {
   return async (tree, file) => {
     if (file.data.astro?.frontmatter?.["draft"]) return;
 
@@ -63,7 +65,14 @@ export const remarkStarlightSpellChecker: Plugin<
       }
     );
 
-    contents.set(getFilePath(base, filePath, slug), fileContent);
+    const fullFilePath = getFilePath(base, filePath, slug);
+    const localeConfig = getLocaleConfig(starlightConfig);
+    const locale = getLocale(fullFilePath, localeConfig);
+
+    contents.set(
+      locale,
+      (contents.get(locale) ?? new Map()).set(fullFilePath, fileContent)
+    );
   };
 };
 
@@ -113,7 +122,7 @@ function normalizeFilePath(base: string, srcDir: URL, filePath?: string) {
 //   );
 // }
 
-export type Contents = Map<string, string>;
+export type Contents = Map<string, Map<string, string>>;
 
 // interface MdxIdAttribute {
 //   name: "id";

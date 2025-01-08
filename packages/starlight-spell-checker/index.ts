@@ -36,7 +36,11 @@ export default function starlightSpellChecker(
                   remarkPlugins: [
                     [
                       remarkStarlightSpellChecker,
-                      { base: astroConfig.base, srcDir: astroConfig.srcDir },
+                      {
+                        base: astroConfig.base,
+                        srcDir: astroConfig.srcDir,
+                        starlightConfig: starlightConfig,
+                      },
                     ],
                   ],
                 },

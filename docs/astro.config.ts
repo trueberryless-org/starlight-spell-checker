@@ -21,9 +21,6 @@ export default defineConfig({
       },
       plugins: [
         starlightSpellChecker({
-          usage: {
-            enabled: true,
-          },
           spell: {
             ignore: ["astro.config.mjs"],
           },

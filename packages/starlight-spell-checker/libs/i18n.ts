@@ -62,23 +62,11 @@ const dictionaryMapper: Record<string, any> = {
   "zh-tw": undefined,
 };
 
-export function getLocaleDictionary(
-  path: string,
-  starlightConfig: StarlightUserConfig
-): Dictionary {
-  const localeConfig = getLocaleConfig(starlightConfig);
-
-  const pathLocale = getLocale(path, localeConfig);
-
-  if (pathLocale) {
-    return dictionaryMapper[pathLocale];
-  }
-  return dictionaryMapper[
-    localeConfig.defaultLocale !== "" ? localeConfig.defaultLocale : "en"
-  ];
+export function getLocaleDictionary(path: string): Dictionary {
+  return dictionaryMapper[path];
 }
 
-function getLocale(path: string, localeConfig: LocaleConfig) {
+export function getLocale(path: string, localeConfig: LocaleConfig): string {
   const normalizedPath = ensureTrailingSlash(ensureLeadingSlash(path));
 
   for (const locale of localeConfig.locales) {
@@ -87,7 +75,7 @@ function getLocale(path: string, localeConfig: LocaleConfig) {
     }
   }
 
-  return;
+  return localeConfig.defaultLocale !== "" ? localeConfig.defaultLocale : "en";
 }
 
 export interface LocaleConfig {
