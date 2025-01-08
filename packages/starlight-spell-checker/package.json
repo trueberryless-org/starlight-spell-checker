@@ -10,7 +10,8 @@
   },
   "devDependencies": {
     "@astrojs/starlight": "^0.30.3",
-    "astro": "^5.1.2"
+    "astro": "^5.1.2",
+    "vitest": "^2.1.8"
   },
   "peerDependencies": {
     "@astrojs/starlight": ">=0.30"
@@ -76,5 +77,8 @@
     "unified": "^11.0.5",
     "unist-util-visit": "^5.0.0",
     "vfile-reporter": "^8.1.1"
+  },
+  "scripts": {
+    "test": "vitest"
   }
 }
