@@ -12,32 +12,25 @@ import dictionaryPt from "dictionary-pt";
 import dictionaryRu from "dictionary-ru";
 
 export function getLocaleConfig(config: StarlightUserConfig): LocaleConfig {
+  let defaultLocale = config.defaultLocale ?? "en";
+  const locales: string[] = [];
+
   if (!config.locales || Object.keys(config.locales).length === 0)
     return {
-      defaultLocale: "",
-      locales: [],
+      defaultLocale,
+      locales,
     };
-
-  let defaultLocale = config.defaultLocale;
-  const locales: string[] = [];
 
   for (const [dir, locale] of Object.entries(config.locales)) {
     if (!locale) continue;
 
     if (dir === "root") {
       if (!locale.lang) continue;
-
-      defaultLocale = "";
+      defaultLocale = locale.lang;
     }
 
     locales.push(dir);
   }
-
-  if (defaultLocale === undefined)
-    return {
-      defaultLocale: "",
-      locales: [],
-    };
 
   return {
     defaultLocale,
@@ -75,7 +68,7 @@ export function getLocale(path: string, localeConfig: LocaleConfig): string {
     }
   }
 
-  return localeConfig.defaultLocale !== "" ? localeConfig.defaultLocale : "en";
+  return localeConfig.defaultLocale;
 }
 
 export interface LocaleConfig {

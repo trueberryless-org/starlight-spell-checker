@@ -8,6 +8,7 @@ export default defineConfig({
       pagefind: false,
       plugins: [starlightSpellChecker()],
       title: "Starlight Spell Checker Tests - valid content fr",
+      defaultLocale: "fr",
     }),
   ],
 });

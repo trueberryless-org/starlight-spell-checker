@@ -2,106 +2,118 @@ import { expect, test } from 'vitest'
 
 import { ValidationErrorType } from '../libs/validation'
 
-import { buildFixture, expectValidationErrorCount, expectValidationErrors } from './utils'
+import { buildFixture, expectValidationErrorCount, expectValidationErrors, expectValidationSuccess, expectValidationWarningCount, expectValidationWarnings } from './utils'
 
 test('builds with valid English content', async () => {
-  const { status } = await buildFixture('valid-content')
+  const { output, status } = await buildFixture('valid-content')
 
   expect(status).toBe('success')
+  expectValidationSuccess(output)
 })
 
 test('builds with valid German content', async () => {
-  const { status } = await buildFixture('valid-content-de')
+  const { output, status } = await buildFixture('valid-content-de')
 
   expect(status).toBe('success')
+  expectValidationSuccess(output)
 })
 
 test('builds with valid French content', async () => {
-  const { status } = await buildFixture('valid-content-fr')
+  const { output, status } = await buildFixture('valid-content-fr')
 
   expect(status).toBe('success')
+  expectValidationSuccess(output)
 })
 
-// test('does not build with invalid links', async () => {
-//   const { output, status } = await buildFixture('invalid-links')
+test('builds with valid Multilingual content', async () => {
+  const { output, status } = await buildFixture('valid-content-multilingual')
 
-//   expect(status).toBe('error')
+  expect(status).toBe('success')
+  expectValidationSuccess(output)
+})
 
-//   expectValidationErrorCount(output, 64, 4)
+test('builds with invalid English content, but warnings', async () => {
+  const { output, status } = await buildFixture('invalid-content')
 
-//   expectValidationErrors(output, 'test/', [
-//     ['/https://starlight.astro.build/', ValidationErrorType.InvalidLink],
-//     ['/', ValidationErrorType.InvalidLink],
-//     ['/unknown', ValidationErrorType.InvalidLink],
-//     ['/unknown/', ValidationErrorType.InvalidLink],
-//     ['/unknown#title', ValidationErrorType.InvalidLink],
-//     ['/unknown/#title', ValidationErrorType.InvalidLink],
-//     ['/draft', ValidationErrorType.InvalidLink],
-//     ['/draft/', ValidationErrorType.InvalidLink],
-//     ['#links', ValidationErrorType.InvalidHash],
-//     ['/guides/example/#links', ValidationErrorType.InvalidHash],
-//     ['/icon.svg', ValidationErrorType.InvalidLink],
-//     ['/guidelines/ui.pdf', ValidationErrorType.InvalidLink],
-//     ['/unknown-ref', ValidationErrorType.InvalidLink],
-//     ['#unknown-ref', ValidationErrorType.InvalidHash],
-//     ['#anotherDiv', ValidationErrorType.InvalidHash],
-//     ['/guides/page-with-custom-slug', ValidationErrorType.InvalidLink],
-//     ['/release/@pkg/v0.2.0', ValidationErrorType.InvalidLink],
-//     ['/?query=string', ValidationErrorType.InvalidLink],
-//     ['/unknown?query=string', ValidationErrorType.InvalidLink],
-//     ['/unknown/?query=string', ValidationErrorType.InvalidLink],
-//     ['/unknown?query=string#title', ValidationErrorType.InvalidLink],
-//     ['/unknown/?query=string#title', ValidationErrorType.InvalidLink],
-//     ['?query=string#links', ValidationErrorType.InvalidHash],
-//     ['/guides/example/?query=string#links', ValidationErrorType.InvalidHash],
-//     ['/icon.svg?query=string', ValidationErrorType.InvalidLink],
-//     ['/guidelines/ui.pdf?query=string', ValidationErrorType.InvalidLink],
-//     ['/unknown-ref?query=string', ValidationErrorType.InvalidLink],
-//     ['?query=string#unknown-ref', ValidationErrorType.InvalidHash],
-//     ['http://localhost', ValidationErrorType.LocalLink],
-//     ['http://localhost:4321/', ValidationErrorType.LocalLink],
-//     ['https://127.0.0.1:4321/getting-started', ValidationErrorType.LocalLink],
-//   ])
+  expect(status).toBe('success')
 
-//   expectValidationErrors(output, 'guides/example/', [
-//     ['#links', ValidationErrorType.InvalidHash],
-//     ['/unknown/#links', ValidationErrorType.InvalidLink],
-//     ['/unknown', ValidationErrorType.InvalidLink],
-//     ['#anotherBlock', ValidationErrorType.InvalidHash],
-//     ['/icon.svg', ValidationErrorType.InvalidLink],
-//     ['/guidelines/ui.pdf', ValidationErrorType.InvalidLink],
-//     ['/linkcard/', ValidationErrorType.InvalidLink],
-//     ['/linkcard/#links', ValidationErrorType.InvalidLink],
-//     ['#linkcard', ValidationErrorType.InvalidHash],
-//     ['/linkbutton/', ValidationErrorType.InvalidLink],
-//     ['/linkbutton/#links', ValidationErrorType.InvalidLink],
-//     ['#linkbutton', ValidationErrorType.InvalidHash],
-//     ['?query=string#links', ValidationErrorType.InvalidHash],
-//     ['/unknown/?query=string#links', ValidationErrorType.InvalidLink],
-//     ['/unknown?query=string', ValidationErrorType.InvalidLink],
-//     ['/icon.svg?query=string', ValidationErrorType.InvalidLink],
-//     ['/guidelines/ui.pdf?query=string', ValidationErrorType.InvalidLink],
-//     ['/linkcard/?query=string', ValidationErrorType.InvalidLink],
-//     ['/linkbutton/?query=string', ValidationErrorType.InvalidLink],
-//   ])
+  expectValidationWarningCount(output, 6, 1)
 
-//   expectValidationErrors(output, 'guides/namespacetest/', [
-//     ['#some-other-content', ValidationErrorType.InvalidHash],
-//     ['/guides/namespacetest/#another-content', ValidationErrorType.InvalidHash],
-//   ])
+  expectValidationWarnings(output, 'test/', [
+    ['diped', ValidationErrorType.Spell, ["dipped", "doped", "duped", "biped", "diced", "died", "diked", "dined", "dived", "piped", "wiped"]],
+    ['horison', ValidationErrorType.Spell, ["orison", "horizon", "Morison"]],
+    ['heus', ValidationErrorType.Spell, ["hers", "hews", "he's", "hems", "hens", "hes", "hues", "Hess", "Hus", "Zeus"]],
+    ['evaning', ValidationErrorType.Spell, ["evading", "evening"]],
+    ['breze', ValidationErrorType.Spell, ["breeze", "braze", "breve"]],
+    ['thrugh', ValidationErrorType.Spell, ["though", "through", "thrush"]],
+  ])
+})
 
-//   expectValidationErrors(output, 'relative/', [
-//     ['.', ValidationErrorType.RelativeLink],
-//     ['./relative', ValidationErrorType.RelativeLink],
-//     ['./test', ValidationErrorType.RelativeLink],
-//     ['./guides/example', ValidationErrorType.RelativeLink],
-//     ['../test', ValidationErrorType.RelativeLink],
-//     ['test', ValidationErrorType.RelativeLink],
-//     ['.?query=string', ValidationErrorType.RelativeLink],
-//     ['./relative?query=string', ValidationErrorType.RelativeLink],
-//     ['./test?query=string', ValidationErrorType.RelativeLink],
-//     ['./guides/example?query=string', ValidationErrorType.RelativeLink],
-//     ['../test?query=string', ValidationErrorType.RelativeLink],
-//     ['test?query=string', ValidationErrorType.RelativeLink],
-//   ])
-// })
+test('builds with invalid German content, but warnings', async () => {
+  const { output, status } = await buildFixture('invalid-content-de')
+
+  expect(status).toBe('success')
+
+  expectValidationWarningCount(output, 6, 1)
+
+  expectValidationWarnings(output, 'test/', [
+    ['tachte', ValidationErrorType.Spell, ["dachte", "fachte", "pachte", "wachte", "takte", "-achte", "achte", "lachte", "machte", "sachte", "tauchte", "trachte"]],
+    ['Horisont', ValidationErrorType.Spell, ["Horizont"]],
+    ['Tönnen', ValidationErrorType.Spell, ["Tönen", "Gönnen", "Können", "Tannen", "Tennen", "Tonnen", "Tönten"]],
+    ['Briese', ValidationErrorType.Spell, ["Brise", "Briefe", "Friese", "Priese", "Riese", "-riese"]],
+    ['Abbends', ValidationErrorType.Spell, ["Abends"]],
+    ['durh', ValidationErrorType.Spell, ["durch", "Dur"]],
+  ])
+})
+
+test('builds with invalid French content, but warnings', async () => {
+  const { output, status } = await buildFixture('invalid-content-fr')
+
+  expect(status).toBe('success')
+
+  expectValidationWarningCount(output, 6, 1)
+
+  expectValidationWarnings(output, 'test/', [
+    ['ploungé', ValidationErrorType.Spell, ["plongé"]],
+    ['l\'horison', ValidationErrorType.Spell, ["l’horizon", "l’horion"]],
+    ['tientes', ValidationErrorType.Spell, ["fientes", "teintes", "tentes", "tiennes", "tintes"]],
+    ['briese', ValidationErrorType.Spell, ["briefe", "bries", "brise"]],
+    ['sior', ValidationErrorType.Spell, ["sir", "soir", "Dior", "Sion"]],
+    ['tràvers', ValidationErrorType.Spell, ["travers"]],
+  ])
+})
+
+test('builds with invalid Multilingual content, but warnings', async () => {
+  const { output, status } = await buildFixture('invalid-content-multilingual')
+
+  expect(status).toBe('success')
+
+  expectValidationWarningCount(output, 18, 3)
+
+  expectValidationWarnings(output, 'test/', [
+    ['diped', ValidationErrorType.Spell, ["dipped", "doped", "duped", "biped", "diced", "died", "diked", "dined", "dived", "piped", "wiped"]],
+    ['horison', ValidationErrorType.Spell, ["orison", "horizon", "Morison"]],
+    ['heus', ValidationErrorType.Spell, ["hers", "hews", "he's", "hems", "hens", "hes", "hues", "Hess", "Hus", "Zeus"]],
+    ['evaning', ValidationErrorType.Spell, ["evading", "evening"]],
+    ['breze', ValidationErrorType.Spell, ["breeze", "braze", "breve"]],
+    ['thrugh', ValidationErrorType.Spell, ["though", "through", "thrush"]],
+  ])
+  
+  expectValidationWarnings(output, 'de/test/', [
+    ['tachte', ValidationErrorType.Spell, ["dachte", "fachte", "pachte", "wachte", "takte", "-achte", "achte", "lachte", "machte", "sachte", "tauchte", "trachte"]],
+    ['Horisont', ValidationErrorType.Spell, ["Horizont"]],
+    ['Tönnen', ValidationErrorType.Spell, ["Tönen", "Gönnen", "Können", "Tannen", "Tennen", "Tonnen", "Tönten"]],
+    ['Briese', ValidationErrorType.Spell, ["Brise", "Briefe", "Friese", "Priese", "Riese", "-riese"]],
+    ['Abbends', ValidationErrorType.Spell, ["Abends"]],
+    ['durh', ValidationErrorType.Spell, ["durch", "Dur"]],
+  ])
+  
+  expectValidationWarnings(output, 'fr/test/', [
+    ['ploungé', ValidationErrorType.Spell, ["plongé"]],
+    ['l\'horison', ValidationErrorType.Spell, ["l’horizon", "l’horion"]],
+    ['tientes', ValidationErrorType.Spell, ["fientes", "teintes", "tentes", "tiennes", "tintes"]],
+    ['briese', ValidationErrorType.Spell, ["briefe", "bries", "brise"]],
+    ['sior', ValidationErrorType.Spell, ["sir", "soir", "Dior", "Sion"]],
+    ['tràvers', ValidationErrorType.Spell, ["travers"]],
+  ])
+})

@@ -38,6 +38,10 @@ export async function buildFixture(name: string) {
   return { output, status };
 }
 
+export function expectValidationSuccess(output: string) {
+  expect(output).toMatch(new RegExp(`All words spelled correctly.`));
+}
+
 export function expectValidationWarningCount(
   output: string,
   count: number,
@@ -63,20 +67,20 @@ export function expectValidationWarnings(
 ) {
   expect(output).toMatch(
     new RegExp(`▶ ${path}
-${validationWarnings
-  .map(
-    ([word, type, suggestions], index) =>
-      `.* ${
-        index < validationWarnings.length - 1 ? "├" : "└"
-      }─ ${word.replaceAll("?", String.raw`\?`)} - ${type}${
-        suggestions
-          ? suggestions.length > 0
-            ? ` \(${suggestions.join(", ")}\)`
-            : " no suggestions"
-          : ""
-      }`
-  )
-  .join("\n")}`)
+      ${validationWarnings
+        .map(
+          ([word, type, suggestions], index) =>
+            `.* ${
+              index < validationWarnings.length - 1 ? "├" : "└"
+            }─ ${word} - ${type}${
+              suggestions
+                ? suggestions.length > 0
+                  ? ` \(${suggestions.join(", ")}\)`
+                  : " no suggestions"
+                : ""
+            }`
+        )
+        .join("\n")}`)
   );
 }
 
@@ -105,20 +109,19 @@ export function expectValidationErrors(
 ) {
   expect(output).toMatch(
     new RegExp(`▶ ${path}
-${validationErrors
-  .map(
-    ([word, type, suggestions], index) =>
-      `.* ${index < validationErrors.length - 1 ? "├" : "└"}─ ${word.replaceAll(
-        "?",
-        String.raw`\?`
-      )} - ${type}${
-        suggestions
-          ? suggestions.length > 0
-            ? ` \(${suggestions.join(", ")}\)`
-            : " no suggestions"
-          : ""
-      }`
-  )
-  .join("\n")}`)
+      ${validationErrors
+        .map(
+          ([word, type, suggestions], index) =>
+            `.* ${
+              index < validationErrors.length - 1 ? "├" : "└"
+            }─ ${word} - ${type}${
+              suggestions
+                ? suggestions.length > 0
+                  ? ` \(${suggestions.join(", ")}\)`
+                  : " no suggestions"
+                : ""
+            }`
+        )
+        .join("\n")}`)
   );
 }
