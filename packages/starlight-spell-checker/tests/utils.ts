@@ -65,9 +65,9 @@ export function expectValidationWarnings(
     suggestions?: string[]
   ][]
 ) {
-  expect(output).toMatch(
-    new RegExp(`▶ ${path}
-      ${validationWarnings
+  console.log(
+    new RegExp(
+      `▶ ${path}${validationWarnings
         .map(
           ([word, type, suggestions], index) =>
             `.* ${
@@ -80,7 +80,26 @@ export function expectValidationWarnings(
                 : ""
             }`
         )
-        .join("\n")}`)
+        .join("\n")}`
+    )
+  );
+  expect(output).toMatch(
+    new RegExp(
+      `▶ ${path}${validationWarnings
+        .map(
+          ([word, type, suggestions], index) =>
+            `.* ${
+              index < validationWarnings.length - 1 ? "├" : "└"
+            }─ ${word} - ${type}${
+              suggestions
+                ? suggestions.length > 0
+                  ? ` \(${suggestions.join(", ")}\)`
+                  : " no suggestions"
+                : ""
+            }`
+        )
+        .join("\n")}`
+    )
   );
 }
 
@@ -108,8 +127,8 @@ export function expectValidationErrors(
   ][]
 ) {
   expect(output).toMatch(
-    new RegExp(`▶ ${path}
-      ${validationErrors
+    new RegExp(
+      `▶ ${path}${validationErrors
         .map(
           ([word, type, suggestions], index) =>
             `.* ${
@@ -122,6 +141,7 @@ export function expectValidationErrors(
                 : ""
             }`
         )
-        .join("\n")}`)
+        .join("\n")}`
+    )
   );
 }

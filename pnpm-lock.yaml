@@ -232,6 +232,102 @@ importers:
         specifier: workspace:*
         version: link:../../..
 
+  packages/starlight-spell-checker/tests/fixtures/spell-throw-error-invalid-content:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.3(astro@5.1.2(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.2(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
+  packages/starlight-spell-checker/tests/fixtures/spell-throw-error-invalid-content-de:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.3(astro@5.1.2(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.2(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
+  packages/starlight-spell-checker/tests/fixtures/spell-throw-error-invalid-content-fr:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.3(astro@5.1.2(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.2(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
+  packages/starlight-spell-checker/tests/fixtures/spell-throw-error-invalid-content-multilingual:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.3(astro@5.1.2(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.2(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
+  packages/starlight-spell-checker/tests/fixtures/spell-throw-error-valid-content:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.3(astro@5.1.2(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.2(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
+  packages/starlight-spell-checker/tests/fixtures/spell-throw-error-valid-content-de:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.3(astro@5.1.2(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.2(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
+  packages/starlight-spell-checker/tests/fixtures/spell-throw-error-valid-content-fr:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.3(astro@5.1.2(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.2(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
+  packages/starlight-spell-checker/tests/fixtures/spell-throw-error-valid-content-multilingual:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.3(astro@5.1.2(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.2(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
   packages/starlight-spell-checker/tests/fixtures/valid-content:
     dependencies:
       '@astrojs/starlight':
