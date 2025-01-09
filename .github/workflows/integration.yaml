@@ -46,4 +46,4 @@ jobs:
 
       - name: Test
         run: pnpm test
-        working-directory: ./docs
+        working-directory: ./packages/starlight-spell-checker
