@@ -65,40 +65,23 @@ export function expectValidationWarnings(
     suggestions?: string[]
   ][]
 ) {
-  console.log(
-    new RegExp(
-      `▶ ${path}${validationWarnings
-        .map(
-          ([word, type, suggestions], index) =>
-            `.* ${
-              index < validationWarnings.length - 1 ? "├" : "└"
-            }─ ${word} - ${type}${
-              suggestions
-                ? suggestions.length > 0
-                  ? ` \(${suggestions.join(", ")}\)`
-                  : " no suggestions"
-                : ""
-            }`
-        )
-        .join("\n")}`
-    )
-  );
   expect(output).toMatch(
     new RegExp(
-      `▶ ${path}${validationWarnings
-        .map(
-          ([word, type, suggestions], index) =>
-            `.* ${
-              index < validationWarnings.length - 1 ? "├" : "└"
-            }─ ${word} - ${type}${
-              suggestions
-                ? suggestions.length > 0
-                  ? ` \(${suggestions.join(", ")}\)`
-                  : " no suggestions"
-                : ""
-            }`
-        )
-        .join("\n")}`
+      `▶ ${path}
+${validationWarnings
+  .map(
+    ([word, type, suggestions], index) =>
+      `.* ${
+        index < validationWarnings.length - 1 ? "├" : "└"
+      }─ ${word} - ${type}${
+        suggestions
+          ? suggestions.length > 0
+            ? ` \\\(${suggestions.join(", ")}\\\)`
+            : " no suggestions"
+          : ""
+      }`
+  )
+  .join("\n")}`
     )
   );
 }
@@ -128,20 +111,21 @@ export function expectValidationErrors(
 ) {
   expect(output).toMatch(
     new RegExp(
-      `▶ ${path}${validationErrors
-        .map(
-          ([word, type, suggestions], index) =>
-            `.* ${
-              index < validationErrors.length - 1 ? "├" : "└"
-            }─ ${word} - ${type}${
-              suggestions
-                ? suggestions.length > 0
-                  ? ` \(${suggestions.join(", ")}\)`
-                  : " no suggestions"
-                : ""
-            }`
-        )
-        .join("\n")}`
+      `▶ ${path}
+${validationErrors
+  .map(
+    ([word, type, suggestions], index) =>
+      `.* ${
+        index < validationErrors.length - 1 ? "├" : "└"
+      }─ ${word} - ${type}${
+        suggestions
+          ? suggestions.length > 0
+            ? ` \\\(${suggestions.join(", ")}\\\)`
+            : " no suggestions"
+          : ""
+      }`
+  )
+  .join("\n")}`
     )
   );
 }
