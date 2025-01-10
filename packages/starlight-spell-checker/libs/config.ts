@@ -80,6 +80,15 @@ const configSchema = z
          * @default false
          */
         throwError: z.boolean().default(false),
+
+        /**
+         * Defines a list of words that should be ignored by the case police checker.
+         *
+         * The words in this list will be ignored by the case police checker and will not be considered as misspelled.
+         *
+         * @default []
+         */
+        ignore: z.array(z.string()).default([]),
       })
       .default({}),
 
@@ -104,6 +113,20 @@ const configSchema = z
          * @default false
          */
         throwError: z.boolean().default(false),
+
+        /**
+         * Whether to ignore [literal words](https://github.com/syntax-tree/nlcst-is-literal).
+         *
+         * @default true
+         */
+        ignoreLiterals: z.boolean().default(true),
+
+        /**
+         * Whether to suggest straight (') instead of smart (’) apostrophes.
+         *
+         * @default false
+         */
+        straight: z.boolean().default(false),
       })
       .default({}),
 
@@ -152,6 +175,22 @@ const configSchema = z
          * @default false
          */
         throwError: z.boolean().default(false),
+
+        /**
+         * Defines a list of words that should be ignored by the equality checker.
+         *
+         * The words in this list will be ignored by the equality checker and will not be considered as inconsiderate.
+         *
+         * @default []
+         */
+        ignore: z.array(z.string()).default([]),
+
+        /**
+         * Whether to allow "he or she", "garbagemen and garbagewomen", etc.
+         *
+         * @default false
+         */
+        binary: z.boolean().default(false),
       })
       .default({}),
 
@@ -200,6 +239,15 @@ const configSchema = z
          * @default false
          */
         throwError: z.boolean().default(false),
+
+        /**
+         * Defines a list of words that should be ignored by the intensify checker.
+         *
+         * The words in this list will be ignored by the intensify checker and will not be considered as weak.
+         *
+         * @default []
+         */
+        ignore: z.array(z.string()).default([]),
       })
       .default({}),
 
@@ -248,6 +296,15 @@ const configSchema = z
          * @default false
          */
         throwError: z.boolean().default(false),
+
+        /**
+         * Defines a list of words that should be ignored by the passive checker.
+         *
+         * The words in this list will be ignored by the passive checker and will not be considered as passive.
+         *
+         * @default []
+         */
+        ignore: z.array(z.string()).default([]),
       })
       .default({}),
 
@@ -272,11 +329,36 @@ const configSchema = z
          * @default false
          */
         throwError: z.boolean().default(false),
+
+        /**
+         * Defines a list of words that should be ignored by the profanity checker.
+         *
+         * The words in this list will be ignored by the profanity checker and will not be considered as vulgar.
+         *
+         * @default []
+         */
+        ignore: z.array(z.string()).default([]),
+
+        /**
+         * Minimum sureness to warn about, see [cuss](https://github.com/words/cuss)
+         *
+         * @default 0
+         */
+        sureness: z
+          .number()
+          .refine((val) => [0, 1, 2].includes(val), {
+            message: "Number must be 0, 1, or 2",
+          })
+          .default(0),
       })
       .default({}),
 
     /**
      * Configuration for the readability plugin.
+     * 
+     * It applies [Dale—Chall](https://github.com/words/dale-chall-formula),
+[Automated Readability](https://github.com/words/automated-readability), [Coleman-Liau](https://github.com/words/coleman-liau), [Flesch](https://github.com/words/flesch),
+[Gunning-Fog](https://github.com/words/gunning-fog), [SMOG](https://github.com/words/smog-formula), and [Spache](https://github.com/words/spache-formula).
      */
     readability: z
       .object({
@@ -296,6 +378,33 @@ const configSchema = z
          * @default false
          */
         throwError: z.boolean().default(false),
+
+        /**
+         * Defines the target age group.
+         *
+         * @default 22
+         */
+        age: z.number().default(22),
+
+        /**
+         * Defines the minimum number of words.
+         *
+         * Evaluate sentences containing at least this number of words. While most algorithms assess the reading level of an entire text, this plugin analyzes each sentence individually. Short sentences, however, can be disproportionately influenced by a single long or complex word.
+         *
+         * @default 5
+         */
+        minWords: z.number().default(5),
+
+        /**
+         * Defines how many algorithms (out of 7) need to agree that something is hard to read.
+         * 
+         * The algorithms are: [Dale—Chall](https://github.com/words/dale-chall-formula),
+[Automated Readability](https://github.com/words/automated-readability), [Coleman-Liau](https://github.com/words/coleman-liau), [Flesch](https://github.com/words/flesch),
+[Gunning-Fog](https://github.com/words/gunning-fog), [SMOG](https://github.com/words/smog-formula), and [Spache](https://github.com/words/spache-formula)
+         * 
+         * @default 4/7
+         */
+        threshold: z.number().default(4 / 7),
       })
       .default({}),
 
@@ -368,6 +477,15 @@ const configSchema = z
          * @default false
          */
         throwError: z.boolean().default(false),
+
+        /**
+         * Defines a list of words that should be ignored by the simplify checker.
+         *
+         * The words in this list will be ignored by the simplify checker and will not be considered as simplifiable.
+         *
+         * @default []
+         */
+        ignore: z.array(z.string()).default([]),
       })
       .default({}),
 
@@ -416,6 +534,58 @@ const configSchema = z
          * @default false
          */
         throwError: z.boolean().default(false),
+
+        /**
+         * Whether to suggest straight (') instead of smart (’) apostrophes.
+         *
+         * @default false
+         */
+        straight: z
+          .boolean()
+          .default(false)
+          .transform((value) => (value ? "straight" : "smart")),
+
+        smartQuotes: z
+          .union([
+            z.array(
+              z.string().refine((str) => str.length === 1 || str.length === 2, {
+                message:
+                  "Each quote must be either one or two characters long.",
+              })
+            ),
+            z.record(
+              z.array(
+                z
+                  .string()
+                  .refine((str) => str.length === 1 || str.length === 2, {
+                    message:
+                      "Each quote must be either one or two characters long.",
+                  })
+              )
+            ),
+          ])
+          .default(["“”", "‘’"]),
+
+        straightQuotes: z
+          .union([
+            z.array(
+              z.string().refine((str) => str.length === 1 || str.length === 2, {
+                message:
+                  "Each quote must be either one or two characters long.",
+              })
+            ),
+            z.record(
+              z.array(
+                z
+                  .string()
+                  .refine((str) => str.length === 1 || str.length === 2, {
+                    message:
+                      "Each quote must be either one or two characters long.",
+                  })
+              )
+            ),
+          ])
+          .default(['"', "'"]),
       })
       .default({}),
 

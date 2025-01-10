@@ -1,29 +1,30 @@
-import { fileURLToPath } from "node:url";
-import { statSync } from "node:fs";
-
 import type { StarlightUserConfig as StarlightUserConfigWithPlugins } from "@astrojs/starlight/types";
 import type { AstroConfig, AstroIntegrationLogger } from "astro";
-import { $, bgGreen, black, blue, dim, green, red, yellow } from "kleur/colors";
+import { $, bgGreen, black, blue, dim, red, yellow } from "kleur/colors";
 
 import type { StarlightSpellCheckerConfig } from "../libs/config";
 
 import { retext } from "retext";
 import { getLocaleDictionary } from "./i18n";
-import { stripLeadingSlash } from "./path";
 import { getValidationData } from "./remark";
 import picomatch from "picomatch";
 
 import retextAssuming from "retext-assuming";
-// import retextCasePolice from "retext-case-police";
+import retextCasePolice from "retext-case-police";
 // import retextCliches from "retext-cliches";
 import retextContractions from "retext-contractions";
 import retextDiacritics from "retext-diacritics";
 import retextEquality from "retext-equality";
 import retextIndefiniteArticle from "retext-indefinite-article";
 import retextIntensify from "retext-intensify";
-import retextOveruse from "retext-overuse";
+// import retextOveruse from "retext-overuse";
 import retextPassive from "retext-passive";
-import retextProfanities from "retext-profanities";
+import retextProfanitiesAr from "retext-profanities/ar-latn";
+import retextProfanitiesEn from "retext-profanities/en";
+import retextProfanitiesEs from "retext-profanities/es";
+import retextProfanitiesFr from "retext-profanities/fr";
+import retextProfanitiesIt from "retext-profanities/it";
+import retextProfanitiesPt from "retext-profanities/pt";
 import retextReadability from "retext-readability";
 import retextRedundantAcronyms from "retext-redundant-acronyms";
 import retextRepeatedWords from "retext-repeated-words";
@@ -72,7 +73,7 @@ export async function validateTexts(
     let dictionary = getLocaleDictionary(locale);
 
     let retextProcessor = createProcessor(retext())
-      .use(retextAssuming, options.assuming.enabled, {
+      .use(retextAssuming, options.assuming.enabled && locale === "en", {
         ...(options.assuming.phrases !== undefined && {
           phrases: options.assuming.phrases,
         }),
@@ -80,18 +81,51 @@ export async function validateTexts(
         verbose: options.assuming.verbose,
       })
       // .use(retextCliches)
-      .use(retextContractions, options.contractions.enabled)
+      .use(
+        retextContractions,
+        options.contractions.enabled && locale === "en",
+        {
+          allowLiterals: !options.contractions.ignoreLiterals,
+        }
+      )
       .use(retextDiacritics, options.diacritics.enabled)
-      .use(retextEquality, options.equality.enabled)
-      .use(retextIndefiniteArticle, options.indefiniteArticle.enabled)
-      .use(retextIntensify, options.intensify.enabled)
+      .use(retextEquality, options.equality.enabled && locale === "en", {
+        ignore: options.equality.ignore,
+        binary: options.equality.binary,
+      })
+      .use(
+        retextIndefiniteArticle,
+        options.indefiniteArticle.enabled && locale === "en"
+      )
+      .use(retextIntensify, options.intensify.enabled && locale === "en", {
+        ignore: options.intensify.ignore,
+      })
       // .use(retextOveruse, options.overuse.enabled)
-      .use(retextPassive, options.passive.enabled)
-      .use(retextProfanities, options.profanities.enabled)
-      .use(retextReadability, options.readability.enabled)
-      .use(retextRedundantAcronyms, options.redundantAcronyms.enabled)
+      .use(retextPassive, options.passive.enabled && locale === "en", {
+        ignore: options.passive.ignore,
+      })
+      .use(
+        profanityMapper[locale],
+        options.profanities.enabled &&
+          Object.keys(profanityMapper).includes(locale),
+        {
+          ignore: options.profanities.ignore,
+          sureness: options.profanities.sureness,
+        }
+      )
+      .use(retextReadability, options.readability.enabled && locale === "en", {
+        age: options.readability.age,
+        minWords: options.readability.minWords,
+        threshold: options.readability.threshold,
+      })
+      .use(
+        retextRedundantAcronyms,
+        options.redundantAcronyms.enabled && locale === "en"
+      )
       .use(retextRepeatedWords, options.repeatedWords.enabled)
-      .use(retextSimplify, options.simplify.enabled)
+      .use(retextSimplify, options.simplify.enabled && locale === "en", {
+        ignore: options.simplify.ignore,
+      })
       .use(retextSpell, options.spell.enabled, {
         dictionary,
         ignore: options.spell.ignore,
@@ -99,8 +133,19 @@ export async function validateTexts(
         ignoreDigits: options.spell.ignoreDigits,
         max: options.spell.max,
       })
-      .use(retextUsage, options.usage.enabled)
-      .use(retextQuotes, options.quotes.enabled)
+      .use(retextUsage, options.usage.enabled && locale === "en")
+      .use(retextQuotes, options.quotes.enabled, {
+        preferred: options.quotes.straight,
+        smart: Array.isArray(options.quotes.smartQuotes)
+          ? options.quotes.smartQuotes
+          : options.quotes.smartQuotes[locale],
+        straight: Array.isArray(options.quotes.straightQuotes)
+          ? options.quotes.straightQuotes
+          : options.quotes.straightQuotes[locale],
+      })
+      .use(retextCasePolice, options.casePolice.enabled, {
+        ignore: options.casePolice.ignore,
+      })
       .build();
     for (const [filePath, content] of files) {
       if (isExcludedPage(filePath, options.exclude)) {
@@ -315,6 +360,15 @@ function getThrowErrorForType(
   // Access the options dynamically to get the `throwError` value
   return options[optionKey]?.throwError ?? undefined;
 }
+
+const profanityMapper: Record<string, any> = {
+  ar: retextProfanitiesAr,
+  en: retextProfanitiesEn,
+  es: retextProfanitiesEs,
+  fr: retextProfanitiesFr,
+  it: retextProfanitiesIt,
+  "pt-BR": retextProfanitiesPt,
+};
 
 type ValidationErrors = Map<string, ValidationError[]>;
 
