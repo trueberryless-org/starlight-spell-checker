@@ -5,7 +5,12 @@ import {
   type StarlightSpellCheckerConfig,
   type StarlightSpellCheckerUserConfig,
 } from "./libs/config";
-import { logErrors, logUnsupportedLanguages, logWarnings, validateTexts } from "./libs/validation";
+import {
+  logErrors,
+  logUnsupportedLanguages,
+  logWarnings,
+  validateTexts,
+} from "./libs/validation";
 import { clearContentLayerCache } from "./libs/astro";
 import { remarkStarlightSpellChecker } from "./libs/remark";
 import { green } from "kleur/colors";
@@ -47,13 +52,14 @@ export default function starlightSpellChecker(
               });
             },
             "astro:build:done": async ({ dir, pages }) => {
-              const { warnings, errors, unsupportedLanguages } = await validateTexts(
-                pages,
-                dir,
-                astroConfig,
-                starlightConfig,
-                config
-              );
+              const { warnings, errors, unsupportedLanguages } =
+                await validateTexts(
+                  pages,
+                  dir,
+                  astroConfig,
+                  starlightConfig,
+                  config
+                );
 
               logWarnings(logger, warnings);
               logErrors(logger, errors);

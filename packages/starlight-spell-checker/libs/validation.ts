@@ -298,7 +298,20 @@ export function logUnsupportedLanguages(
   if (unsupportedLanguages.size == 0) {
     logger.info(green("✓ All languages supported.\n"));
   } else {
-    logger.info(yellow(`✗ Unsupported ${pluralize(unsupportedLanguages.size, "language")}: ${red([...unsupportedLanguages].map(error => error.locale).join(yellow(", ")))} (No ${unsupportedLanguages.size == 1 ? "dictionary" : "dictionaries"} available.)`));
+    logger.info(
+      yellow(
+        `✗ Unsupported ${pluralize(
+          unsupportedLanguages.size,
+          "language"
+        )}: ${red(
+          [...unsupportedLanguages]
+            .map((error) => error.locale)
+            .join(yellow(", "))
+        )} (No ${
+          unsupportedLanguages.size == 1 ? "dictionary" : "dictionaries"
+        } available.)`
+      )
+    );
   }
 }
 
@@ -400,7 +413,6 @@ interface ValidationError {
   type: ValidationErrorType;
   suggestions?: string[];
 }
-
 
 type UnsupportedLanguageErrors = Set<UnsupportedLanguageError>;
 

@@ -42,11 +42,22 @@ export function expectValidationSuccess(output: string) {
   expect(output).toMatch(new RegExp(`All words spelled correctly.`));
 }
 
-export function expectValidationUnsupportedLanguage(output: string, locales: string[]) {
+export function expectValidationUnsupportedLanguage(
+  output: string,
+  locales: string[]
+) {
   const per = getPermutations(locales);
-  const localePattern = `(${per.map(pair => pair.join(", ")).join("|")})`;
-  
-  expect(output).toMatch(new RegExp(`Unsupported ${locales.length === 1 ? "language" : "languages"}: ${localePattern} \\\(No ${locales.length === 1 ? "dictionary" : "dictionaries"} available.\\\)`));
+  const localePattern = `(${per.map((pair) => pair.join(", ")).join("|")})`;
+
+  expect(output).toMatch(
+    new RegExp(
+      `Unsupported ${
+        locales.length === 1 ? "language" : "languages"
+      }: ${localePattern} \\\(No ${
+        locales.length === 1 ? "dictionary" : "dictionaries"
+      } available.\\\)`
+    )
+  );
 }
 
 export function expectValidationWarningCount(
@@ -143,19 +154,19 @@ function getPermutations(arr: any[]): any[][] {
   const permutations = [];
 
   for (let i = 0; i < arr.length; i++) {
-      // Das aktuelle Element
-      const currentElement = arr[i];
+    // Das aktuelle Element
+    const currentElement = arr[i];
 
-      // Restliches Array ohne das aktuelle Element
-      const remainingElements = arr.slice(0, i).concat(arr.slice(i + 1));
+    // Restliches Array ohne das aktuelle Element
+    const remainingElements = arr.slice(0, i).concat(arr.slice(i + 1));
 
-      // Rekursiv die Permutationen des restlichen Arrays holen
-      const remainingPermutations = getPermutations(remainingElements);
+    // Rekursiv die Permutationen des restlichen Arrays holen
+    const remainingPermutations = getPermutations(remainingElements);
 
-      // Das aktuelle Element zu jeder der Permutationen hinzufügen
-      for (const permutation of remainingPermutations) {
-          permutations.push([currentElement, ...permutation]);
-      }
+    // Das aktuelle Element zu jeder der Permutationen hinzufügen
+    for (const permutation of remainingPermutations) {
+      permutations.push([currentElement, ...permutation]);
+    }
   }
 
   return permutations;
