@@ -13,8 +13,8 @@ export default defineConfig({
             throwError: true,
           },
           spell: {
-            enabled: false
-          }
+            enabled: false,
+          },
         }),
       ],
       title:

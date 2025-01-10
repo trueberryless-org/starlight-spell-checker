@@ -14,8 +14,8 @@ export default defineConfig({
             mode: "straight",
           },
           spell: {
-            enabled: false
-          }
+            enabled: false,
+          },
         }),
       ],
       title:

@@ -126,7 +126,10 @@ const configSchema = z
          *
          * @default "smart"
          */
-        mode: z.enum(["smart", "straight"]).default("smart").transform((value) => value === "straight"),
+        mode: z
+          .enum(["smart", "straight"])
+          .default("smart")
+          .transform((value) => value === "straight"),
       })
       .default({}),
 
