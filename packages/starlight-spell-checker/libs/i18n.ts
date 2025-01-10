@@ -38,7 +38,7 @@ export function getLocaleConfig(config: StarlightUserConfig): LocaleConfig {
   };
 }
 
-const dictionaryMapper: Record<string, any> = {
+const dictionaryMapper: Record<string, Dictionary | undefined> = {
   ar: undefined,
   de: dictionaryDe,
   en: dictionaryEn,
@@ -55,7 +55,7 @@ const dictionaryMapper: Record<string, any> = {
   "zh-tw": undefined,
 };
 
-export function getLocaleDictionary(path: string): Dictionary {
+export function getLocaleDictionary(path: string): Dictionary | undefined {
   return dictionaryMapper[path];
 }
 

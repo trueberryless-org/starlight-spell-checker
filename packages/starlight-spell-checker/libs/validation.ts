@@ -68,9 +68,15 @@ export async function validateTexts(
 
   const errors: ValidationErrors = new Map();
   const warnings: ValidationErrors = new Map();
+  const unsupportedLanguages: UnsupportedLanguageErrors = new Set();
 
   for (const [locale, files] of contents) {
     let dictionary = getLocaleDictionary(locale);
+
+    if (!dictionary) {
+      unsupportedLanguages.add({ locale });
+      continue;
+    }
 
     let retextProcessor = createProcessor(retext())
       .use(retextAssuming, options.assuming.enabled && locale === "en", {
@@ -192,7 +198,7 @@ export async function validateTexts(
     }
   }
 
-  return { warnings, errors };
+  return { warnings, errors, unsupportedLanguages };
 }
 
 export function logWarnings(
@@ -281,6 +287,19 @@ export function logErrors(
   }
 
   process.stdout.write("\n");
+}
+
+export function logUnsupportedLanguages(
+  pluginLogger: AstroIntegrationLogger,
+  unsupportedLanguages: UnsupportedLanguageErrors
+) {
+  const logger = pluginLogger.fork("");
+
+  if (unsupportedLanguages.size == 0) {
+    logger.info(green("✓ All languages supported.\n"));
+  } else {
+    logger.info(yellow(`✗ Unsupported ${pluralize(unsupportedLanguages.size, "language")}: ${red([...unsupportedLanguages].map(error => error.locale).join(yellow(", ")))} (No ${unsupportedLanguages.size == 1 ? "dictionary" : "dictionaries"} available.)`));
+  }
 }
 
 /**
@@ -380,6 +399,13 @@ interface ValidationError {
   word: string;
   type: ValidationErrorType;
   suggestions?: string[];
+}
+
+
+type UnsupportedLanguageErrors = Set<UnsupportedLanguageError>;
+
+interface UnsupportedLanguageError {
+  locale: string;
 }
 
 const validationErrorTypeMapper: Record<string, any> = {
