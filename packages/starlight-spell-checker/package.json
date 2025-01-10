@@ -10,6 +10,8 @@
   },
   "devDependencies": {
     "@astrojs/starlight": "^0.30.3",
+    "@vitest/coverage-v8": "^2.1.8",
+    "@vitest/ui": "^2.1.8",
     "astro": "^5.1.2",
     "vitest": "^2.1.8"
   },
@@ -79,6 +81,7 @@
     "vfile-reporter": "^8.1.1"
   },
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   }
 }

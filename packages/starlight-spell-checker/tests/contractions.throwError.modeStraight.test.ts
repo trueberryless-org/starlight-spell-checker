@@ -9,12 +9,11 @@ test('builds with valid English content', async () => {
 
   expect(status).toBe('error')
 
-  expectValidationErrorCount(output, 3, 1)
+  expectValidationErrorCount(output, 2, 1)
 
   expectValidationErrors(output, '/', [
-    ['doesn’t', ValidationErrorType.Contractions, ["doesn't"]],
-    ['y’all', ValidationErrorType.Contractions, ["y'all"]],
     ['isn’t', ValidationErrorType.Contractions, ["isn't"]],
+    ['o’clock', ValidationErrorType.Contractions, ["o'clock"]],
   ])
 })
 
@@ -23,11 +22,10 @@ test('does not build with contractions throw error invalid English content', asy
 
   expect(status).toBe('error')
 
-  expectValidationErrorCount(output, 3, 1)
+  expectValidationErrorCount(output, 2, 1)
 
   expectValidationErrors(output, '/', [
-    ['does’nt', ValidationErrorType.Contractions, ["doesn’t"]],
-    ['yall', ValidationErrorType.Contractions, ["y’all"]],
-    ['isnt', ValidationErrorType.Contractions, ["isn’t"]],
+    ['isnt', ValidationErrorType.Contractions, ["isn't"]],
+    ['oc’lock', ValidationErrorType.Contractions, ["o'clock"]],
   ])
 })
