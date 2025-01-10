@@ -11,11 +11,11 @@ export default defineConfig({
           contractions: {
             enabled: true,
             throwError: true,
-            ignoreLiterals: false
+            ignoreLiterals: false,
           },
           spell: {
-            enabled: false
-          }
+            enabled: false,
+          },
         }),
       ],
       title:
