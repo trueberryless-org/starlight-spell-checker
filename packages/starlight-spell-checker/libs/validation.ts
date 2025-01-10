@@ -86,6 +86,7 @@ export async function validateTexts(
         options.contractions.enabled && locale === "en",
         {
           allowLiterals: !options.contractions.ignoreLiterals,
+          straight: options.contractions.mode,
         }
       )
       .use(retextDiacritics, options.diacritics.enabled)
@@ -135,13 +136,13 @@ export async function validateTexts(
       })
       .use(retextUsage, options.usage.enabled && locale === "en")
       .use(retextQuotes, options.quotes.enabled, {
-        preferred: options.quotes.straight,
-        smart: Array.isArray(options.quotes.smartQuotes)
-          ? options.quotes.smartQuotes
-          : options.quotes.smartQuotes[locale],
-        straight: Array.isArray(options.quotes.straightQuotes)
-          ? options.quotes.straightQuotes
-          : options.quotes.straightQuotes[locale],
+        preferred: options.quotes.mode,
+        smart: Array.isArray(options.quotes.smart)
+          ? options.quotes.smart
+          : options.quotes.smart[locale],
+        straight: Array.isArray(options.quotes.straight)
+          ? options.quotes.straight
+          : options.quotes.straight[locale],
       })
       .use(retextCasePolice, options.casePolice.enabled, {
         ignore: options.casePolice.ignore,

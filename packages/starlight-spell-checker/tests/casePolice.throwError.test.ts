@@ -11,7 +11,7 @@ test('builds with case police throw error valid Multilingual content', async () 
   expectValidationSuccess(output)
 })
 
-test('does not build with spell throw error invalid Multilingual content', async () => {
+test('does not build with case police throw error invalid Multilingual content', async () => {
   const { output, status } = await buildFixture('case-police-throw-error-invalid-content-multilingual')
 
   expect(status).toBe('error')
@@ -25,7 +25,7 @@ test('does not build with spell throw error invalid Multilingual content', async
     ['Gcp', ValidationErrorType.CasePolice, ["GCP"]],
     ['posix', ValidationErrorType.CasePolice, ["POSIX"]],
     ['Iaas', ValidationErrorType.CasePolice, ["IaaS"]],
-    // ['wifi', ValidationErrorType.CasePolice, ["Wi-Fi"]],
+    ['wifi', ValidationErrorType.CasePolice, ["Wi-Fi"]],
     ['eSim', ValidationErrorType.CasePolice, ["eSIM"]],
     ['Airpods', ValidationErrorType.CasePolice, ["AirPods"]],
     ['1password', ValidationErrorType.CasePolice, ["1Password"]],
@@ -41,7 +41,7 @@ test('does not build with spell throw error invalid Multilingual content', async
     ['Gcp', ValidationErrorType.CasePolice, ["GCP"]],
     ['posix', ValidationErrorType.CasePolice, ["POSIX"]],
     ['Iaas', ValidationErrorType.CasePolice, ["IaaS"]],
-    // ['wifi', ValidationErrorType.CasePolice, ["Wi-Fi"]],
+    ['wifi', ValidationErrorType.CasePolice, ["Wi-Fi"]],
     ['eSim', ValidationErrorType.CasePolice, ["eSIM"]],
     ['Airpods', ValidationErrorType.CasePolice, ["AirPods"]],
     ['1password', ValidationErrorType.CasePolice, ["1Password"]],
@@ -57,7 +57,7 @@ test('does not build with spell throw error invalid Multilingual content', async
     ['Gcp', ValidationErrorType.CasePolice, ["GCP"]],
     ['posix', ValidationErrorType.CasePolice, ["POSIX"]],
     ['Iaas', ValidationErrorType.CasePolice, ["IaaS"]],
-    // ['wifi', ValidationErrorType.CasePolice, ["Wi-Fi"]],
+    ['wifi', ValidationErrorType.CasePolice, ["Wi-Fi"]],
     ['eSim', ValidationErrorType.CasePolice, ["eSIM"]],
     ['Airpods', ValidationErrorType.CasePolice, ["AirPods"]],
     ['1password', ValidationErrorType.CasePolice, ["1Password"]],

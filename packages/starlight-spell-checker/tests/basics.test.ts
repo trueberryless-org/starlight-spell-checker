@@ -2,7 +2,7 @@ import { expect, test } from 'vitest'
 
 import { ValidationErrorType } from '../libs/validation'
 
-import { buildFixture, expectValidationErrorCount, expectValidationErrors, expectValidationSuccess, expectValidationWarningCount, expectValidationWarnings } from './utils'
+import { buildFixture, expectValidationSuccess, expectValidationWarningCount, expectValidationWarnings } from './utils'
 
 test('builds with valid English content', async () => {
   const { output, status } = await buildFixture('valid-content')

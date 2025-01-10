@@ -12,6 +12,9 @@ export default defineConfig({
             enabled: true,
             throwError: true,
           },
+        spell: {
+          enabled: false
+        },
         }),
       ],
       title:

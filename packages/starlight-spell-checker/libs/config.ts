@@ -122,11 +122,11 @@ const configSchema = z
         ignoreLiterals: z.boolean().default(true),
 
         /**
-         * Whether to suggest straight (') instead of smart (’) apostrophes.
+         * Whether to suggest straight (') or smart (’) apostrophes.
          *
-         * @default false
+         * @default "smart"
          */
-        straight: z.boolean().default(false),
+        mode: z.enum(["smart", "straight"]).default("smart").transform((value) => value === "straight"),
       })
       .default({}),
 
@@ -536,16 +536,13 @@ const configSchema = z
         throwError: z.boolean().default(false),
 
         /**
-         * Whether to suggest straight (') instead of smart (’) apostrophes.
+         * Whether to suggest straight (') or smart (’) apostrophes.
          *
-         * @default false
+         * @default "smart"
          */
-        straight: z
-          .boolean()
-          .default(false)
-          .transform((value) => (value ? "straight" : "smart")),
+        mode: z.enum(["smart", "straight"]).default("smart"),
 
-        smartQuotes: z
+        smart: z
           .union([
             z.array(
               z.string().refine((str) => str.length === 1 || str.length === 2, {
@@ -566,7 +563,7 @@ const configSchema = z
           ])
           .default(["“”", "‘’"]),
 
-        straightQuotes: z
+        straight: z
           .union([
             z.array(
               z.string().refine((str) => str.length === 1 || str.length === 2, {
