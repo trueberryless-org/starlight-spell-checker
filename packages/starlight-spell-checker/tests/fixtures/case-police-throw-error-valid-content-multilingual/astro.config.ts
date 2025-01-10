@@ -6,13 +6,16 @@ export default defineConfig({
   integrations: [
     starlight({
       pagefind: false,
-      plugins: [starlightSpellChecker({
-        casePolice: {
-          enabled: true,
-          throwError: true,
-        }
-      })],
-      title: "Starlight Spell Checker Tests - case police throw error valid content multilingual",
+      plugins: [
+        starlightSpellChecker({
+          casePolice: {
+            enabled: true,
+            throwError: true,
+          },
+        }),
+      ],
+      title:
+        "Starlight Spell Checker Tests - case police throw error valid content multilingual",
       locales: {
         root: {
           lang: "en",
