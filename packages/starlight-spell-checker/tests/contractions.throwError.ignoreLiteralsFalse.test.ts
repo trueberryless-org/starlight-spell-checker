@@ -4,7 +4,7 @@ import { ValidationErrorType } from '../libs/validation'
 
 import { buildFixture, expectValidationErrorCount, expectValidationErrors, expectValidationSuccess } from './utils'
 
-test('builds with valid English content', async () => {
+test('builds with contractions throw error valid English content', async () => {
   const { output, status } = await buildFixture('contractions-throw-error-ignore-literals-false-valid-content')
 
   expect(status).toBe('success')

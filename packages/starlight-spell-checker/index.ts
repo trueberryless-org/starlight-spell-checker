@@ -51,15 +51,9 @@ export default function starlightSpellChecker(
                 },
               });
             },
-            "astro:build:done": async ({ dir, pages }) => {
+            "astro:build:done": async () => {
               const { warnings, errors, unsupportedLanguages } =
-                await validateTexts(
-                  pages,
-                  dir,
-                  astroConfig,
-                  starlightConfig,
-                  config
-                );
+                await validateTexts(config);
 
               logWarnings(logger, warnings);
               logErrors(logger, errors);

@@ -1,6 +1,6 @@
 import type { StarlightUserConfig as StarlightUserConfigWithPlugins } from "@astrojs/starlight/types";
-import type { AstroConfig, AstroIntegrationLogger } from "astro";
-import { $, bgGreen, black, blue, dim, red, yellow } from "kleur/colors";
+import type { AstroIntegrationLogger } from "astro";
+import { $, bgGreen, black, blue, dim, green, red, yellow } from "kleur/colors";
 
 import type { StarlightSpellCheckerConfig } from "../libs/config";
 
@@ -55,13 +55,7 @@ export const ValidationErrorType = {
   Other: "other",
 } as const;
 
-export async function validateTexts(
-  pages: PageData[],
-  outputDir: URL,
-  astroConfig: AstroConfig,
-  starlightConfig: StarlightUserConfig,
-  options: StarlightSpellCheckerConfig
-) {
+export async function validateTexts(options: StarlightSpellCheckerConfig) {
   process.stdout.write(`\n${bgGreen(black(` validating spelling `))}\n`);
 
   const { contents } = getValidationData();
@@ -166,6 +160,7 @@ export async function validateTexts(
         let fileWarnings: ValidationError[] = [];
 
         for (const error of file.messages.values()) {
+          console.log(error);
           const throwError = getThrowErrorForType(
             validationErrorTypeMapper[error.source ?? "other"],
             options

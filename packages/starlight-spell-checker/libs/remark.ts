@@ -3,12 +3,9 @@ import "mdast-util-mdx-jsx";
 import nodePath from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { hasProperty } from "hast-util-has-property";
-import type { Nodes } from "hast";
-import { fromHtml } from "hast-util-from-html";
 import { slug } from "github-slugger";
 import type { Root } from "mdast";
-import { unified, type Plugin } from "unified";
+import { type Plugin } from "unified";
 import { visit } from "unist-util-visit";
 
 import { ensureTrailingSlash, stripLeadingSlash } from "./path";

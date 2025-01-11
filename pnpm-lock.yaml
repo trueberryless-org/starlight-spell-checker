@@ -65,15 +65,6 @@ importers:
       github-slugger:
         specifier: ^2.0.0
         version: 2.0.0
-      hast:
-        specifier: ^1.0.0
-        version: 1.0.0
-      hast-util-from-html:
-        specifier: ^2.0.3
-        version: 2.0.3
-      hast-util-has-property:
-        specifier: ^3.0.0
-        version: 3.0.0
       kleur:
         specifier: ^4.1.5
         version: 4.1.5
@@ -83,27 +74,12 @@ importers:
       mdast-util-mdx-jsx:
         specifier: ^3.1.3
         version: 3.1.3
-      mdast-util-to-string:
-        specifier: ^4.0.0
-        version: 4.0.0
       no-cliches:
         specifier: ^0.3.6
         version: 0.3.6
       picomatch:
         specifier: ^4.0.2
         version: 4.0.2
-      rehype-stringify:
-        specifier: ^10.0.1
-        version: 10.0.1
-      remark-parse:
-        specifier: ^11.0.0
-        version: 11.0.0
-      remark-rehype:
-        specifier: ^11.1.1
-        version: 11.1.1
-      remark-retext:
-        specifier: ^6.0.0
-        version: 6.0.0
       retext:
         specifier: ^9.0.0
         version: 9.0.0
@@ -158,9 +134,6 @@ importers:
       retext-spell:
         specifier: ^6.1.0
         version: 6.1.0
-      retext-stringify:
-        specifier: ^4.0.0
-        version: 4.0.0
       retext-usage:
         specifier: ^0.5.0
         version: 0.5.0
@@ -170,9 +143,6 @@ importers:
       unist-util-visit:
         specifier: ^5.0.0
         version: 5.0.0
-      vfile-reporter:
-        specifier: ^8.1.1
-        version: 8.1.1
     devDependencies:
       '@astrojs/starlight':
         specifier: ^0.30.3
@@ -299,6 +269,78 @@ importers:
         version: link:../../..
 
   packages/starlight-spell-checker/tests/fixtures/contractions-throw-error-valid-content:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.3(astro@5.1.2(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.2(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
+  packages/starlight-spell-checker/tests/fixtures/diacritics-throw-error-invalid-content:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.3(astro@5.1.2(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.2(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
+  packages/starlight-spell-checker/tests/fixtures/diacritics-throw-error-valid-content:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.3(astro@5.1.2(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.2(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
+  packages/starlight-spell-checker/tests/fixtures/equality-throw-error-invalid-content:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.3(astro@5.1.2(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.2(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
+  packages/starlight-spell-checker/tests/fixtures/equality-throw-error-valid-content:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.3(astro@5.1.2(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.2(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
+  packages/starlight-spell-checker/tests/fixtures/indefinite-article-throw-error-invalid-content:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.3(astro@5.1.2(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.2(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
+  packages/starlight-spell-checker/tests/fixtures/indefinite-article-throw-error-valid-content:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.30.2
@@ -1321,9 +1363,6 @@ packages:
   '@types/sax@1.2.7':
     resolution: {integrity: sha512-rO73L89PJxeYM3s3pPPjiPgVVcymqU490g0YO5n5By0k2Erzj6tay/4lr1CHAAU4JyOWd1rpQ8bCf6cZfHU96A==}
 
-  '@types/supports-color@8.1.3':
-    resolution: {integrity: sha512-Hy6UMpxhE3j1tLpl27exp1XqHD7n8chAiNPzWfz16LPZoMMoSc4dzLl6w9qijkEb/r5O1ozdu1CWGA2L83ZeZg==}
-
   '@types/unist@2.0.11':
     resolution: {integrity: sha512-CmBKiL6NNo/OqgmMn95Fk9Whlp2mtvIv+KNpQKN2F4SjvrEesubTRWGYSg+BnWZOnlCaSTU1sMpsBOzgbYhnsA==}
 
@@ -1969,10 +2008,6 @@ packages:
   hast-util-whitespace@3.0.0:
     resolution: {integrity: sha512-88JUN06ipLwsnv+dVn+OIYOvAuvBMy/Qoi6O7mQHxdPXpjy+Cd6xRkWwux7DKO+4sYILtLBRIKgsdpS2gQc7qw==}
 
-  hast@1.0.0:
-    resolution: {integrity: sha512-vFUqlRV5C+xqP76Wwq2SrM0kipnmpxJm7OfvVXpB35Fp+Fn4MV+ozr+JZr5qFvyR1q/U+Foim2x+3P+x9S1PLA==}
-    deprecated: Renamed to rehype
-
   hastscript@9.0.0:
     resolution: {integrity: sha512-jzaLBGavEDKHrc5EfFImKN7nZKKBdSLIdGvCwDZ9TfzbF2ffXiov8CKE445L2Z1Ek2t/m4SKQ2j6Ipv7NyUolw==}
 
@@ -2216,9 +2251,6 @@ packages:
 
   mdast-util-to-markdown@2.1.2:
     resolution: {integrity: sha512-xj68wMTvGXVOKonmog6LwyJKrYXZPvlwabaryTjLh9LuvovB/KAH+kvi8Gjj+7rJjsFi23nkUxRQv1KqSroMqA==}
-
-  mdast-util-to-nlcst@7.0.1:
-    resolution: {integrity: sha512-iMucBmaHxOpreaPPR87U9NrfGqzyoKXFY1zdbtFVsckLWOi/iIshu6bFLsax0mIm9fQI+MpYpu8pBhyN7rkIGA==}
 
   mdast-util-to-string@4.0.0:
     resolution: {integrity: sha512-0H44vDimn51F0YwvxSJSm0eCDOJTRlmN0R1yBh4HLj9wiV1Dn0QoXGbvFAWj2hSItVTlCmBF1hqKlIyUBVFLPg==}
@@ -2682,9 +2714,6 @@ packages:
   remark-rehype@11.1.1:
     resolution: {integrity: sha512-g/osARvjkBXb6Wo0XvAeXQohVta8i84ACbenPpoSsxTOQH/Ae0/RGP4WZgnMH5pMLpsj4FG7OHmcIcXxpza8eQ==}
 
-  remark-retext@6.0.0:
-    resolution: {integrity: sha512-VYs0p+3G4DKm/KtWx7LV8YPbyX4CjBf1SZcEk2usEv3QK6JK4g5EfurDAPUmGVZOx/NcqOiNbozfGqpl2HQfTA==}
-
   remark-smartypants@3.0.2:
     resolution: {integrity: sha512-ILTWeOriIluwEvPjv67v7Blgrcx+LZOkAUVtKI3putuhlZm84FnqDORNXPPm+HY3NdZOMhyDwZ1E+eZB/Df5dA==}
     engines: {node: '>=16.0.0'}
@@ -2874,10 +2903,6 @@ packages:
     resolution: {integrity: sha512-HnLOCR3vjcY8beoNLtcjZ5/nxn2afmME6lhrDrebokqMap+XbeW8n9TXpPDOqdGK5qcI3oT0GKTW6wC7EMiVqA==}
     engines: {node: '>=12'}
 
-  string-width@6.1.0:
-    resolution: {integrity: sha512-k01swCJAgQmuADB0YIc+7TuatfNvTBVOoaUWJjTB9R4VJzR5vNWzf5t42ESVZFPS8xTySF7CAdV4t/aaIm3UnQ==}
-    engines: {node: '>=16'}
-
   string-width@7.2.0:
     resolution: {integrity: sha512-tsaTIkKW9b4N+AEj+SVA+WhJzV7/zMhcSu78mLKWSk7cXMOSHsBKFWUs0fWwq8QyK3MgJBQRX6Gbi4kYbdvGkQ==}
     engines: {node: '>=18'}
@@ -2903,10 +2928,6 @@ packages:
   supports-color@7.2.0:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
     engines: {node: '>=8'}
-
-  supports-color@9.4.0:
-    resolution: {integrity: sha512-VL+lNrEoIXww1coLPOmiEmK/0sGigko5COxI09KzHc2VJXJsQ37UaQ+8quuxjDeA7+KnLGTWRyOXSLLR2Wb4jw==}
-    engines: {node: '>=12'}
 
   syllable@5.0.1:
     resolution: {integrity: sha512-HWtNCp6v7J8H0lrT8j1HHjfOLltRoDcC7QRFVu25p4BE52JqetXG65nqC7CsatT8WQRfY4Qvh93BWJIUxbmXFg==}
@@ -3131,15 +3152,6 @@ packages:
 
   vfile-message@4.0.2:
     resolution: {integrity: sha512-jRDZ1IMLttGj41KcZvlrYAaI3CfqpLpfpf+Mfig13viT6NKvRzWZ+lXz0Y5D60w6uJIBAOGq9mSHf0gktF0duw==}
-
-  vfile-reporter@8.1.1:
-    resolution: {integrity: sha512-qxRZcnFSQt6pWKn3PAk81yLK2rO2i7CDXpy8v8ZquiEOMLSnPw6BMSi9Y1sUCwGGl7a9b3CJT1CKpnRF7pp66g==}
-
-  vfile-sort@4.0.0:
-    resolution: {integrity: sha512-lffPI1JrbHDTToJwcq0rl6rBmkjQmMuXkAxsZPRS9DXbaJQvc642eCg6EGxcX2i1L+esbuhq+2l9tBll5v8AeQ==}
-
-  vfile-statistics@3.0.0:
-    resolution: {integrity: sha512-/qlwqwWBWFOmpXujL/20P+Iuydil0rZZNglR+VNm6J0gpLHwuVM5s7g2TfVoswbXjZ4HuIhLMySEyIw5i7/D8w==}
 
   vfile@6.0.3:
     resolution: {integrity: sha512-KzIbH/9tXat2u30jf+smMwFCsno4wHVdNmzFyL+T/L3UGqqk6JKfVqOFOZEpZSHADH1k40ab6NUIXZq422ov3Q==}
@@ -4128,8 +4140,6 @@ snapshots:
     dependencies:
       '@types/node': 17.0.45
 
-  '@types/supports-color@8.1.3': {}
-
   '@types/unist@2.0.11': {}
 
   '@types/unist@3.0.3': {}
@@ -5000,8 +5010,6 @@ snapshots:
     dependencies:
       '@types/hast': 3.0.4
 
-  hast@1.0.0: {}
-
   hastscript@9.0.0:
     dependencies:
       '@types/hast': 3.0.4
@@ -5351,16 +5359,6 @@ snapshots:
       micromark-util-decode-string: 2.0.1
       unist-util-visit: 5.0.0
       zwitch: 2.0.4
-
-  mdast-util-to-nlcst@7.0.1:
-    dependencies:
-      '@types/mdast': 4.0.4
-      '@types/nlcst': 2.0.3
-      '@types/unist': 3.0.3
-      nlcst-to-string: 4.0.0
-      unist-util-position: 5.0.0
-      vfile: 6.0.3
-      vfile-location: 5.0.3
 
   mdast-util-to-string@4.0.0:
     dependencies:
@@ -6048,15 +6046,6 @@ snapshots:
       unified: 11.0.5
       vfile: 6.0.3
 
-  remark-retext@6.0.0:
-    dependencies:
-      '@types/mdast': 4.0.4
-      '@types/nlcst': 2.0.3
-      mdast-util-to-nlcst: 7.0.1
-      parse-latin: 7.0.0
-      unified: 11.0.5
-      vfile: 6.0.3
-
   remark-smartypants@3.0.2:
     dependencies:
       retext: 9.0.0
@@ -6416,12 +6405,6 @@ snapshots:
       emoji-regex: 9.2.2
       strip-ansi: 7.1.0
 
-  string-width@6.1.0:
-    dependencies:
-      eastasianwidth: 0.2.0
-      emoji-regex: 10.4.0
-      strip-ansi: 7.1.0
-
   string-width@7.2.0:
     dependencies:
       emoji-regex: 10.4.0
@@ -6450,8 +6433,6 @@ snapshots:
   supports-color@7.2.0:
     dependencies:
       has-flag: 4.0.0
-
-  supports-color@9.4.0: {}
 
   syllable@5.0.1:
     dependencies:
@@ -6641,27 +6622,6 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
       unist-util-stringify-position: 4.0.0
-
-  vfile-reporter@8.1.1:
-    dependencies:
-      '@types/supports-color': 8.1.3
-      string-width: 6.1.0
-      supports-color: 9.4.0
-      unist-util-stringify-position: 4.0.0
-      vfile: 6.0.3
-      vfile-message: 4.0.2
-      vfile-sort: 4.0.0
-      vfile-statistics: 3.0.0
-
-  vfile-sort@4.0.0:
-    dependencies:
-      vfile: 6.0.3
-      vfile-message: 4.0.2
-
-  vfile-statistics@3.0.0:
-    dependencies:
-      vfile: 6.0.3
-      vfile-message: 4.0.2
 
   vfile@6.0.3:
     dependencies:

@@ -1,6 +1,7 @@
 import { ensureLeadingSlash, ensureTrailingSlash } from "./path";
 import type { StarlightUserConfig } from "./validation";
 
+import dictionaryDa from "dictionary-da";
 import dictionaryDe from "dictionary-de";
 import dictionaryEn, { type Dictionary } from "dictionary-en";
 import dictionaryEs from "dictionary-es";
@@ -40,6 +41,7 @@ export function getLocaleConfig(config: StarlightUserConfig): LocaleConfig {
 
 const dictionaryMapper: Record<string, Dictionary | undefined> = {
   ar: undefined,
+  da: dictionaryDa,
   de: dictionaryDe,
   en: dictionaryEn,
   es: dictionaryEs,
