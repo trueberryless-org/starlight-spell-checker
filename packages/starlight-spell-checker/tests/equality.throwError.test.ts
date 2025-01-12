@@ -16,9 +16,11 @@ test('does not build with equality throw error invalid English content', async (
 
   expect(status).toBe('error')
 
-  expectValidationErrorCount(output, 1, 1)
+  expectValidationErrorCount(output, 3, 1)
 
   expectValidationErrors(output, '/', [
-    ['obviously', ValidationErrorType.Equality],
+    ['obviously', ValidationErrorType.Equality, []],
+    ['Brother', ValidationErrorType.Equality, ["Sibling"]],
+    ['sister', ValidationErrorType.Equality, ["sibling"]],
   ])
 })

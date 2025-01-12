@@ -1,0 +1,10 @@
+{
+  "name": "@starlight-spell-checker-tests/equality-throw-error-binary-true-invalid-content",
+  "version": "0.0.0",
+  "dependencies": {
+    "@astrojs/starlight": "^0.30.2",
+    "astro": "^5.1.1",
+    "starlight-spell-checker": "workspace:*"
+  },
+  "private": true
+}

@@ -160,7 +160,7 @@ export async function validateTexts(options: StarlightSpellCheckerConfig) {
         let fileWarnings: ValidationError[] = [];
 
         for (const error of file.messages.values()) {
-          console.log(error);
+          // console.log(error);
           const throwError = getThrowErrorForType(
             validationErrorTypeMapper[error.source ?? "other"],
             options
