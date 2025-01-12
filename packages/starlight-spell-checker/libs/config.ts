@@ -620,6 +620,8 @@ const configSchema = z
          */
         ignore: z.array(z.string()).default([]),
 
+        ignoreFile: z.string().optional(),
+
         /**
          * Whether to ignore [literal words](https://github.com/syntax-tree/nlcst-is-literal).
          *

@@ -55,6 +55,12 @@ export default function starlightSpellChecker(
               const { warnings, errors, unsupportedLanguages } =
                 await validateTexts(config);
 
+              if (config.spell.ignoreFile)
+                console.log(
+                  "ignored words:",
+                  await import("./module-ignore-words.txt")
+                );
+
               logWarnings(logger, warnings);
               logErrors(logger, errors);
               logUnsupportedLanguages(logger, unsupportedLanguages);

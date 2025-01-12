@@ -22,7 +22,8 @@ export default defineConfig({
       plugins: [
         starlightSpellChecker({
           spell: {
-            ignore: ["astro.config.mjs"],
+            ignore: ["astro.config.mjs", "config"],
+            ignoreFile: "./module-ignore-words.txt",
           },
         }),
       ],
