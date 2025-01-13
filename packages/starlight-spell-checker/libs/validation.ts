@@ -30,7 +30,7 @@ import retextRedundantAcronyms from "retext-redundant-acronyms";
 import retextRepeatedWords from "retext-repeated-words";
 import retextSimplify from "retext-simplify";
 import retextSpell from "retext-spell";
-import retextUsage from "retext-usage";
+import retextUsage from "@trueberryless-org/retext-usage";
 import retextQuotes from "retext-quotes";
 
 export const ValidationErrorType = {
@@ -160,7 +160,7 @@ export async function validateTexts(options: StarlightSpellCheckerConfig) {
         let fileWarnings: ValidationError[] = [];
 
         for (const error of file.messages.values()) {
-          // console.log(error);
+          console.log(error);
           const throwError = getThrowErrorForType(
             validationErrorTypeMapper[error.source ?? "other"],
             options

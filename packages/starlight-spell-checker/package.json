@@ -33,6 +33,7 @@
   "bugs": "https://github.com/trueberryless-org/starlight-spell-checker/issues",
   "dependencies": {
     "@trueberryless-org/retext-indefinite-article": "^0.1.0",
+    "@trueberryless-org/retext-usage": "^0.1.3",
     "dictionary-da": "^6.0.0",
     "dictionary-de": "^3.0.0",
     "dictionary-en": "^4.0.0",
@@ -69,7 +70,6 @@
     "retext-repeated-words": "^5.0.0",
     "retext-simplify": "^8.0.0",
     "retext-spell": "^6.1.0",
-    "retext-usage": "^0.5.0",
     "unified": "^11.0.5",
     "unist-util-visit": "^5.0.0"
   },
