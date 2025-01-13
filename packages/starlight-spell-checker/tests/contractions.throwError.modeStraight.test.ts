@@ -12,8 +12,8 @@ test('builds with contractions throw error valid English content', async () => {
   expectValidationErrorCount(output, 2, 1)
 
   expectValidationErrors(output, '/', [
-    ['isn’t', ValidationErrorType.Contractions, ["isn't"]],
-    ['o’clock', ValidationErrorType.Contractions, ["o'clock"]],
+    ['isn’t', ValidationErrorType.Contractions, "missing-straight-apostrophe", ["isn't"]],
+    ['o’clock', ValidationErrorType.Contractions, "missing-straight-apostrophe", ["o'clock"]],
   ])
 })
 
@@ -25,7 +25,7 @@ test('does not build with contractions throw error invalid English content', asy
   expectValidationErrorCount(output, 2, 1)
 
   expectValidationErrors(output, '/', [
-    ['isnt', ValidationErrorType.Contractions, ["isn't"]],
-    ['oc’lock', ValidationErrorType.Contractions, ["o'clock"]],
+    ['isnt', ValidationErrorType.Contractions, "missing-straight-apostrophe", ["isn't"]],
+    ['oc’lock', ValidationErrorType.Contractions, "missing-straight-apostrophe", ["o'clock"]],
   ])
 })

@@ -19,9 +19,9 @@ test('does not build with contractions throw error invalid English content', asy
   expectValidationErrorCount(output, 4, 1)
 
   expectValidationErrors(output, '/', [
-    ['does’nt', ValidationErrorType.Contractions, ["doesn’t"]],
-    ['yall', ValidationErrorType.Contractions, ["y’all"]],
-    ['isnt', ValidationErrorType.Contractions, ["isn’t"]],
-    ['oc’lock', ValidationErrorType.Contractions, ["o’clock"]],
+    ['does’nt', ValidationErrorType.Contractions, "missing-smart-apostrophe", ["doesn’t"]],
+    ['yall', ValidationErrorType.Contractions, "missing-smart-apostrophe", ["y’all"]],
+    ['isnt', ValidationErrorType.Contractions, "missing-smart-apostrophe", ["isn’t"]],
+    ['oc’lock', ValidationErrorType.Contractions, "missing-smart-apostrophe", ["o’clock"]],
   ])
 })

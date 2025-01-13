@@ -19,8 +19,8 @@ test('does not build with diacritics throw error invalid English content', async
   expectValidationErrorCount(output, 3, 1)
 
   expectValidationErrors(output, '/', [
-    ['Beyonce', ValidationErrorType.Diacritics, ["Beyoncé"]],
-    ['creme fresh', ValidationErrorType.Diacritics, ["crème fraîche"]],
-    ['his resume', ValidationErrorType.Diacritics, ["his résumé"]],
+    ['Beyonce', ValidationErrorType.Diacritics, "beyonce", ["Beyoncé"]],
+    ['creme fresh', ValidationErrorType.Diacritics, "creme-fresh", ["crème fraîche"]],
+    ['his resume', ValidationErrorType.Diacritics, "his-resume", ["his résumé"]],
   ])
 })

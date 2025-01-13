@@ -160,7 +160,7 @@ export async function validateTexts(options: StarlightSpellCheckerConfig) {
         let fileWarnings: ValidationError[] = [];
 
         for (const error of file.messages.values()) {
-          // console.log(error);
+          console.log(error);
           const throwError = getThrowErrorForType(
             validationErrorTypeMapper[error.source ?? "other"],
             options
@@ -170,12 +170,14 @@ export async function validateTexts(options: StarlightSpellCheckerConfig) {
             fileErrors.push({
               word: error.actual ?? "",
               type: validationErrorTypeMapper[error.source ?? "other"],
+              rule: error.ruleId ?? "",
               suggestions: error.expected ?? [],
             });
           } else {
             fileWarnings.push({
               word: error.actual ?? "",
               type: validationErrorTypeMapper[error.source ?? "other"],
+              rule: error.ruleId ?? "",
               suggestions: error.expected ?? [],
             });
           }
@@ -226,7 +228,7 @@ export function logWarnings(
       logger.info(
         `  ${blue(`${index < validationWarnings.length - 1 ? "├" : "└"}─`)} ${
           validationWarning.word
-        }${dim(` - ${validationWarning.type}`)}${
+        }${dim(` - ${validationWarning.type} - ${validationWarning.rule}`)}${
           validationWarning.suggestions
             ? validationWarning.suggestions.length > 0
               ? ` (${validationWarning.suggestions.join(", ")})`
@@ -270,7 +272,7 @@ export function logErrors(
       logger.info(
         `  ${blue(`${index < validationErrors.length - 1 ? "├" : "└"}─`)} ${
           validationError.word
-        }${dim(` - ${validationError.type}`)}${
+        }${dim(` - ${validationError.type} - ${validationError.rule}`)}${
           validationError.suggestions
             ? validationError.suggestions.length > 0
               ? ` (${validationError.suggestions.join(", ")})`
@@ -406,6 +408,7 @@ export type ValidationErrorType =
 interface ValidationError {
   word: string;
   type: ValidationErrorType;
+  rule: string;
   suggestions?: string[];
 }
 
@@ -427,6 +430,14 @@ const validationErrorTypeMapper: Record<string, any> = {
   "retext-overuse": ValidationErrorType.Overuse,
   "retext-passive": ValidationErrorType.Passive,
   "retext-profanities": ValidationErrorType.Profanities,
+  "retext-profanities-ar-latn": ValidationErrorType.Profanities,
+  "retext-profanities-ar": ValidationErrorType.Profanities,
+  "retext-profanities-fr": ValidationErrorType.Profanities,
+  "retext-profanities-en": ValidationErrorType.Profanities,
+  "retext-profanities-es": ValidationErrorType.Profanities,
+  "retext-profanities-it": ValidationErrorType.Profanities,
+  "retext-profanities-pt": ValidationErrorType.Profanities,
+  "retext-profanities-pt-pt": ValidationErrorType.Profanities,
   "retext-readability": ValidationErrorType.Readability,
   "retext-redundant-acronyms": ValidationErrorType.RedundantAcronyms,
   "retext-repeated-words": ValidationErrorType.RepeatedWords,

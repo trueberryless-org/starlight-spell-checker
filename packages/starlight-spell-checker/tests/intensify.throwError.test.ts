@@ -19,10 +19,10 @@ test('does not build with intensify throw error invalid English content', async 
   expectValidationErrorCount(output, 5, 1)
 
   expectValidationErrors(output, '/', [
-    ['Some', ValidationErrorType.Intensify, []],
-    ['say', ValidationErrorType.Intensify, []],
-    ['quite', ValidationErrorType.Intensify, []],
-    ['some', ValidationErrorType.Intensify, []],
-    ['apparently', ValidationErrorType.Intensify, []],
+    ['Some', ValidationErrorType.Intensify, "weasel", []],
+    ['say', ValidationErrorType.Intensify, "hedge", []],
+    ['quite', ValidationErrorType.Intensify, "weasel", []],
+    ['some', ValidationErrorType.Intensify, "weasel", []],
+    ['apparently', ValidationErrorType.Intensify, "filler", []],
   ])
 })

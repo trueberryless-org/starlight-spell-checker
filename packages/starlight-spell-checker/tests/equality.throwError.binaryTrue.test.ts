@@ -19,6 +19,6 @@ test('does not build with equality throw error binary true invalid English conte
   expectValidationErrorCount(output, 1, 1)
 
   expectValidationErrors(output, '/', [
-    ['obviously', ValidationErrorType.Equality, []],
+    ['obviously', ValidationErrorType.Equality, "obvious", []],
   ])
 })

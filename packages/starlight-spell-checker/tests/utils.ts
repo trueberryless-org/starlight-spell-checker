@@ -80,6 +80,7 @@ export function expectValidationWarnings(
   validationWarnings: [
     word: string,
     type: ValidationErrorType,
+    rule: string,
     suggestions?: string[]
   ][]
 ) {
@@ -88,10 +89,10 @@ export function expectValidationWarnings(
       `▶ ${path}
 ${validationWarnings
   .map(
-    ([word, type, suggestions], index) =>
+    ([word, type, rule, suggestions], index) =>
       `.* ${
         index < validationWarnings.length - 1 ? "├" : "└"
-      }─ ${word} - ${type}${
+      }─ ${word} - ${type} - ${rule}${
         suggestions
           ? suggestions.length > 0
             ? ` \\\(${suggestions.join(", ")}\\\)`
@@ -124,6 +125,7 @@ export function expectValidationErrors(
   validationErrors: [
     word: string,
     type: ValidationErrorType,
+    rule: string,
     suggestions?: string[]
   ][]
 ) {
@@ -132,10 +134,10 @@ export function expectValidationErrors(
       `▶ ${path}
 ${validationErrors
   .map(
-    ([word, type, suggestions], index) =>
+    ([word, type, rule, suggestions], index) =>
       `.* ${
         index < validationErrors.length - 1 ? "├" : "└"
-      }─ ${word} - ${type}${
+      }─ ${word} - ${type} - ${rule}${
         suggestions
           ? suggestions.length > 0
             ? ` \\\(${suggestions.join(", ")}\\\)`
