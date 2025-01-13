@@ -19,8 +19,8 @@ test('does not build with indefinite article throw error invalid English content
   expectValidationErrorCount(output, 3, 1)
 
   expectValidationErrors(output, '/', [
-    ['a', ValidationErrorType.IndefiniteArticle, "retext-indefinite-article", ["an"]],
-    ['a', ValidationErrorType.IndefiniteArticle, "retext-indefinite-article", ["an"]],
-    ['an', ValidationErrorType.IndefiniteArticle, "retext-indefinite-article", ["a"]],
+    ['a 8-year', ValidationErrorType.IndefiniteArticle, "retext-indefinite-article", ["an 8-year"]],
+    ['a hour', ValidationErrorType.IndefiniteArticle, "retext-indefinite-article", ["an hour"]],
+    ['an European', ValidationErrorType.IndefiniteArticle, "retext-indefinite-article", ["a European"]],
   ])
 })

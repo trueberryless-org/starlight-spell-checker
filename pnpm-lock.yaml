@@ -32,6 +32,9 @@ importers:
 
   packages/starlight-spell-checker:
     dependencies:
+      '@trueberryless-org/retext-indefinite-article':
+        specifier: ^0.1.0
+        version: 0.1.0
       dictionary-da:
         specifier: ^6.0.0
         version: 6.0.0
@@ -110,9 +113,6 @@ importers:
       retext-equality:
         specifier: ^7.1.0
         version: 7.1.0
-      retext-indefinite-article:
-        specifier: ^5.0.0
-        version: 5.0.0
       retext-intensify:
         specifier: ^7.0.0
         version: 7.0.0
@@ -1452,6 +1452,9 @@ packages:
 
   '@shikijs/vscode-textmate@10.0.1':
     resolution: {integrity: sha512-fTIQwLF+Qhuws31iw7Ncl1R3HUDtGwIipiJ9iU+UsDUwMhegFcQKQHd51nZjb7CArq0MvON8rbgCGQYWHUKAdg==}
+
+  '@trueberryless-org/retext-indefinite-article@0.1.0':
+    resolution: {integrity: sha512-z8OpnRUeBQJ5tP+bk5/i3TZPVCWzWYHwEh0iMOGgLoMPd/o3Zb/6J6+hvAzgkGylmglsIOLoRAznD9r0TPVbSg==}
 
   '@types/acorn@4.0.6':
     resolution: {integrity: sha512-veQTnWP+1D/xbxVrPC3zHnCZRjSrKfhbMUlEA43iMZLu7EsnTtkJklIuwrCPbOi8YkvDQAiW05VQQFvvz9oieQ==}
@@ -2901,9 +2904,6 @@ packages:
   retext-equality@7.1.0:
     resolution: {integrity: sha512-YzrGxIfubNetpi5xEZXFaWKaQNdDHYal0JNaIllTRO+vkjO0FRuGgLoYixR1BYR3vx7k6p7c+MdVM1NxTlC+MQ==}
 
-  retext-indefinite-article@5.0.0:
-    resolution: {integrity: sha512-vro0uKcT685qTUy2IWpJiW786JULrs5KK9jSbNEzHq2ln8PV/uQqqlzueSF4wpOtBUl1JzEPetH9hIDdzQ2ypA==}
-
   retext-intensify@7.0.0:
     resolution: {integrity: sha512-wzhhiuCXYViQbvR9AdNhCeeDf3C9ImTtjwIPCYc2EL37SfMQ94WARbKaUytJO+DWsRQLlpztwwR3JyOhGBnsag==}
 
@@ -4254,6 +4254,14 @@ snapshots:
       '@types/hast': 3.0.4
 
   '@shikijs/vscode-textmate@10.0.1': {}
+
+  '@trueberryless-org/retext-indefinite-article@0.1.0':
+    dependencies:
+      '@types/nlcst': 2.0.3
+      nlcst-to-string: 4.0.0
+      number-to-words: 1.2.4
+      unist-util-visit: 5.0.0
+      vfile: 6.0.3
 
   '@types/acorn@4.0.6':
     dependencies:
@@ -6290,14 +6298,6 @@ snapshots:
       nlcst-to-string: 4.0.0
       quotation: 2.0.3
       unist-util-position: 5.0.0
-      unist-util-visit: 5.0.0
-      vfile: 6.0.3
-
-  retext-indefinite-article@5.0.0:
-    dependencies:
-      '@types/nlcst': 2.0.3
-      nlcst-to-string: 4.0.0
-      number-to-words: 1.2.4
       unist-util-visit: 5.0.0
       vfile: 6.0.3
 

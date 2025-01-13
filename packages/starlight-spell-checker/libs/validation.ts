@@ -15,7 +15,7 @@ import retextCasePolice from "retext-case-police";
 import retextContractions from "retext-contractions";
 import retextDiacritics from "retext-diacritics";
 import retextEquality from "retext-equality";
-import retextIndefiniteArticle from "retext-indefinite-article";
+import retextIndefiniteArticle from "@trueberryless-org/retext-indefinite-article";
 import retextIntensify from "retext-intensify";
 // import retextOveruse from "retext-overuse";
 import retextPassive from "retext-passive";

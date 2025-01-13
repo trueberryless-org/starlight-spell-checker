@@ -32,6 +32,7 @@
   },
   "bugs": "https://github.com/trueberryless-org/starlight-spell-checker/issues",
   "dependencies": {
+    "@trueberryless-org/retext-indefinite-article": "^0.1.0",
     "dictionary-da": "^6.0.0",
     "dictionary-de": "^3.0.0",
     "dictionary-en": "^4.0.0",
@@ -58,7 +59,6 @@
     "retext-contractions": "^6.0.0",
     "retext-diacritics": "^5.0.0",
     "retext-equality": "^7.1.0",
-    "retext-indefinite-article": "^5.0.0",
     "retext-intensify": "^7.0.0",
     "retext-overuse": "^1.1.1",
     "retext-passive": "^5.0.0",
