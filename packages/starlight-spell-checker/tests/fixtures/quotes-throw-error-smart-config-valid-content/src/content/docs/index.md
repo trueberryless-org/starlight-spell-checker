@@ -10,7 +10,7 @@ A sentence «with quotes, ‹nested› quotes, and ’80s apostrophes.»
 A sentence «with quotes, ‹nested› quotes, and ’80s apostrophes.»
 
 A sentence «with quotes, ‹nested› quotes, and ’80s apostrophes.»  
-A sentence ‹with quotes, «nested» quotes, and ’80s apostrophes.›  
+A sentence «with quotes, ‹nested› quotes, and ’80s apostrophes.»  
 A sentence «with quotes, ‹nested› quotes, and ’80s apostrophes.»
 
 A sentence «with ‹nested «quotes»›».  
