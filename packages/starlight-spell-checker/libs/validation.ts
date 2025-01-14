@@ -10,7 +10,7 @@ import { getValidationData } from "./remark";
 import picomatch from "picomatch";
 
 import retextAssuming from "retext-assuming";
-import retextCasePolice from "retext-case-police";
+import retextCasePolice from "@trueberryless-org/retext-case-police";
 // import retextCliches from "retext-cliches";
 import retextContractions from "retext-contractions";
 import retextDiacritics from "retext-diacritics";

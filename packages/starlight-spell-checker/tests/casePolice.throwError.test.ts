@@ -16,12 +16,13 @@ test('does not build with case police throw error invalid Multilingual content',
 
   expect(status).toBe('error')
 
-  expectValidationErrorCount(output, 39, 3)
+  expectValidationErrorCount(output, 45, 3)
 
   expectValidationErrors(output, '/', [
     ['Github', ValidationErrorType.CasePolice, "retext-case-police", ["GitHub"]],
     ['kfc', ValidationErrorType.CasePolice, "retext-case-police", ["KFC"]],
     ['nvidia', ValidationErrorType.CasePolice, "retext-case-police", ["NVIDIA"]],
+    ['dos', ValidationErrorType.CasePolice, "retext-case-police", ["DOS"]],
     ['Gcp', ValidationErrorType.CasePolice, "retext-case-police", ["GCP"]],
     ['posix', ValidationErrorType.CasePolice, "retext-case-police", ["POSIX"]],
     ['Iaas', ValidationErrorType.CasePolice, "retext-case-police", ["IaaS"]],
@@ -31,6 +32,7 @@ test('does not build with case police throw error invalid Multilingual content',
     ['1password', ValidationErrorType.CasePolice, "retext-case-police", ["1Password"]],
     ['Angularjs', ValidationErrorType.CasePolice, "retext-case-police", ["AngularJS"]],
     ['Commonjs', ValidationErrorType.CasePolice, "retext-case-police", ["CommonJS"]],
+    ['ms-dos', ValidationErrorType.CasePolice, "retext-case-police", ["MS-DOS"]],
     ['sqlserver', ValidationErrorType.CasePolice, "retext-case-police", ["SQLServer"]],
   ])
   
@@ -38,6 +40,7 @@ test('does not build with case police throw error invalid Multilingual content',
     ['Github', ValidationErrorType.CasePolice, "retext-case-police", ["GitHub"]],
     ['kfc', ValidationErrorType.CasePolice, "retext-case-police", ["KFC"]],
     ['nvidia', ValidationErrorType.CasePolice, "retext-case-police", ["NVIDIA"]],
+    ['dos', ValidationErrorType.CasePolice, "retext-case-police", ["DOS"]],
     ['Gcp', ValidationErrorType.CasePolice, "retext-case-police", ["GCP"]],
     ['posix', ValidationErrorType.CasePolice, "retext-case-police", ["POSIX"]],
     ['Iaas', ValidationErrorType.CasePolice, "retext-case-police", ["IaaS"]],
@@ -47,6 +50,7 @@ test('does not build with case police throw error invalid Multilingual content',
     ['1password', ValidationErrorType.CasePolice, "retext-case-police", ["1Password"]],
     ['Angularjs', ValidationErrorType.CasePolice, "retext-case-police", ["AngularJS"]],
     ['Commonjs', ValidationErrorType.CasePolice, "retext-case-police", ["CommonJS"]],
+    ['ms-dos', ValidationErrorType.CasePolice, "retext-case-police", ["MS-DOS"]],
     ['sqlserver', ValidationErrorType.CasePolice, "retext-case-police", ["SQLServer"]],
   ])
   
@@ -54,6 +58,7 @@ test('does not build with case police throw error invalid Multilingual content',
     ['Github', ValidationErrorType.CasePolice, "retext-case-police", ["GitHub"]],
     ['kfc', ValidationErrorType.CasePolice, "retext-case-police", ["KFC"]],
     ['nvidia', ValidationErrorType.CasePolice, "retext-case-police", ["NVIDIA"]],
+    ['dos', ValidationErrorType.CasePolice, "retext-case-police", ["DOS"]],
     ['Gcp', ValidationErrorType.CasePolice, "retext-case-police", ["GCP"]],
     ['posix', ValidationErrorType.CasePolice, "retext-case-police", ["POSIX"]],
     ['Iaas', ValidationErrorType.CasePolice, "retext-case-police", ["IaaS"]],
@@ -63,6 +68,7 @@ test('does not build with case police throw error invalid Multilingual content',
     ['1password', ValidationErrorType.CasePolice, "retext-case-police", ["1Password"]],
     ['Angularjs', ValidationErrorType.CasePolice, "retext-case-police", ["AngularJS"]],
     ['Commonjs', ValidationErrorType.CasePolice, "retext-case-police", ["CommonJS"]],
+    ['ms-dos', ValidationErrorType.CasePolice, "retext-case-police", ["MS-DOS"]],
     ['sqlserver', ValidationErrorType.CasePolice, "retext-case-police", ["SQLServer"]],
   ])
 })
