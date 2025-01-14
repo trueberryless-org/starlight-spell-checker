@@ -22,6 +22,6 @@ test('does not build with contractions throw error invalid English content', asy
     ['does’nt', ValidationErrorType.Contractions, "missing-smart-apostrophe", ["doesn’t"]],
     ['yall', ValidationErrorType.Contractions, "missing-smart-apostrophe", ["y’all"]],
     ['isnt', ValidationErrorType.Contractions, "missing-smart-apostrophe", ["isn’t"]],
-    ['oc’lock', ValidationErrorType.Contractions, "missing-smart-apostrophe", ["o’clock"]],
+    ['oc\'lock', ValidationErrorType.Contractions, "missing-smart-apostrophe", ["o’clock"]],
   ])
 })

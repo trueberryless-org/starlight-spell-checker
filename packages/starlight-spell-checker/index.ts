@@ -48,6 +48,7 @@ export default function starlightSpellChecker(
                       },
                     ],
                   ],
+                  smartypants: false,
                 },
               });
             },

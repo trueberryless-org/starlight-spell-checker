@@ -153,6 +153,8 @@ export async function validateTexts(options: StarlightSpellCheckerConfig) {
         continue;
       }
 
+      console.log(content);
+
       try {
         const file = await retextProcessor.process(content);
 
