@@ -553,6 +553,78 @@ importers:
         specifier: workspace:*
         version: link:../../..
 
+  packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-mode-straight-invalid-content:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.6(astro@5.1.6(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.6(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
+  packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-mode-straight-valid-content:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.6(astro@5.1.6(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.6(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
+  packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-smart-config-invalid-content:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.6(astro@5.1.6(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.6(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
+  packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-smart-config-valid-content:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.6(astro@5.1.6(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.6(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
+  packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-straight-config-invalid-content:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.6(astro@5.1.6(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.6(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
+  packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-straight-config-valid-content:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.6(astro@5.1.6(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.6(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-valid-content:
     dependencies:
       '@astrojs/starlight':
@@ -4679,7 +4751,7 @@ snapshots:
       prompts: 2.4.2
       rehype: 13.0.2
       semver: 7.6.3
-      shiki: 1.26.1
+      shiki: 1.26.2
       tinyexec: 0.3.2
       tsconfck: 3.1.4(typescript@5.7.2)
       ultrahtml: 1.5.3
@@ -7047,7 +7119,7 @@ snapshots:
   vite@6.0.7:
     dependencies:
       esbuild: 0.24.2
-      postcss: 8.4.49
+      postcss: 8.5.0
       rollup: 4.29.2
     optionalDependencies:
       fsevents: 2.3.3

@@ -153,8 +153,6 @@ export async function validateTexts(options: StarlightSpellCheckerConfig) {
         continue;
       }
 
-      console.log(content);
-
       try {
         const file = await retextProcessor.process(content);
 
@@ -162,7 +160,7 @@ export async function validateTexts(options: StarlightSpellCheckerConfig) {
         let fileWarnings: ValidationError[] = [];
 
         for (const error of file.messages.values()) {
-          console.log(error);
+          // console.log(error);
           const throwError = getThrowErrorForType(
             validationErrorTypeMapper[error.source ?? "other"],
             options

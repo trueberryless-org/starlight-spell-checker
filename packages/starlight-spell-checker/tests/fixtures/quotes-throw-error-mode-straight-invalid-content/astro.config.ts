@@ -11,6 +11,7 @@ export default defineConfig({
           quotes: {
             enabled: true,
             throwError: true,
+            mode: "straight",
           },
           spell: {
             enabled: false,
@@ -18,7 +19,7 @@ export default defineConfig({
         }),
       ],
       title:
-        "Starlight Spell Checker Tests - quotes throw error invalid content",
+        "Starlight Spell Checker Tests - quotes throw error mode straight invalid content",
     }),
   ],
 });
