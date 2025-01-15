@@ -23,7 +23,40 @@ test('does not build with quotes throw error multi nested invalid English conten
 
   expect(status).toBe('error')
 
-  expectValidationErrorCount(output, , 1)
+  expectValidationErrorCount(output, 32, 1)
 
-  
+  expectValidationErrors(output, '/', [
+    ['“', ValidationErrorType.Quotes, 'quote', ['‹']],
+    ['‘', ValidationErrorType.Quotes, 'quote', ['“']],
+    ['’', ValidationErrorType.Quotes, 'quote', ['”']],
+    ['”', ValidationErrorType.Quotes, 'quote', ['›']],
+    ['‘', ValidationErrorType.Quotes, 'quote', ['“']],
+    ['“', ValidationErrorType.Quotes, 'quote', ['‘']],
+    ['”', ValidationErrorType.Quotes, 'quote', ['’']],
+    ['’', ValidationErrorType.Quotes, 'quote', ['”']],
+    ['‘', ValidationErrorType.Quotes, 'quote', ['“']],
+    ['“', ValidationErrorType.Quotes, 'quote', ['‘']],
+    ['‘', ValidationErrorType.Quotes, 'quote', ['‹']],
+    ['’', ValidationErrorType.Quotes, 'quote', ['›']],
+    ['”', ValidationErrorType.Quotes, 'quote', ['’']],
+    ['’', ValidationErrorType.Quotes, 'quote', ['”']],
+    ['«', ValidationErrorType.Quotes, 'quote', ['“']],
+    ['‹', ValidationErrorType.Quotes, 'quote', ['‘']],
+    ['“', ValidationErrorType.Quotes, 'quote', ['«']],
+    ['‘', ValidationErrorType.Quotes, 'quote', ['‹']],
+    ['«', ValidationErrorType.Quotes, 'quote', ['“']],
+    ['»', ValidationErrorType.Quotes, 'quote', ['”']],
+    ['’', ValidationErrorType.Quotes, 'quote', ['›']],
+    ['”', ValidationErrorType.Quotes, 'quote', ['»']],
+    ['›', ValidationErrorType.Quotes, 'quote', ['’']],
+    ['»', ValidationErrorType.Quotes, 'quote', ['”']],
+    ['«', ValidationErrorType.Quotes, 'quote', ['“']],
+    ['“', ValidationErrorType.Quotes, 'quote', ['‘']],
+    ['‘', ValidationErrorType.Quotes, 'quote', ['«']],
+    ['«', ValidationErrorType.Quotes, 'quote', ['‹']],
+    ['»', ValidationErrorType.Quotes, 'quote', ['›']],
+    ['’', ValidationErrorType.Quotes, 'quote', ['»']],
+    ['”', ValidationErrorType.Quotes, 'quote', ['’']],
+    ['»', ValidationErrorType.Quotes, 'quote', ['”']],
+  ]);
 })
