@@ -1,5 +1,5 @@
 {
-  "name": "@starlight-spell-checker-tests/quotes-throw-error-straight-config-valid-content",
+  "name": "@starlight-spell-checker-tests/quotes-throw-error-smart-straight-config-invalid-content",
   "version": "0.0.0",
   "dependencies": {
     "@astrojs/starlight": "^0.30.2",
