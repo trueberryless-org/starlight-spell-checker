@@ -1,0 +1,53 @@
+---
+title: Configuration
+description: An overview of all the configuration options supported by the Starlight Spell Checker plugin.
+---
+
+The Starlight Spell Checker plugin can be configured inside the `astro.config.mjs` configuration file of your project:
+
+```js {11}
+// astro.config.mjs
+import starlight from "@astrojs/starlight";
+import { defineConfig } from "astro/config";
+import starlightSpellChecker from "starlight-spell-checker";
+
+export default defineConfig({
+  integrations: [
+    starlight({
+      plugins: [
+        starlightSpellChecker({
+          // Configuration options go here.
+        }),
+      ],
+      title: "My Docs",
+    }),
+  ],
+});
+```
+
+## Configuration options
+
+The Starlight Spell Checker plugin accepts the following configuration options:
+
+### `assuming`
+
+Configuration parameters of the [`retext-assuming`](https://github.com/davidhund/retext-assuming) plugin.
+
+**Type**: 
+
+```ql
+{
+  enabled?: boolean,
+  throwError?: boolean,
+  phrases?: string[],
+  ignore?: string[],
+  verbose?: boolean
+}
+```
+
+#### `enabled`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to enable the assuming plugin.

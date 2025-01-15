@@ -29,13 +29,13 @@ export default defineConfig({
       sidebar: [
         {
           label: "Start Here",
-          items: [{ slug: "getting-started" }],
+          items: [{ slug: "getting-started" }, { slug: "configuration" }],
         },
       ],
       social: {
         github: "https://github.com/trueberryless-org/starlight-spell-checker",
       },
-      title: "starlight-spell-checker",
+      title: "Starlight Spell Checker",
     }),
   ],
 });
