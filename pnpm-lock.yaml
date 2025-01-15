@@ -577,6 +577,18 @@ importers:
         specifier: workspace:*
         version: link:../../..
 
+  packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-multi-multi-nested-valid-content:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.6(astro@5.1.6(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.6(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-multi-nested-invalid-content:
     dependencies:
       '@astrojs/starlight':
