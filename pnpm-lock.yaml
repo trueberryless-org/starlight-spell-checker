@@ -32,6 +32,9 @@ importers:
 
   packages/starlight-spell-checker:
     dependencies:
+      '@trueberryless-org/retext-assuming':
+        specifier: ^0.1.1
+        version: 0.1.1
       '@trueberryless-org/retext-case-police':
         specifier: ^0.1.1
         version: 0.1.1
@@ -101,9 +104,6 @@ importers:
       retext:
         specifier: ^9.0.0
         version: 9.0.0
-      retext-assuming:
-        specifier: ^1.0.0
-        version: 1.0.0
       retext-cliches:
         specifier: ^1.0.0
         version: 1.0.0
@@ -577,6 +577,30 @@ importers:
         specifier: workspace:*
         version: link:../../..
 
+  packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-multi-nested-invalid-content:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.6(astro@5.1.6(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.6(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
+  packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-multi-nested-valid-content:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.6(astro@5.1.6(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.6(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-smart-config-invalid-content:
     dependencies:
       '@astrojs/starlight':
@@ -614,6 +638,30 @@ importers:
         version: link:../../..
 
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-smart-config-valid-content:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.6(astro@5.1.6(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.6(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
+  packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-smart-straight-config-invalid-content:
+    dependencies:
+      '@astrojs/starlight':
+        specifier: ^0.30.2
+        version: 0.30.6(astro@5.1.6(rollup@4.29.2)(typescript@5.7.2))
+      astro:
+        specifier: ^5.1.1
+        version: 5.1.6(rollup@4.29.2)(typescript@5.7.2)
+      starlight-spell-checker:
+        specifier: workspace:*
+        version: link:../../..
+
+  packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-smart-straight-config-valid-content:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.30.2
@@ -1711,6 +1759,9 @@ packages:
   '@shikijs/vscode-textmate@10.0.1':
     resolution: {integrity: sha512-fTIQwLF+Qhuws31iw7Ncl1R3HUDtGwIipiJ9iU+UsDUwMhegFcQKQHd51nZjb7CArq0MvON8rbgCGQYWHUKAdg==}
 
+  '@trueberryless-org/retext-assuming@0.1.1':
+    resolution: {integrity: sha512-DrmC4Z9eLZvW4IHZ+P0YAfb/NqNFI7WsTynLaH6n4muzbXLBAzbAlS6jI6hV367uGjmxONhUAffrIp6jLOe17g==}
+
   '@trueberryless-org/retext-case-police@0.1.1':
     resolution: {integrity: sha512-6jLjWCOx0ywTCyJVJ1ML/30lSr8yLtwlLf438cyBdqRQ3EbFmwADqREURW0tUx9vmpw+n3fAi2bTPjuJ4t/tbQ==}
     engines: {node: '>=17'}
@@ -2591,11 +2642,11 @@ packages:
     resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
     engines: {node: '>=8'}
 
-  lodash.difference@4.5.0:
-    resolution: {integrity: sha512-dS2j+W26TQ7taQBGN8Lbbq04ssV3emRw4NY58WErlTO29pIqS0HmoT5aJ9+TUQ1N3G+JOZSji4eugsWwGp9yPA==}
-
   lodash.startcase@4.4.0:
     resolution: {integrity: sha512-+WKqsK294HMSc2jEbNgpHpd0JfIBhp7rEV4aqXWqFr6AlXov+SlcgB1Fv01y2kGe3Gc8nMW7VA0SrGuSkRfIEg==}
+
+  lodash@4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
 
   longest-streak@3.1.0:
     resolution: {integrity: sha512-9Ri+o0JYgehTaVBBDoMqIl8GXtbWg711O3srftcHhZ0dqnETqLaoIK0x17fUw9rFSlK/0NlsKe0Ahhyl5pXE2g==}
@@ -3156,9 +3207,6 @@ packages:
   resolve-from@5.0.0:
     resolution: {integrity: sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==}
     engines: {node: '>=8'}
-
-  retext-assuming@1.0.0:
-    resolution: {integrity: sha512-DuUVEYtWtplVwzlY8kJao87ZIuzgGBKuq1bSA8lss2aKzEQJSRGDUkmGVgnTnJiCYFFGRbskfaq0bSkpLQlwuQ==}
 
   retext-cliches@1.0.0:
     resolution: {integrity: sha512-iriUk/RSovD4rL+X1O67dSC+cP79Ks58p6Gus3ygry7wQXVEVOZGGX37yIkBWJgg8wh76mNsgk13DoLjlVzrNw==}
@@ -4555,6 +4603,14 @@ snapshots:
 
   '@shikijs/vscode-textmate@10.0.1': {}
 
+  '@trueberryless-org/retext-assuming@0.1.1':
+    dependencies:
+      lodash: 4.17.21
+      nlcst-search: 1.5.1
+      nlcst-to-string: 2.0.4
+      quotation: 1.1.3
+      unist-util-find-before: 2.0.5
+
   '@trueberryless-org/retext-case-police@0.1.1':
     dependencies:
       case-police: 0.5.14
@@ -5654,9 +5710,9 @@ snapshots:
     dependencies:
       p-locate: 4.1.0
 
-  lodash.difference@4.5.0: {}
-
   lodash.startcase@4.4.0: {}
+
+  lodash@4.17.21: {}
 
   longest-streak@3.1.0: {}
 
@@ -6574,14 +6630,6 @@ snapshots:
       unified: 11.0.5
 
   resolve-from@5.0.0: {}
-
-  retext-assuming@1.0.0:
-    dependencies:
-      lodash.difference: 4.5.0
-      nlcst-search: 1.5.1
-      nlcst-to-string: 2.0.4
-      quotation: 1.1.3
-      unist-util-find-before: 2.0.5
 
   retext-cliches@1.0.0:
     dependencies:

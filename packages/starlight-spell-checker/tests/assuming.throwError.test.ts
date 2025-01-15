@@ -16,14 +16,13 @@ test('does not build with assuming throw error invalid English content', async (
 
   expect(status).toBe('error')
 
-  expectValidationErrorCount(output, 6, 1)
+  expectValidationErrorCount(output, 5, 1)
 
-  // expectValidationErrors(output, '/', [
-  //   ['diped', ValidationErrorType.Assuming, ["dipped", "doped", "duped", "biped", "diced", "died", "diked", "dined", "dived", "piped", "wiped"]],
-  //   ['horison', ValidationErrorType.Assuming, ["orison", "horizon", "Morison"]],
-  //   ['heus', ValidationErrorType.Assuming, ["hers", "hews", "he's", "hems", "hens", "hes", "hues", "Hess", "Hus", "Zeus"]],
-  //   ['evaning', ValidationErrorType.Assuming, ["evading", "evening"]],
-  //   ['breze', ValidationErrorType.Assuming, ["breeze", "braze", "breve"]],
-  //   ['thrugh', ValidationErrorType.Assuming, ["though", "through", "thrush"]],
-  // ])
+  expectValidationErrors(output, '/', [
+    ['just', ValidationErrorType.Assuming, "no-just", []],
+    ['simply', ValidationErrorType.Assuming, "no-simply", []],
+    ['obviously', ValidationErrorType.Assuming, "no-obviously", []],
+    ['actually', ValidationErrorType.Assuming, "no-actually", []],
+    ['easy', ValidationErrorType.Assuming, "no-easy", []],
+  ])
 })

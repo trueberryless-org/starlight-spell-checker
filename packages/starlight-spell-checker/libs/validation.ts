@@ -9,7 +9,7 @@ import { getLocaleDictionary } from "./i18n";
 import { getValidationData } from "./remark";
 import picomatch from "picomatch";
 
-import retextAssuming from "retext-assuming";
+import retextAssuming from "@trueberryless-org/retext-assuming";
 import retextCasePolice from "@trueberryless-org/retext-case-police";
 // import retextCliches from "retext-cliches";
 import retextContractions from "retext-contractions";
@@ -160,7 +160,7 @@ export async function validateTexts(options: StarlightSpellCheckerConfig) {
         let fileWarnings: ValidationError[] = [];
 
         for (const error of file.messages.values()) {
-          // console.log(error);
+          console.log(error);
           const throwError = getThrowErrorForType(
             validationErrorTypeMapper[error.source ?? "other"],
             options
