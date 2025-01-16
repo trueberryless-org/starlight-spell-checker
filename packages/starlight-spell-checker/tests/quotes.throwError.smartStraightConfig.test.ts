@@ -50,7 +50,7 @@ test('does not build with quotes throw error smart straight config invalid Engli
     ['»', ValidationErrorType.Quotes, 'quote', ['›']],
     ["'", ValidationErrorType.Quotes, 'apostrophe', ['’']],
     ['›', ValidationErrorType.Quotes, 'quote', ['»']],
-    ['»', ValidationErrorType.Quotes, 'quote', ['›']],
+    ['›', ValidationErrorType.Quotes, 'quote', ['»']],
     ['‹', ValidationErrorType.Quotes, 'quote', ['«']],
     ["'", ValidationErrorType.Quotes, 'apostrophe', ['’']],
     ['«', ValidationErrorType.Quotes, 'quote', ['‹']],

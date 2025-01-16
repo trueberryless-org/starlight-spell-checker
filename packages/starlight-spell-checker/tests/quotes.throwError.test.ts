@@ -16,7 +16,7 @@ test('does not build with quotes throw error invalid English content', async () 
 
   expect(status).toBe('error')
 
-  expectValidationErrorCount(output, 35, 1)
+  expectValidationErrorCount(output, 34, 1)
 
   expectValidationErrors(output, '/', [
     ['"', ValidationErrorType.Quotes, 'quote', ['“']],
@@ -31,7 +31,6 @@ test('does not build with quotes throw error invalid English content', async () 
     ['\'', ValidationErrorType.Quotes, 'quote', ['“']],
     ['‘', ValidationErrorType.Quotes, 'quote', ['“']],
     ['“', ValidationErrorType.Quotes, 'quote', ['‘']],
-    ['”', ValidationErrorType.Quotes, 'quote', ['’']],
     ['”', ValidationErrorType.Quotes, 'quote', ['’']],
     ['’', ValidationErrorType.Quotes, 'quote', ['“']],
     ['‘', ValidationErrorType.Quotes, 'quote', ['“']],

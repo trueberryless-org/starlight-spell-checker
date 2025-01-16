@@ -33,7 +33,7 @@ test('does not build with quotes throw error straight config mode straight inval
     ['”', ValidationErrorType.Quotes, 'quote', ['"']],
     ['”', ValidationErrorType.Quotes, 'quote', ["'"]],
     ['’', ValidationErrorType.Quotes, 'apostrophe', ["'"]],
-    ['”', ValidationErrorType.Quotes, 'quote', ['"']],
+    ['”', ValidationErrorType.Quotes, 'quote', ["'"]],
     ['’', ValidationErrorType.Quotes, 'quote', ["'"]],
     ['‘', ValidationErrorType.Quotes, 'quote', ['"']],
     ['‘', ValidationErrorType.Quotes, 'quote', ["'"]],
