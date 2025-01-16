@@ -3,17 +3,18 @@ import "mdast-util-mdx-jsx";
 import nodePath from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { hasProperty } from "hast-util-has-property";
-import type { Nodes } from "hast";
-import { fromHtml } from "hast-util-from-html";
 import { slug } from "github-slugger";
 import type { Root } from "mdast";
-import { unified, type Plugin } from "unified";
+import { type Plugin } from "unified";
 import { visit } from "unist-util-visit";
 
 import { ensureTrailingSlash, stripLeadingSlash } from "./path";
 import { getLocaleConfig, getLocale } from "./i18n";
 import type { StarlightUserConfig } from "./validation";
+
+import { unified } from "unified";
+import rehypeParse from "rehype-parse";
+import { toText } from "hast-util-to-text";
 
 // All the text content keyed by locale, then keyed by file path.
 const contents: Contents = new Map();
@@ -32,6 +33,30 @@ export const remarkStarlightSpellChecker: Plugin<
         : undefined;
 
     let fileContent: string = "";
+
+    // Extract all string values from frontmatter (recursively, with HTML parsing)
+    const frontmatter = file.data.astro?.frontmatter;
+    if (frontmatter) {
+      const extractStrings = (obj: any): string[] => {
+        const strings: string[] = [];
+        for (const value of Object.values(obj)) {
+          if (typeof value === "string") {
+            // Parse HTML and extract text content
+            const htmlTree = unified()
+              .use(rehypeParse, { fragment: true })
+              .parse(value);
+            const textContent = toText(htmlTree);
+            strings.push(textContent);
+          } else if (typeof value === "object" && value !== null) {
+            strings.push(...extractStrings(value));
+          }
+        }
+        return strings;
+      };
+
+      fileContent += extractStrings(frontmatter).join("\n");
+      fileContent += "\n"; // Separate frontmatter from the Markdown content
+    }
 
     // https://github.com/syntax-tree/mdast#nodes
     // https://github.com/syntax-tree/mdast-util-mdx-jsx#nodes

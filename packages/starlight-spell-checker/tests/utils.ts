@@ -42,6 +42,24 @@ export function expectValidationSuccess(output: string) {
   expect(output).toMatch(new RegExp(`All words spelled correctly.`));
 }
 
+export function expectValidationUnsupportedLanguage(
+  output: string,
+  locales: string[]
+) {
+  const per = getPermutations(locales);
+  const localePattern = `(${per.map((pair) => pair.join(", ")).join("|")})`;
+
+  expect(output).toMatch(
+    new RegExp(
+      `Unsupported ${
+        locales.length === 1 ? "language" : "languages"
+      }: ${localePattern} \\\(No ${
+        locales.length === 1 ? "dictionary" : "dictionaries"
+      } available.\\\)`
+    )
+  );
+}
+
 export function expectValidationWarningCount(
   output: string,
   count: number,
@@ -62,6 +80,7 @@ export function expectValidationWarnings(
   validationWarnings: [
     word: string,
     type: ValidationErrorType,
+    rule: string,
     suggestions?: string[]
   ][]
 ) {
@@ -70,10 +89,10 @@ export function expectValidationWarnings(
       `▶ ${path}
 ${validationWarnings
   .map(
-    ([word, type, suggestions], index) =>
+    ([word, type, rule, suggestions], index) =>
       `.* ${
         index < validationWarnings.length - 1 ? "├" : "└"
-      }─ ${word} - ${type}${
+      }─ ${word} - ${type} - ${rule}${
         suggestions
           ? suggestions.length > 0
             ? ` \\\(${suggestions.join(", ")}\\\)`
@@ -106,6 +125,7 @@ export function expectValidationErrors(
   validationErrors: [
     word: string,
     type: ValidationErrorType,
+    rule: string,
     suggestions?: string[]
   ][]
 ) {
@@ -114,10 +134,10 @@ export function expectValidationErrors(
       `▶ ${path}
 ${validationErrors
   .map(
-    ([word, type, suggestions], index) =>
+    ([word, type, rule, suggestions], index) =>
       `.* ${
         index < validationErrors.length - 1 ? "├" : "└"
-      }─ ${word} - ${type}${
+      }─ ${word} - ${type} - ${rule}${
         suggestions
           ? suggestions.length > 0
             ? ` \\\(${suggestions.join(", ")}\\\)`
@@ -128,4 +148,18 @@ ${validationErrors
   .join("\n")}`
     )
   );
+}
+
+function getPermutations(arr: any[]): any[][] {
+  if (arr.length === 0) return [[]];
+  const permutations = [];
+  for (let i = 0; i < arr.length; i++) {
+    const currentElement = arr[i];
+    const remainingElements = arr.slice(0, i).concat(arr.slice(i + 1));
+    const remainingPermutations = getPermutations(remainingElements);
+    for (const permutation of remainingPermutations) {
+      permutations.push([currentElement, ...permutation]);
+    }
+  }
+  return permutations;
 }

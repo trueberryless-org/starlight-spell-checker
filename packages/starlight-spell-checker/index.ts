@@ -5,7 +5,12 @@ import {
   type StarlightSpellCheckerConfig,
   type StarlightSpellCheckerUserConfig,
 } from "./libs/config";
-import { logErrors, logWarnings, validateTexts } from "./libs/validation";
+import {
+  logErrors,
+  logUnsupportedLanguages,
+  logWarnings,
+  validateTexts,
+} from "./libs/validation";
 import { clearContentLayerCache } from "./libs/astro";
 import { remarkStarlightSpellChecker } from "./libs/remark";
 import { green } from "kleur/colors";
@@ -43,20 +48,17 @@ export default function starlightSpellChecker(
                       },
                     ],
                   ],
+                  smartypants: false,
                 },
               });
             },
-            "astro:build:done": async ({ dir, pages }) => {
-              const { warnings, errors } = await validateTexts(
-                pages,
-                dir,
-                astroConfig,
-                starlightConfig,
-                config
-              );
+            "astro:build:done": async () => {
+              const { warnings, errors, unsupportedLanguages } =
+                await validateTexts(config);
 
               logWarnings(logger, warnings);
               logErrors(logger, errors);
+              logUnsupportedLanguages(logger, unsupportedLanguages);
 
               if (warnings.size <= 0 && errors.size <= 0) {
                 logger.info(green("✓ All words spelled correctly.\n"));
