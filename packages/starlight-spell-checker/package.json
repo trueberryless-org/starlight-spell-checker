@@ -64,7 +64,7 @@
     "retext-overuse": "^1.1.1",
     "retext-passive": "^5.0.0",
     "retext-profanities": "^8.0.0",
-    "retext-quotes": "^6.0.0",
+    "retext-quotes": "^6.0.2",
     "retext-readability": "^8.0.0",
     "retext-redundant-acronyms": "^5.0.0",
     "retext-repeated-words": "^5.0.0",
