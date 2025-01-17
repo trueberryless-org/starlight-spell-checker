@@ -27,6 +27,10 @@ export default defineConfig({
           label: "Start Here",
           items: [{ slug: "getting-started" }, { slug: "configuration" }],
         },
+        {
+          label: "Guides",
+          items: [{ slug: "conditional-validation" }],
+        },
       ],
       social: {
         github: "https://github.com/trueberryless-org/starlight-spell-checker",
