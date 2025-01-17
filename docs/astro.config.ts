@@ -1,6 +1,7 @@
 import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
 import starlightSpellChecker from "starlight-spell-checker";
+import starlightPluginsDocsComponents from "@trueberryless-org/starlight-plugins-docs-components";
 
 export default defineConfig({
   integrations: [
@@ -24,6 +25,9 @@ export default defineConfig({
           spell: {
             ignore: ["astro.config.mjs"],
           },
+        }),
+        starlightPluginsDocsComponents({
+          pluginName: "starlight-spell-checker",
         }),
       ],
       sidebar: [
