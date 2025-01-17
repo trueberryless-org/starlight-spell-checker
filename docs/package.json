@@ -29,5 +29,6 @@
     "url": "https://github.com/trueberryless-org/starlight-spell-checker.git",
     "directory": "docs"
   },
-  "bugs": "https://github.com/trueberryless-org/starlight-spell-checker/issues"
+  "bugs": "https://github.com/trueberryless-org/starlight-spell-checker/issues",
+  "packageManager": "pnpm@9.6.0"
 }
