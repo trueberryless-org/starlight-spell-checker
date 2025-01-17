@@ -10,22 +10,14 @@ export default defineConfig({
         baseUrl:
           "https://github.com/trueberryless-org/starlight-spell-checker/edit/main/docs/",
       },
-      locales: {
-        root: {
-          lang: "en",
-          label: "English",
-        },
-        de: {
-          lang: "de",
-          label: "Deutsch",
-        },
+      logo: {
+        light: "./src/assets/logo-light.png",
+        dark: "./src/assets/logo-dark.png",
+        replacesTitle: true,
       },
+      defaultLocale: "en",
       plugins: [
-        starlightSpellChecker({
-          spell: {
-            ignore: ["astro.config.mjs"],
-          },
-        }),
+        starlightSpellChecker(),
         starlightPluginsDocsComponents({
           pluginName: "starlight-spell-checker",
         }),
