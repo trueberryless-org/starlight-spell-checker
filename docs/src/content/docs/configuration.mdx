@@ -1,0 +1,884 @@
+---
+title: Configuration
+description: An overview of all the configuration options supported by the Starlight Spell Checker plugin.
+---
+
+import { FileTree } from '@astrojs/starlight/components';
+
+The Starlight Spell Checker plugin can be configured inside the `astro.config.mjs` configuration file of your project:
+
+```js {11}
+// astro.config.mjs
+import starlight from "@astrojs/starlight";
+import { defineConfig } from "astro/config";
+import starlightSpellChecker from "starlight-spell-checker";
+
+export default defineConfig({
+  integrations: [
+    starlight({
+      plugins: [
+        starlightSpellChecker({
+          // Configuration options go here.
+        }),
+      ],
+      title: "My Docs",
+    }),
+  ],
+});
+```
+
+## Configuration options
+
+The Starlight Spell Checker plugin accepts the following configuration options:
+
+### `exclude`
+
+**Type**: `string[]`  
+**Default**: `[]`
+
+A list of page paths or [glob patterns](https://github.com/micromatch/picomatch#globbing-features) that should be excluded from validation.
+
+In the following example, only the `test.md` page will be validated, and the `exclude-pattern/*` and `exclude-manually/` paths will be ignored.
+
+<FileTree>
+
+- astro.config.mjs
+- package.json
+- src
+  - content/docs/
+    - **test.md**
+    - exclude-manually.md
+    - exclude-pattern/
+      - 1.md
+      - 2.md
+      - 3.md
+
+</FileTree>
+
+```js {6}
+export default defineConfig({
+  integrations: [
+    starlight({
+      plugins: [
+        starlightSpellChecker({
+          exclude: ["exclude-manually/", "exclude-pattern/*"],
+        }),
+      ],
+    }),
+  ],
+})
+```
+
+:::tip
+You can use this [webpage](https://www.digitalocean.com/community/tools/glob) to generate and test glob patterns.
+:::
+
+### `assuming`
+
+Configuration parameters of the [`retext-assuming`](https://github.com/davidhund/retext-assuming) plugin.
+
+**Type**: 
+
+```ql
+{
+  enabled?: boolean,
+  throwError?: boolean,
+  phrases?: string[],
+  ignore?: string[],
+  verbose?: boolean
+}
+```
+
+:::caution
+The `assuming` functionality is only available for the English language. If you enable it, it will only check English content, ignoring all other languages.
+:::
+
+#### `enabled`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to enable the assuming plugin.
+
+#### `throwError`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to throw an error if the plugin detects mistakes.
+
+If `true`, the plugin will throw an error and stop the build process.  
+If `false`, the plugin will log warnings and continue the build process.
+
+#### `phrases`
+
+**Type**: `string[]`  
+**Default**: internal list
+
+A list of phrases that the plugin should check against. In other words, a list of phrases to warn about.
+
+#### `ignore`
+
+**Type**: `string[]`  
+**Default**: `[]`
+
+A list of words that the plugin should ignore. In other words, a list of phrases _not_ to warn about.
+
+#### `verbose`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to also check for phrases that are _probably fine_, like "You should **not** _simply_ assume".
+
+### `casePolice`
+
+Configuration parameters of the [`retext-case-police`](https://github.com/JulianCataldo/retext-case-police) plugin.
+
+**Type**: 
+
+```ql
+{
+  enabled?: boolean,
+  throwError?: boolean,
+  ignore?: string[]
+}
+```
+
+#### `enabled`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to enable the assuming plugin.
+
+#### `throwError`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to throw an error if the plugin detects mistakes.
+
+If `true`, the plugin will throw an error and stop the build process.  
+If `false`, the plugin will log warnings and continue the build process.
+
+#### `ignore`
+
+**Type**: `string[]`  
+**Default**: `[]`
+
+A list of words that the plugin should ignore. In other words, a list of phrases _not_ to warn about.
+
+### `contractions`
+
+Configuration parameters of the [`retext-contractions`](https://github.com/retextjs/retext-contractions) plugin.
+
+**Type**: 
+
+```ql
+{
+  enabled?: boolean,
+  throwError?: boolean,
+  ignoreLiterals?: boolean,
+  mode?: "smart" | "straight"
+}
+```
+
+:::caution
+The `contractions` functionality is only available for the English language. If you enable it, it will only check English content, ignoring all other languages.
+:::
+
+#### `enabled`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to enable the assuming plugin.
+
+#### `throwError`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to throw an error if the plugin detects mistakes.
+
+If `true`, the plugin will throw an error and stop the build process.  
+If `false`, the plugin will log warnings and continue the build process.
+
+#### `ignoreLiterals`
+
+**Type**: `boolean`  
+**Default**: `true`
+
+Whether to ignore contractions in [literal strings](https://github.com/syntax-tree/nlcst-is-literal).
+
+If `true`, the plugin will ignore [literal words](https://github.com/syntax-tree/nlcst-is-literal).
+If `false`, the plugin will check [literal words](https://github.com/syntax-tree/nlcst-is-literal).
+
+#### `mode`
+
+**Type**: `"smart" | "straight"`  
+**Default**: `"smart"`
+
+Whether to suggest smart (`'`) or straight (`’`) apostrophes. See [retext-quotes](#quotes) if you want to properly check apostrophes though.
+
+### `diacritics`
+
+Configuration parameters of the [`retext-diacritics`](https://github.com/retextjs/retext-diacritics) plugin.
+
+**Type**: 
+
+```ql
+{
+  enabled?: boolean,
+  throwError?: boolean
+}
+```
+
+#### `enabled`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to enable the assuming plugin.
+
+#### `throwError`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to throw an error if the plugin detects mistakes.
+
+If `true`, the plugin will throw an error and stop the build process.  
+If `false`, the plugin will log warnings and continue the build process.
+
+### `equality`
+
+Configuration parameters of the [`retext-equality`](https://github.com/retextjs/retext-equality) plugin.
+
+**Type**: 
+
+```ql
+{
+  enabled?: boolean,
+  throwError?: boolean,
+  ignore?: string[],
+  binary?: boolean
+}
+```
+
+:::caution
+The `equality` functionality is only available for the English language. If you enable it, it will only check English content, ignoring all other languages.
+:::
+
+#### `enabled`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to enable the assuming plugin.
+
+#### `throwError`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to throw an error if the plugin detects mistakes.
+
+If `true`, the plugin will throw an error and stop the build process.  
+If `false`, the plugin will log warnings and continue the build process.
+
+#### `ignore`
+
+**Type**: `string[]`  
+**Default**: `[]`
+
+A list of words that the plugin should ignore. In other words, a list of phrases _not_ to warn about.
+
+#### `binary`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to allow phrases like "he or she", "garbagemen and garbagewomen", etc.
+
+### `indefiniteArticle`
+
+Configuration parameters of the [`retext-indefinite-article`](https://github.com/retextjs/retext-indefinite-article) plugin.
+
+**Type**: 
+
+```ql
+{
+  enabled?: boolean,
+  throwError?: boolean
+}
+```
+
+:::caution
+The `indefiniteArticle` functionality is only available for the English language. If you enable it, it will only check English content, ignoring all other languages.
+:::
+
+#### `enabled`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to enable the assuming plugin.
+
+#### `throwError`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to throw an error if the plugin detects mistakes.
+
+If `true`, the plugin will throw an error and stop the build process.  
+If `false`, the plugin will log warnings and continue the build process.
+
+### `intensify`
+
+Configuration parameters of the [`retext-intensify`](https://github.com/retextjs/retext-intensify) plugin.
+
+**Type**: 
+
+```ql
+{
+  enabled?: boolean,
+  throwError?: boolean,
+  ignore?: string[]
+}
+```
+
+:::caution
+The `intensify` functionality is only available for the English language. If you enable it, it will only check English content, ignoring all other languages.
+:::
+
+#### `enabled`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to enable the assuming plugin.
+
+#### `throwError`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to throw an error if the plugin detects mistakes.
+
+If `true`, the plugin will throw an error and stop the build process.  
+If `false`, the plugin will log warnings and continue the build process.
+
+#### `ignore`
+
+**Type**: `string[]`  
+**Default**: `[]`
+
+A list of words that the plugin should ignore. In other words, a list of phrases _not_ to warn about.
+
+### `passive`
+
+Configuration parameters of the [`retext-passive`](https://github.com/retextjs/retext-passive) plugin.
+
+**Type**: 
+
+```ql
+{
+  enabled?: boolean,
+  throwError?: boolean,
+  ignore?: string[]
+}
+```
+
+:::caution
+The `passive` functionality is only available for the English language. If you enable it, it will only check English content, ignoring all other languages.
+:::
+
+#### `enabled`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to enable the assuming plugin.
+
+#### `throwError`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to throw an error if the plugin detects mistakes.
+
+If `true`, the plugin will throw an error and stop the build process.  
+If `false`, the plugin will log warnings and continue the build process.
+
+#### `ignore`
+
+**Type**: `string[]`  
+**Default**: `[]`
+
+A list of words that the plugin should ignore. In other words, a list of phrases _not_ to warn about.
+
+### `profanities`
+
+Configuration parameters of the [`retext-profanities`](https://github.com/retextjs/retext-profanities) plugin.
+
+**Type**: 
+
+```ql
+{
+  enabled?: boolean,
+  throwError?: boolean,
+  ignore?: string[]
+}
+```
+
+:::caution
+The `profanities` functionality is only available for these languages:
+
+- Arabic (`ar`)
+- English (`en`)
+- Spanish (`es`)
+- French (`fr`)
+- Italian (`it`)
+- Brazilian Portuguese (`pt-BR`)
+
+If you enable it, it will only check these languages, ignoring all other languages.
+:::
+
+#### `enabled`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to enable the assuming plugin.
+
+#### `throwError`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to throw an error if the plugin detects mistakes.
+
+If `true`, the plugin will throw an error and stop the build process.  
+If `false`, the plugin will log warnings and continue the build process.
+
+#### `ignore`
+
+**Type**: `string[]`  
+**Default**: `[]`
+
+A list of words that the plugin should ignore. In other words, a list of phrases _not_ to warn about.
+
+#### `sureness`
+
+**Type**: `0 | 1 | 2`  
+**Default**: `0`
+
+Minimum sureness level to warn about. See [cuss](https://github.com/words/cuss) for further information.
+
+### `readability`
+
+Configuration parameters of the [`retext-readability`](https://github.com/retextjs/retext-readability) plugin.
+
+**Type**: 
+
+```ql
+{
+  enabled?: boolean,
+  throwError?: boolean
+}
+```
+
+:::caution
+The `readability` functionality is only available for the English language. If you enable it, it will only check English content, ignoring all other languages.
+:::
+
+#### `enabled`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to enable the assuming plugin.
+
+#### `throwError`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to throw an error if the plugin detects mistakes.
+
+If `true`, the plugin will throw an error and stop the build process.  
+If `false`, the plugin will log warnings and continue the build process.
+
+#### `age`
+
+**Type**: `number`  
+**Default**: `22`
+
+Define the target age group. This will ensure that your text is readable for the specified age group.
+
+#### `minWords`
+
+**Type**: `number`  
+**Default**: `5`
+
+Evaluate sentences containing at least this number of words. While most algorithms assess the reading level of an entire text, this plugin analyzes each sentence individually. Short sentences, however, can be disproportionately influenced by a single long or complex word.
+
+#### `threshold`
+
+**Type**: `number`  
+**Default**: `4 / 7`
+
+Defines how many algorithms (out of 7) need to agree that something is hard to read.
+
+The plugin uses these algorithms:
+
+- [Dale—Chall](https://github.com/words/dale-chall-formula)
+- [Automated Readability](https://github.com/words/automated-readability)
+- [Coleman-Liau](https://github.com/words/coleman-liau)
+- [Flesch](https://github.com/words/flesch)
+- [Gunning-Fog](https://github.com/words/gunning-fog)
+- [SMOG](https://github.com/words/smog-formula)
+- [Spache](https://github.com/words/spache-formula)
+
+### `redundantAcronyms`
+
+Configuration parameters of the [`retext-redundant-acronyms`](https://github.com/retextjs/retext-redundant-acronyms) plugin.
+
+**Type**: 
+
+```ql
+{
+  enabled?: boolean,
+  throwError?: boolean
+}
+```
+
+:::caution
+The `redundantAcronyms` functionality is only available for the English language. If you enable it, it will only check English content, ignoring all other languages.
+:::
+
+#### `enabled`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to enable the assuming plugin.
+
+#### `throwError`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to throw an error if the plugin detects mistakes.
+
+If `true`, the plugin will throw an error and stop the build process.  
+If `false`, the plugin will log warnings and continue the build process.
+
+### `repeatedWords`
+
+Configuration parameters of the [`retext-repeated-words`](https://github.com/retextjs/retext-repeated-words) plugin.
+
+**Type**: 
+
+```ql
+{
+  enabled?: boolean,
+  throwError?: boolean
+}
+```
+
+#### `enabled`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to enable the assuming plugin.
+
+#### `throwError`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to throw an error if the plugin detects mistakes.
+
+If `true`, the plugin will throw an error and stop the build process.  
+If `false`, the plugin will log warnings and continue the build process.
+
+### `simplify`
+
+Configuration parameters of the [`retext-simplify`](https://github.com/retextjs/retext-simplify) plugin.
+
+**Type**: 
+
+```ql
+{
+  enabled?: boolean,
+  throwError?: boolean,
+  ignore?: string[]
+}
+```
+
+:::caution
+The `simplify` functionality is only available for the English language. If you enable it, it will only check English content, ignoring all other languages.
+:::
+
+#### `enabled`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to enable the assuming plugin.
+
+#### `throwError`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to throw an error if the plugin detects mistakes.
+
+If `true`, the plugin will throw an error and stop the build process.  
+If `false`, the plugin will log warnings and continue the build process.
+
+#### `ignore`
+
+**Type**: `string[]`  
+**Default**: `[]`
+
+A list of words that the plugin should ignore. In other words, a list of phrases _not_ to warn about.
+
+### `spell`
+
+Configuration parameters of the [`retext-spell`](https://github.com/retextjs/retext-spell) plugin.
+
+**Type**: 
+
+```ql
+{
+  enabled?: boolean,
+  throwError?: boolean,
+  ignore?: string[]
+}
+```
+
+:::caution
+The `spell` functionality is only available for these languages:
+
+- Danish (`da`)
+- German (`de`)
+- English (`en`)
+- Spanish (`es`)
+- French (`fr`)
+- Italian (`it`)
+- Korean (`ko`)
+- Polish (`pl`)
+- Brazilian Portuguese (`pt-BR`)
+- Russian (`ru`)
+
+If you enable it, it will only check these languages, ignoring all other languages with a warning in the output.
+
+These are the currently unsupported languages:
+
+- Arabic (`ar`)
+- Hindian (`hi`)
+- Japanese (`ja`)
+- Simplified Chinese (`zh-cn`)
+- Traditional Chinese (`zh-tw`)
+
+If you want to add a dictionary for an unsupported language, please [take a look at this repo](https://github.com/wooorm/dictionaries?tab=readme-ov-file#adding-a-new-dictionary) and [let us know](https://github.com/trueberryless-org/starlight-spell-checker/issues/new).
+:::
+
+#### `enabled`
+
+**Type**: `boolean`  
+**Default**: `true`
+
+Whether to enable the assuming plugin.
+
+#### `throwError`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to throw an error if the plugin detects mistakes.
+
+If `true`, the plugin will throw an error and stop the build process.  
+If `false`, the plugin will log warnings and continue the build process.
+
+#### `ignore`
+
+**Type**: `string[]`  
+**Default**: `[]`
+
+A list of words that the plugin should ignore. In other words, a list of phrases _not_ to warn about.
+
+### `usage`
+
+Configuration parameters of the [`retext-usage`](https://github.com/adamhollett/retext-usage) plugin.
+
+**Type**: 
+
+```ql
+{
+  enabled?: boolean,
+  throwError?: boolean
+}
+```
+
+:::caution
+The `usage` functionality is only available for the English language. If you enable it, it will only check English content, ignoring all other languages.
+:::
+
+#### `enabled`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to enable the assuming plugin.
+
+#### `throwError`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to throw an error if the plugin detects mistakes.
+
+If `true`, the plugin will throw an error and stop the build process.  
+If `false`, the plugin will log warnings and continue the build process.
+
+### `quotes`
+
+Configuration parameters of the [`retext-quotes`](https://github.com/retextjs/retext-quotes) plugin. This plugin knows about apostrophes as well and prefers `'` when
+`preferred: 'straight'`, and `’` otherwise.
+
+**Type**: 
+
+```ql
+{
+  enabled?: boolean,
+  throwError?: boolean,
+  mode?: "smart" | "straight",
+  smart?: string[] | Record<string, string[]>,
+  straight?: string[] | Record<string, string[]>
+}
+```
+
+#### `enabled`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to enable the assuming plugin.
+
+#### `throwError`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to throw an error if the plugin detects mistakes.
+
+If `true`, the plugin will throw an error and stop the build process.  
+If `false`, the plugin will log warnings and continue the build process.
+
+#### `mode`
+
+**Type**: `"smart" | "straight"`  
+**Default**: `"smart"`
+
+Whether to suggest smart (`'`) or straight (`’`) apostrophes.
+
+#### `smart`
+
+**Type**: `string[] | Record<string, string[]>`  
+**Default**: `["“”", "‘’"]`
+
+List of quotes to see as smart quotes.
+
+**Explaination**:
+
+The values in `smart` can be one or two characters.
+When two, the first character determines the opening quote and the second
+the closing quote at that level.
+When one, both the opening and closing quote are that character.
+
+The order in which the preferred quotes appear in their respective list
+determines which quotes to use at which level of nesting.
+So, to prefer `‘’` at the first level of nesting, and `“”` at the second,
+pass: `smart: ['‘’', '“”']`.
+
+If quotes are nested deeper than the given amount of quotes, the markers
+wrap around: a third level of nesting when using `smart: ['«»', '‹›']`
+should have double guillemets, a fourth single, a fifth double again, etc.
+
+**Multilingualism**:
+
+If you want to defined different quotes for different languages, you can pass a `Record<string, string[]>` type, like this:
+
+```js {6-12}
+export default defineConfig({
+  integrations: [
+    starlight({
+      plugins: [
+        starlightSpellChecker({
+          quotes: {
+            smart: {
+              en: ['“”', '‘’'],
+              de: ['„“', '‚‘'],
+              fr: ["«»", "“”"],
+            },
+          },
+        }),
+      ],
+    }),
+  ],
+})
+```
+
+#### `straight`
+
+**Type**: `string[] | Record<string, string[]>`  
+**Default**: `['"', "'"]`
+
+List of quotes to see as straight quotes.
+
+**Explaination**:
+
+The values in `straight` can be one or two characters.
+When two, the first character determines the opening quote and the second
+the closing quote at that level.
+When one, both the opening and closing quote are that character.
+
+The order in which the preferred quotes appear in their respective list
+determines which quotes to use at which level of nesting.
+So, to prefer `"` at the first level of nesting, and `'` at the second,
+pass: `straight: ['"', "'"]`.
+
+If quotes are nested deeper than the given amount of quotes, the markers
+wrap around: a third level of nesting when using `straight: ['«»', '‹›']`
+should have double guillemets, a fourth single, a fifth double again, etc.
+
+**Multilingualism**:
+
+If you want to defined different quotes for different languages, you can pass a `Record<string, string[]>` type, like this:
+
+```js {6-12}
+export default defineConfig({
+  integrations: [
+    starlight({
+      plugins: [
+        starlightSpellChecker({
+          quotes: {
+            straight: {
+              en: ['“”', '‘’'],
+              de: ['„“', '‚‘'],
+              fr: ["«»", "“”"],
+            },
+          },
+        }),
+      ],
+    }),
+  ],
+})
+```
