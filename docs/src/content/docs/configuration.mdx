@@ -124,6 +124,13 @@ A list of phrases that the plugin should check against. In other words, a list o
 
 A list of words that the plugin should ignore. In other words, a list of phrases _not_ to warn about.
 
+#### `verbose`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to also check for phrases that are _probably fine_, like "You should **not** _simply_ assume".
+
 ### `casePolice`
 
 Configuration parameters of the [`retext-case-police`](https://github.com/JulianCataldo/retext-case-police) plugin.
@@ -171,7 +178,9 @@ Configuration parameters of the [`retext-contractions`](https://github.com/retex
 ```ql
 {
   enabled?: boolean,
-  throwError?: boolean
+  throwError?: boolean,
+  ignoreLiterals?: boolean,
+  mode?: "smart" | "straight"
 }
 ```
 
@@ -195,6 +204,23 @@ Whether to throw an error if the plugin detects mistakes.
 
 If `true`, the plugin will throw an error and stop the build process.  
 If `false`, the plugin will log warnings and continue the build process.
+
+#### `ignoreLiterals`
+
+**Type**: `boolean`  
+**Default**: `true`
+
+Whether to ignore contractions in [literal strings](https://github.com/syntax-tree/nlcst-is-literal).
+
+If `true`, the plugin will ignore [literal words](https://github.com/syntax-tree/nlcst-is-literal).
+If `false`, the plugin will check [literal words](https://github.com/syntax-tree/nlcst-is-literal).
+
+#### `mode`
+
+**Type**: `"smart" | "straight"`  
+**Default**: `"smart"`
+
+Whether to suggest smart (`'`) or straight (`’`) apostrophes. See [retext-quotes](#quotes) if you want to properly check apostrophes though.
 
 ### `diacritics`
 
@@ -236,7 +262,8 @@ Configuration parameters of the [`retext-equality`](https://github.com/retextjs/
 {
   enabled?: boolean,
   throwError?: boolean,
-  ignore?: string[]
+  ignore?: string[],
+  binary?: boolean
 }
 ```
 
@@ -267,6 +294,13 @@ If `false`, the plugin will log warnings and continue the build process.
 **Default**: `[]`
 
 A list of words that the plugin should ignore. In other words, a list of phrases _not_ to warn about.
+
+#### `binary`
+
+**Type**: `boolean`  
+**Default**: `false`
+
+Whether to allow phrases like "he or she", "garbagemen and garbagewomen", etc.
 
 ### `indefiniteArticle`
 
@@ -437,6 +471,13 @@ If `false`, the plugin will log warnings and continue the build process.
 
 A list of words that the plugin should ignore. In other words, a list of phrases _not_ to warn about.
 
+#### `sureness`
+
+**Type**: `0 | 1 | 2`  
+**Default**: `0`
+
+Minimum sureness level to warn about. See [cuss](https://github.com/words/cuss) for further information.
+
 ### `readability`
 
 Configuration parameters of the [`retext-readability`](https://github.com/retextjs/retext-readability) plugin.
@@ -470,6 +511,37 @@ Whether to throw an error if the plugin detects mistakes.
 
 If `true`, the plugin will throw an error and stop the build process.  
 If `false`, the plugin will log warnings and continue the build process.
+
+#### `age`
+
+**Type**: `number`  
+**Default**: `22`
+
+Define the target age group. This will ensure that your text is readable for the specified age group.
+
+#### `minWords`
+
+**Type**: `number`  
+**Default**: `5`
+
+Evaluate sentences containing at least this number of words. While most algorithms assess the reading level of an entire text, this plugin analyzes each sentence individually. Short sentences, however, can be disproportionately influenced by a single long or complex word.
+
+#### `threshold`
+
+**Type**: `number`  
+**Default**: `4 / 7`
+
+Defines how many algorithms (out of 7) need to agree that something is hard to read.
+
+The plugin uses these algorithms:
+
+- [Dale—Chall](https://github.com/words/dale-chall-formula)
+- [Automated Readability](https://github.com/words/automated-readability)
+- [Coleman-Liau](https://github.com/words/coleman-liau)
+- [Flesch](https://github.com/words/flesch)
+- [Gunning-Fog](https://github.com/words/gunning-fog)
+- [SMOG](https://github.com/words/smog-formula)
+- [Spache](https://github.com/words/spache-formula)
 
 ### `redundantAcronyms`
 
@@ -678,14 +750,18 @@ If `false`, the plugin will log warnings and continue the build process.
 
 ### `quotes`
 
-Configuration parameters of the [`retext-quotes`](https://github.com/retextjs/retext-quotes) plugin.
+Configuration parameters of the [`retext-quotes`](https://github.com/retextjs/retext-quotes) plugin. This plugin knows about apostrophes as well and prefers `'` when
+`preferred: 'straight'`, and `’` otherwise.
 
 **Type**: 
 
 ```ql
 {
   enabled?: boolean,
-  throwError?: boolean
+  throwError?: boolean,
+  mode?: "smart" | "straight",
+  smart?: string[] | Record<string, string[]>,
+  straight?: string[] | Record<string, string[]>
 }
 ```
 
@@ -705,3 +781,104 @@ Whether to throw an error if the plugin detects mistakes.
 
 If `true`, the plugin will throw an error and stop the build process.  
 If `false`, the plugin will log warnings and continue the build process.
+
+#### `mode`
+
+**Type**: `"smart" | "straight"`  
+**Default**: `"smart"`
+
+Whether to suggest smart (`'`) or straight (`’`) apostrophes.
+
+#### `smart`
+
+**Type**: `string[] | Record<string, string[]>`  
+**Default**: `["“”", "‘’"]`
+
+List of quotes to see as smart quotes.
+
+**Explaination**:
+
+The values in `smart` can be one or two characters.
+When two, the first character determines the opening quote and the second
+the closing quote at that level.
+When one, both the opening and closing quote are that character.
+
+The order in which the preferred quotes appear in their respective list
+determines which quotes to use at which level of nesting.
+So, to prefer `‘’` at the first level of nesting, and `“”` at the second,
+pass: `smart: ['‘’', '“”']`.
+
+If quotes are nested deeper than the given amount of quotes, the markers
+wrap around: a third level of nesting when using `smart: ['«»', '‹›']`
+should have double guillemets, a fourth single, a fifth double again, etc.
+
+**Multilingualism**:
+
+If you want to defined different quotes for different languages, you can pass a `Record<string, string[]>` type, like this:
+
+```js {6-12}
+export default defineConfig({
+  integrations: [
+    starlight({
+      plugins: [
+        starlightSpellChecker({
+          quotes: {
+            smart: {
+              en: ['“”', '‘’'],
+              de: ['„“', '‚‘'],
+              fr: ["«»", "“”"],
+            },
+          },
+        }),
+      ],
+    }),
+  ],
+})
+```
+
+#### `straight`
+
+**Type**: `string[] | Record<string, string[]>`  
+**Default**: `['"', "'"]`
+
+List of quotes to see as straight quotes.
+
+**Explaination**:
+
+The values in `straight` can be one or two characters.
+When two, the first character determines the opening quote and the second
+the closing quote at that level.
+When one, both the opening and closing quote are that character.
+
+The order in which the preferred quotes appear in their respective list
+determines which quotes to use at which level of nesting.
+So, to prefer `"` at the first level of nesting, and `'` at the second,
+pass: `straight: ['"', "'"]`.
+
+If quotes are nested deeper than the given amount of quotes, the markers
+wrap around: a third level of nesting when using `straight: ['«»', '‹›']`
+should have double guillemets, a fourth single, a fifth double again, etc.
+
+**Multilingualism**:
+
+If you want to defined different quotes for different languages, you can pass a `Record<string, string[]>` type, like this:
+
+```js {6-12}
+export default defineConfig({
+  integrations: [
+    starlight({
+      plugins: [
+        starlightSpellChecker({
+          quotes: {
+            straight: {
+              en: ['“”', '‘’'],
+              de: ['„“', '‚‘'],
+              fr: ["«»", "“”"],
+            },
+          },
+        }),
+      ],
+    }),
+  ],
+})
+```
