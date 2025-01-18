@@ -10,6 +10,7 @@
     "preview": "astro preview",
     "typecheck": "tsc --noEmit",
     "linkcheck": "CHECK_LINKS=true pnpm build",
+    "spellcheck": "set CHECK_SPELLING=true && pnpm build",
     "astro": "astro"
   },
   "dependencies": {
