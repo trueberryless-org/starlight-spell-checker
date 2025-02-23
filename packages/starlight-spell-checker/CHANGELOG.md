@@ -1,5 +1,17 @@
 # starlight-spell-checker
 
+## 0.2.0
+
+### Minor Changes
+
+- [#19](https://github.com/trueberryless-org/starlight-spell-checker/pull/19) [`91cbe71`](https://github.com/trueberryless-org/starlight-spell-checker/commit/91cbe71c919caa28a9cc701a5a2261eda0789e98) Thanks [@trueberryless](https://github.com/trueberryless)! - ⚠️ **BREAKING CHANGE:** The minimum supported version of Starlight is now version `0.32.0`.
+
+  Please use the `@astrojs/upgrade` command to upgrade your project:
+
+  ```sh
+  npx @astrojs/upgrade
+  ```
+
 ## 0.1.0
 
 ### Minor Changes
