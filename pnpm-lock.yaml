@@ -184,10 +184,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/assuming-throw-error-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -196,10 +196,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/assuming-throw-error-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -208,10 +208,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/case-police-throw-error-invalid-content-multilingual:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -220,10 +220,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/case-police-throw-error-valid-content-multilingual:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -232,10 +232,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/contractions-throw-error-ignore-literals-false-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -244,10 +244,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/contractions-throw-error-ignore-literals-false-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -256,10 +256,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/contractions-throw-error-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -268,10 +268,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/contractions-throw-error-mode-straight-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -280,10 +280,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/contractions-throw-error-mode-straight-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -292,10 +292,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/contractions-throw-error-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -304,10 +304,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/diacritics-throw-error-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -316,10 +316,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/diacritics-throw-error-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -328,10 +328,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/equality-throw-error-binary-true-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -340,10 +340,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/equality-throw-error-binary-true-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -352,10 +352,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/equality-throw-error-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -364,10 +364,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/equality-throw-error-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -376,10 +376,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/exclude:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -388,10 +388,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/indefinite-article-throw-error-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -400,10 +400,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/indefinite-article-throw-error-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -412,10 +412,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/intensify-throw-error-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -424,10 +424,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/intensify-throw-error-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -436,10 +436,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -448,10 +448,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/invalid-content-de:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -460,10 +460,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/invalid-content-fr:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -472,10 +472,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/invalid-content-frontmatter:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -484,10 +484,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/invalid-content-multilingual:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -496,10 +496,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/passive-throw-error-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -508,10 +508,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/passive-throw-error-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -520,10 +520,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/profanities-throw-error-invalid-content-multilingual:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -532,10 +532,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/profanities-throw-error-sureness-2-invalid-content-multilingual:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -544,10 +544,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/profanities-throw-error-sureness-2-valid-content-multilingual:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -556,10 +556,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/profanities-throw-error-valid-content-multilingual:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -568,10 +568,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -580,10 +580,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-invalid-content-multilingual:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -592,10 +592,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-mode-straight-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -604,10 +604,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-mode-straight-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -616,10 +616,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-multi-multi-nested-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -628,10 +628,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-multi-nested-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -640,10 +640,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-multi-nested-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -652,10 +652,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-smart-config-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -664,10 +664,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-smart-config-mode-straight-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -676,10 +676,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-smart-config-mode-straight-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -688,10 +688,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-smart-config-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -700,10 +700,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-smart-straight-config-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -712,10 +712,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-smart-straight-config-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -724,10 +724,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-straight-config-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -736,10 +736,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-straight-config-mode-straight-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -748,10 +748,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-straight-config-mode-straight-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -760,10 +760,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-straight-config-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -772,10 +772,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -784,10 +784,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/quotes-throw-error-valid-content-multilingual:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -796,10 +796,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/redundant-acronyms-throw-error-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -808,10 +808,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/redundant-acronyms-throw-error-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -820,10 +820,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/repeated-words-throw-error-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -832,10 +832,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/repeated-words-throw-error-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -844,10 +844,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/simplify-throw-error-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -856,10 +856,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/simplify-throw-error-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -868,10 +868,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/spell-throw-error-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -880,10 +880,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/spell-throw-error-invalid-content-de:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -892,10 +892,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/spell-throw-error-invalid-content-fr:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -904,10 +904,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/spell-throw-error-invalid-content-multilingual:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -916,10 +916,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/spell-throw-error-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -928,10 +928,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/spell-throw-error-valid-content-de:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -940,10 +940,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/spell-throw-error-valid-content-fr:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -952,10 +952,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/spell-throw-error-valid-content-multilingual:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -964,10 +964,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/unsupported-language:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -976,10 +976,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/unsupported-languages:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -988,10 +988,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/usage-throw-error-invalid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -1000,10 +1000,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/usage-throw-error-valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -1012,10 +1012,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/valid-content:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -1024,10 +1024,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/valid-content-de:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -1048,10 +1048,10 @@ importers:
   packages/starlight-spell-checker/tests/fixtures/valid-content-multilingual:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.30.2
-        version: 0.30.6(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.32.1
+        version: 0.32.1(astro@5.3.0(rollup@4.34.8)(typescript@5.7.2))
       astro:
-        specifier: ^5.1.1
+        specifier: ^5.3.0
         version: 5.3.0(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
@@ -1828,38 +1828,20 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@shikijs/core@1.26.1':
-    resolution: {integrity: sha512-yeo7sG+WZQblKPclUOKRPwkv1PyoHYkJ4gP9DzhFJbTdueKR7wYTI1vfF/bFi1NTgc545yG/DzvVhZgueVOXMA==}
-
   '@shikijs/core@1.29.2':
     resolution: {integrity: sha512-vju0lY9r27jJfOY4Z7+Rt/nIOjzJpZ3y+nYpqtUZInVoXQ/TJZcfGnNOGnKjFdVZb8qexiCuSlZRKcGfhhTTZQ==}
-
-  '@shikijs/engine-javascript@1.26.1':
-    resolution: {integrity: sha512-CRhA0b8CaSLxS0E9A4Bzcb3LKBNpykfo9F85ozlNyArxjo2NkijtiwrJZ6eHa+NT5I9Kox2IXVdjUsP4dilsmw==}
 
   '@shikijs/engine-javascript@1.29.2':
     resolution: {integrity: sha512-iNEZv4IrLYPv64Q6k7EPpOCE/nuvGiKl7zxdq0WFuRPF5PAE9PRo2JGq/d8crLusM59BRemJ4eOqrFrC4wiQ+A==}
 
-  '@shikijs/engine-oniguruma@1.26.1':
-    resolution: {integrity: sha512-F5XuxN1HljLuvfXv7d+mlTkV7XukC1cawdtOo+7pKgPD83CAB1Sf8uHqP3PK0u7njFH0ZhoXE1r+0JzEgAQ+kg==}
-
   '@shikijs/engine-oniguruma@1.29.2':
     resolution: {integrity: sha512-7iiOx3SG8+g1MnlzZVDYiaeHe7Ez2Kf2HrJzdmGwkRisT7r4rak0e655AcM/tF9JG/kg5fMNYlLLKglbN7gBqA==}
-
-  '@shikijs/langs@1.26.1':
-    resolution: {integrity: sha512-oz/TQiIqZejEIZbGtn68hbJijAOTtYH4TMMSWkWYozwqdpKR3EXgILneQy26WItmJjp3xVspHdiUxUCws4gtuw==}
 
   '@shikijs/langs@1.29.2':
     resolution: {integrity: sha512-FIBA7N3LZ+223U7cJDUYd5shmciFQlYkFXlkKVaHsCPgfVLiO+e12FmQE6Tf9vuyEsFe3dIl8qGWKXgEHL9wmQ==}
 
-  '@shikijs/themes@1.26.1':
-    resolution: {integrity: sha512-JDxVn+z+wgLCiUhBGx2OQrLCkKZQGzNH3nAxFir4PjUcYiyD8Jdms9izyxIogYmSwmoPTatFTdzyrRKbKlSfPA==}
-
   '@shikijs/themes@1.29.2':
     resolution: {integrity: sha512-i9TNZlsq4uoyqSbluIcZkmPL9Bfi3djVxRnofUHwvx/h6SRW3cwgBC5SML7vsDcWyukY0eCzVN980rqP6qNl9g==}
-
-  '@shikijs/types@1.26.1':
-    resolution: {integrity: sha512-d4B00TKKAMaHuFYgRf3L0gwtvqpW4hVdVwKcZYbBfAAQXspgkbWqnFfuFl3MDH6gLbsubOcr+prcnsqah3ny7Q==}
 
   '@shikijs/types@1.29.2':
     resolution: {integrity: sha512-VJjK0eIijTZf0QSTODEXCqinjBn0joAHQ+aPSBzrv4O2d/QSbsMw+ZeSRx03kV34Hy7NzUvV/7NqfYGRLrASmw==}
@@ -3216,9 +3198,6 @@ packages:
   once@1.4.0:
     resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
 
-  oniguruma-to-es@0.10.0:
-    resolution: {integrity: sha512-zapyOUOCJxt+xhiNRPPMtfJkHGsZ98HHB9qJEkdT8BGytO/+kpe4m1Ngf0MzbzTmhacn11w9yGeDP6tzDhnCdg==}
-
   oniguruma-to-es@2.3.0:
     resolution: {integrity: sha512-bwALDxriqfKGfUufKGGepCzu9x7nJQuoRoAFp4AnwehhC2crqrDIAP/uN2qdlsAvSMpeRC3+Yzhqc7hLmle5+g==}
 
@@ -3586,9 +3565,6 @@ packages:
   shebang-regex@3.0.0:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
-
-  shiki@1.26.1:
-    resolution: {integrity: sha512-Gqg6DSTk3wYqaZ5OaYtzjcdxcBvX5kCy24yvRJEgjT5U+WHlmqCThLuBUx0juyxQBi+6ug53IGeuQS07DWwpcw==}
 
   shiki@1.29.2:
     resolution: {integrity: sha512-njXuliz/cP+67jU2hukkxCNuH1yUi4QfdZZY+sMr5PPrIyXSu5iTb/qYC4BiWWB0vZ+7TbdvYUCeL23zpwCfbg==}
@@ -4211,7 +4187,7 @@ snapshots:
       remark-parse: 11.0.0
       remark-rehype: 11.1.1
       remark-smartypants: 3.0.2
-      shiki: 1.26.1
+      shiki: 1.29.2
       unified: 11.0.5
       unist-util-remove-position: 5.0.0
       unist-util-visit: 5.0.0
@@ -4991,15 +4967,6 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.34.8':
     optional: true
 
-  '@shikijs/core@1.26.1':
-    dependencies:
-      '@shikijs/engine-javascript': 1.26.1
-      '@shikijs/engine-oniguruma': 1.26.1
-      '@shikijs/types': 1.26.1
-      '@shikijs/vscode-textmate': 10.0.1
-      '@types/hast': 3.0.4
-      hast-util-to-html: 9.0.4
-
   '@shikijs/core@1.29.2':
     dependencies:
       '@shikijs/engine-javascript': 1.29.2
@@ -5009,48 +4976,24 @@ snapshots:
       '@types/hast': 3.0.4
       hast-util-to-html: 9.0.4
 
-  '@shikijs/engine-javascript@1.26.1':
-    dependencies:
-      '@shikijs/types': 1.26.1
-      '@shikijs/vscode-textmate': 10.0.1
-      oniguruma-to-es: 0.10.0
-
   '@shikijs/engine-javascript@1.29.2':
     dependencies:
       '@shikijs/types': 1.29.2
       '@shikijs/vscode-textmate': 10.0.1
       oniguruma-to-es: 2.3.0
 
-  '@shikijs/engine-oniguruma@1.26.1':
-    dependencies:
-      '@shikijs/types': 1.26.1
-      '@shikijs/vscode-textmate': 10.0.1
-
   '@shikijs/engine-oniguruma@1.29.2':
     dependencies:
       '@shikijs/types': 1.29.2
       '@shikijs/vscode-textmate': 10.0.1
 
-  '@shikijs/langs@1.26.1':
-    dependencies:
-      '@shikijs/types': 1.26.1
-
   '@shikijs/langs@1.29.2':
     dependencies:
       '@shikijs/types': 1.29.2
 
-  '@shikijs/themes@1.26.1':
-    dependencies:
-      '@shikijs/types': 1.26.1
-
   '@shikijs/themes@1.29.2':
     dependencies:
       '@shikijs/types': 1.29.2
-
-  '@shikijs/types@1.26.1':
-    dependencies:
-      '@shikijs/vscode-textmate': 10.0.1
-      '@types/hast': 3.0.4
 
   '@shikijs/types@1.29.2':
     dependencies:
@@ -6931,12 +6874,6 @@ snapshots:
     dependencies:
       wrappy: 1.0.2
 
-  oniguruma-to-es@0.10.0:
-    dependencies:
-      emoji-regex-xs: 1.0.0
-      regex: 5.1.1
-      regex-recursion: 5.1.1
-
   oniguruma-to-es@2.3.0:
     dependencies:
       emoji-regex-xs: 1.0.0
@@ -7523,17 +7460,6 @@ snapshots:
       shebang-regex: 3.0.0
 
   shebang-regex@3.0.0: {}
-
-  shiki@1.26.1:
-    dependencies:
-      '@shikijs/core': 1.26.1
-      '@shikijs/engine-javascript': 1.26.1
-      '@shikijs/engine-oniguruma': 1.26.1
-      '@shikijs/langs': 1.26.1
-      '@shikijs/themes': 1.26.1
-      '@shikijs/types': 1.26.1
-      '@shikijs/vscode-textmate': 10.0.1
-      '@types/hast': 3.0.4
 
   shiki@1.29.2:
     dependencies:
