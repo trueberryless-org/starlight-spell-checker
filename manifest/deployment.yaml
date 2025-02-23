@@ -17,5 +17,5 @@ spec:
     spec:
       containers:
         - name: starlight-spell-checker
-          image: "trueberryless/starlight-spell-checker:0.1.0"
+          image: "trueberryless/starlight-spell-checker:0.2.0"
           imagePullPolicy: Always
