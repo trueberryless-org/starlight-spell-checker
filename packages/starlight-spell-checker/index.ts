@@ -25,7 +25,12 @@ export default function starlightSpellChecker(
   return {
     name: "starlight-spell-checker",
     hooks: {
-      setup({ addIntegration, astroConfig, config: starlightConfig, logger }) {
+      "config:setup"({
+        addIntegration,
+        astroConfig,
+        config: starlightConfig,
+        logger,
+      }) {
         addIntegration({
           name: "starlight-spell-checker-integration",
           hooks: {
