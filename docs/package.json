@@ -1,16 +1,24 @@
 {
   "name": "starlight-spell-checker-docs",
   "version": "0.2.0",
-  "license": "MIT",
+  "private": true,
   "description": "Check your documentation for spelling mistakes; multilingual support.",
+  "homepage": "https://github.com/trueberryless-org/starlight-spell-checker",
+  "bugs": "https://github.com/trueberryless-org/starlight-spell-checker/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trueberryless-org/starlight-spell-checker.git",
+    "directory": "docs"
+  },
+  "license": "MIT",
   "author": "trueberryless-org",
   "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+    "astro": "astro",
     "build": "astro build",
+    "dev": "astro dev",
     "preview": "astro preview",
-    "astro": "astro"
+    "start": "astro dev"
   },
   "dependencies": {
     "@astrojs/node": "^9.1.0",
@@ -22,16 +30,8 @@
     "starlight-plugin-show-latest-version": "^0.4.0",
     "starlight-spell-checker": "workspace:*"
   },
+  "packageManager": "pnpm@9.6.0",
   "engines": {
     "node": "^18.17.1 || ^20.3.0 || >=21.0.0"
-  },
-  "private": true,
-  "homepage": "https://github.com/trueberryless-org/starlight-spell-checker",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/trueberryless-org/starlight-spell-checker.git",
-    "directory": "docs"
-  },
-  "bugs": "https://github.com/trueberryless-org/starlight-spell-checker/issues",
-  "packageManager": "pnpm@9.6.0"
+  }
 }
