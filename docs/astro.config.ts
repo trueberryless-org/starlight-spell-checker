@@ -15,7 +15,6 @@ export default defineConfig({
         dark: "./src/assets/logo-dark.png",
         replacesTitle: true,
       },
-      defaultLocale: "en",
       plugins: [
         starlightSpellChecker(),
         starlightPluginsDocsComponents({
