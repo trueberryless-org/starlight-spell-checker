@@ -2,14 +2,18 @@
 
 Check your documentation for spelling mistakes; multilingual support.
 
-## Documentation
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0ffdea5e-0277-4ead-8d23-c69626c76e0d/deploy-status)](https://app.netlify.com/sites/starlight-spell-checker/deploys)
 
-Want to get started immediately?
+## Package
 
-Check out the `starlight-spell-checker` getting started guide.
+If you are looking for the Starlight plugin package, you can find it in the [`packages/starlight-spell-checker/`](/packages/starlight-spell-checker/) directory.
+
+## Project structure
+
+This project uses pnpm workspaces to develop a single Starlight plugin from the `packages/starlight-spell-checker/` directory. A Starlight documentation site is also available in the `docs/` directory that is also used for testing and demonstrating the Starlight plugin.
 
 ## License
 
-Licensed under the MIT license, Copyright © trueberryless.
+Licensed under the MIT License, Copyright © trueberryless-org.
 
 See [LICENSE](/LICENSE) for more information.
