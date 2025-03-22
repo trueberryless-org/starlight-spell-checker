@@ -2,9 +2,6 @@ import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
 import starlightSpellChecker from "starlight-spell-checker";
 import starlightPluginsDocsComponents from "@trueberryless-org/starlight-plugins-docs-components";
-import starlightPluginShowLatestVersion from "starlight-plugin-show-latest-version";
-
-import node from "@astrojs/node";
 
 export default defineConfig({
   integrations: [
@@ -24,13 +21,6 @@ export default defineConfig({
         starlightPluginsDocsComponents({
           pluginName: "starlight-spell-checker",
         }),
-        starlightPluginShowLatestVersion({
-          source: {
-            type: "npm",
-            slug: "starlight-spell-checker",
-          },
-          showInSiteTitle: "deferred",
-        }),
       ],
       sidebar: [
         {
@@ -48,7 +38,4 @@ export default defineConfig({
       title: "Starlight Spell Checker",
     }),
   ],
-  adapter: node({
-    mode: "standalone",
-  }),
 });
