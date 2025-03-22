@@ -1,7 +1,7 @@
 import starlight from "@astrojs/starlight";
+import starlightPluginsDocsComponents from "@trueberryless-org/starlight-plugins-docs-components";
 import { defineConfig } from "astro/config";
 import starlightSpellChecker from "starlight-spell-checker";
-import starlightPluginsDocsComponents from "@trueberryless-org/starlight-plugins-docs-components";
 
 export default defineConfig({
   integrations: [

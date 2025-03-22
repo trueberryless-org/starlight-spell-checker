@@ -1,5 +1,5 @@
-import { z } from "astro/zod";
 import { AstroError } from "astro/errors";
+import { z } from "astro/zod";
 
 const configSchema = z
   .object({

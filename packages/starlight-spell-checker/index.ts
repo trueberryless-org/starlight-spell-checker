@@ -1,19 +1,20 @@
 import type { StarlightPlugin } from "@astrojs/starlight/types";
 import { AstroError } from "astro/errors";
+import { green } from "kleur/colors";
+
+import { clearContentLayerCache } from "./libs/astro";
 import {
-  validateConfig,
   type StarlightSpellCheckerConfig,
   type StarlightSpellCheckerUserConfig,
+  validateConfig,
 } from "./libs/config";
+import { remarkStarlightSpellChecker } from "./libs/remark";
 import {
   logErrors,
   logUnsupportedLanguages,
   logWarnings,
   validateTexts,
 } from "./libs/validation";
-import { clearContentLayerCache } from "./libs/astro";
-import { remarkStarlightSpellChecker } from "./libs/remark";
-import { green } from "kleur/colors";
 
 export { type StarlightSpellCheckerConfig };
 

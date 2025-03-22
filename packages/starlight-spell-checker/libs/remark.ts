@@ -1,20 +1,17 @@
+import { slug } from "github-slugger";
+import { toText } from "hast-util-to-text";
+import type { Root } from "mdast";
 import "mdast-util-mdx-jsx";
-
 import nodePath from "node:path";
 import { fileURLToPath } from "node:url";
-
-import { slug } from "github-slugger";
-import type { Root } from "mdast";
+import rehypeParse from "rehype-parse";
 import { type Plugin } from "unified";
+import { unified } from "unified";
 import { visit } from "unist-util-visit";
 
+import { getLocale, getLocaleConfig } from "./i18n";
 import { ensureTrailingSlash, stripLeadingSlash } from "./path";
-import { getLocaleConfig, getLocale } from "./i18n";
 import type { StarlightUserConfig } from "./validation";
-
-import { unified } from "unified";
-import rehypeParse from "rehype-parse";
-import { toText } from "hast-util-to-text";
 
 // All the text content keyed by locale, then keyed by file path.
 const contents: Contents = new Map();
