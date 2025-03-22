@@ -1,6 +1,5 @@
-import { fileURLToPath } from "node:url";
-
 import { build } from "astro";
+import { fileURLToPath } from "node:url";
 import { expect, vi } from "vitest";
 
 import type { ValidationErrorType } from "../libs/validation";
@@ -81,7 +80,7 @@ export function expectValidationWarnings(
     word: string,
     type: ValidationErrorType,
     rule: string,
-    suggestions?: string[]
+    suggestions?: string[],
   ][]
 ) {
   expect(output).toMatch(
@@ -126,7 +125,7 @@ export function expectValidationErrors(
     word: string,
     type: ValidationErrorType,
     rule: string,
-    suggestions?: string[]
+    suggestions?: string[],
   ][]
 ) {
   expect(output).toMatch(
