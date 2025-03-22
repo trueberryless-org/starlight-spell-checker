@@ -2,6 +2,8 @@
 
 Check your documentation for spelling mistakes; multilingual support.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0ffdea5e-0277-4ead-8d23-c69626c76e0d/deploy-status)](https://app.netlify.com/sites/starlight-spell-checker/deploys)
+
 ## Package
 
 If you are looking for the Starlight plugin package, you can find it in the [`packages/starlight-spell-checker/`](/packages/starlight-spell-checker/) directory.
