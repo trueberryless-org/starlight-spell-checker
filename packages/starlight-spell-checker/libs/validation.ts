@@ -1,21 +1,16 @@
 import type { StarlightUserConfig as StarlightUserConfigWithPlugins } from "@astrojs/starlight/types";
-import type { AstroIntegrationLogger } from "astro";
-import { $, bgGreen, black, blue, dim, green, red, yellow } from "kleur/colors";
-
-import type { StarlightSpellCheckerConfig } from "../libs/config";
-
-import { retext } from "retext";
-import { getLocaleDictionary } from "./i18n";
-import { getValidationData } from "./remark";
-import picomatch from "picomatch";
-
 import retextAssuming from "@trueberryless-org/retext-assuming";
 import retextCasePolice from "@trueberryless-org/retext-case-police";
+import retextIndefiniteArticle from "@trueberryless-org/retext-indefinite-article";
+import retextUsage from "@trueberryless-org/retext-usage";
+import type { AstroIntegrationLogger } from "astro";
+import { $, bgGreen, black, blue, dim, green, red, yellow } from "kleur/colors";
+import picomatch from "picomatch";
+import { retext } from "retext";
 // import retextCliches from "retext-cliches";
 import retextContractions from "retext-contractions";
 import retextDiacritics from "retext-diacritics";
 import retextEquality from "retext-equality";
-import retextIndefiniteArticle from "@trueberryless-org/retext-indefinite-article";
 import retextIntensify from "retext-intensify";
 // import retextOveruse from "retext-overuse";
 import retextPassive from "retext-passive";
@@ -25,13 +20,16 @@ import retextProfanitiesEs from "retext-profanities/es";
 import retextProfanitiesFr from "retext-profanities/fr";
 import retextProfanitiesIt from "retext-profanities/it";
 import retextProfanitiesPt from "retext-profanities/pt";
+import retextQuotes from "retext-quotes";
 import retextReadability from "retext-readability";
 import retextRedundantAcronyms from "retext-redundant-acronyms";
 import retextRepeatedWords from "retext-repeated-words";
 import retextSimplify from "retext-simplify";
 import retextSpell from "retext-spell";
-import retextUsage from "@trueberryless-org/retext-usage";
-import retextQuotes from "retext-quotes";
+
+import type { StarlightSpellCheckerConfig } from "../libs/config";
+import { getLocaleDictionary } from "./i18n";
+import { getValidationData } from "./remark";
 
 export const ValidationErrorType = {
   Assuming: "unhelpful phrase",

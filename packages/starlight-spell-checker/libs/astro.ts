@@ -1,6 +1,5 @@
-import fs from "node:fs";
-
 import type { AstroConfig, AstroIntegrationLogger } from "astro";
+import fs from "node:fs";
 
 const dataStoreFile = "data-store.json";
 

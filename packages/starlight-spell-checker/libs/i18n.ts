@@ -1,6 +1,3 @@
-import { ensureLeadingSlash, ensureTrailingSlash } from "./path";
-import type { StarlightUserConfig } from "./validation";
-
 import dictionaryDa from "dictionary-da";
 import dictionaryDe from "dictionary-de";
 import dictionaryEn, { type Dictionary } from "dictionary-en";
@@ -11,6 +8,9 @@ import dictionaryKo from "dictionary-ko";
 import dictionaryPl from "dictionary-pl";
 import dictionaryPt from "dictionary-pt";
 import dictionaryRu from "dictionary-ru";
+
+import { ensureLeadingSlash, ensureTrailingSlash } from "./path";
+import type { StarlightUserConfig } from "./validation";
 
 export function getLocaleConfig(config: StarlightUserConfig): LocaleConfig {
   let defaultLocale = config.defaultLocale ?? "en";
