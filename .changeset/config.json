@@ -10,5 +10,5 @@
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["@starlight-spell-checker-tests/*"]
+  "ignore": ["starlight-spell-checker-docs","@starlight-spell-checker-tests/*"]
 }
