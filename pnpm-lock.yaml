@@ -169,8 +169,8 @@ importers:
         version: 5.0.0
     devDependencies:
       '@astrojs/starlight':
-        specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        specifier: ^0.33.0
+        version: 0.33.0(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       '@vitest/coverage-v8':
         specifier: ^2.1.8
         version: 2.1.9(vitest@2.1.9)
@@ -178,8 +178,8 @@ importers:
         specifier: ^2.1.8
         version: 2.1.9(vitest@2.1.9)
       astro:
-        specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        specifier: ^5.6.1
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       vitest:
         specifier: ^2.1.8
         version: 2.1.9(@vitest/ui@2.1.9)
@@ -3127,9 +3127,6 @@ packages:
   no-cliches@https://codeload.github.com/dunckr/no-cliches/tar.gz/d636504d5f927e684db325760caeb53264790d09:
     resolution: {tarball: https://codeload.github.com/dunckr/no-cliches/tar.gz/d636504d5f927e684db325760caeb53264790d09}
     version: 0.1.0
-
-  node-fetch-native@1.6.4:
-    resolution: {integrity: sha512-IhOigYzAKHd244OC0JIMIUrjzctirCmPkaIfhDeGcEETWof5zKYUW7e7MYvChGWh/4CJeXEgsRyGzuF334rOOQ==}
 
   node-fetch-native@1.6.6:
     resolution: {integrity: sha512-8Mc2HhqPdlIfedsuZoc3yioPuzp6b+L5jRCRY1QzuWZh2EGJVQrGppC6V6cF0bLdbW0+O2YpqCA25aF/1lvipQ==}
@@ -6937,8 +6934,6 @@ snapshots:
 
   no-cliches@https://codeload.github.com/dunckr/no-cliches/tar.gz/d636504d5f927e684db325760caeb53264790d09: {}
 
-  node-fetch-native@1.6.4: {}
-
   node-fetch-native@1.6.6: {}
 
   node-fetch@2.7.0:
@@ -6966,7 +6961,7 @@ snapshots:
   ofetch@1.4.1:
     dependencies:
       destr: 2.0.3
-      node-fetch-native: 1.6.4
+      node-fetch-native: 1.6.6
       ufo: 1.5.4
 
   once@1.4.0:
