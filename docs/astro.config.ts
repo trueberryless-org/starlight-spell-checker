@@ -31,9 +31,13 @@ export default defineConfig({
           items: [{ slug: "conditional-validation" }],
         },
       ],
-      social: {
-        github: "https://github.com/trueberryless-org/starlight-spell-checker",
-      },
+      social: [
+        {
+          icon: "github",
+          label: "GitHub",
+          href: "https://github.com/trueberryless-org/starlight-spell-checker",
+        },
+      ],
       title: "Starlight Spell Checker",
     }),
   ],
