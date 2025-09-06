@@ -175,7 +175,7 @@ importers:
         specifier: ^2.1.8
         version: 2.1.9(vitest@2.1.9)
       '@vitest/ui':
-        specifier: ^2.1.8
+        specifier: ^2.1.9
         version: 2.1.9(vitest@2.1.9)
       astro:
         specifier: ^5.6.1
@@ -188,10 +188,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -200,10 +200,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -212,10 +212,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -224,10 +224,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -236,10 +236,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -248,10 +248,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -260,10 +260,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -272,10 +272,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -284,10 +284,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -296,10 +296,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -308,10 +308,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -320,10 +320,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -332,10 +332,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -344,10 +344,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -356,10 +356,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -368,10 +368,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -380,10 +380,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -392,10 +392,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -404,10 +404,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -416,10 +416,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -428,10 +428,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -440,10 +440,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -452,10 +452,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -464,10 +464,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -476,10 +476,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -488,10 +488,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -500,10 +500,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -512,10 +512,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -524,10 +524,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -536,10 +536,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -548,10 +548,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -560,10 +560,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -572,10 +572,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -584,10 +584,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -596,10 +596,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -608,10 +608,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -620,10 +620,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -632,10 +632,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -644,10 +644,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -656,10 +656,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -668,10 +668,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -680,10 +680,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -692,10 +692,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -704,10 +704,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -716,10 +716,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -728,10 +728,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -740,10 +740,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -752,10 +752,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -764,10 +764,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -776,10 +776,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -788,10 +788,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -800,10 +800,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -812,10 +812,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -824,10 +824,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -836,10 +836,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -848,10 +848,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -860,10 +860,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -872,10 +872,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -884,10 +884,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -896,10 +896,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -908,10 +908,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -920,10 +920,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -932,10 +932,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -944,10 +944,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -956,10 +956,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -968,10 +968,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -980,10 +980,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -992,10 +992,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -1004,10 +1004,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -1016,10 +1016,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -1028,10 +1028,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -1040,10 +1040,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -1052,10 +1052,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.1
-        version: 0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+        version: 0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       astro:
         specifier: ^5.3.0
-        version: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
+        version: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -2077,11 +2077,6 @@ packages:
     resolution: {integrity: sha512-yJMQId0yXSAbW9I6yqvJ3FcjKzJ8zRL7elbJbllkv1ZJPlsI0NI83Pxn1YL1IapEM347EvOOkSW2GL+2+NO61w==}
     peerDependencies:
       astro: ^4.0.0-beta || ^5.0.0-beta || ^3.3.0
-
-  astro@5.5.4:
-    resolution: {integrity: sha512-rc9Mj6dIKM9ylTSQ0/S1l5f1iSDNs0PEjRMnvVpZ0W+wfBCu99JEuXy+fiWDNT6gf60bC4dKQehZxZGdSJB9kg==}
-    engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
-    hasBin: true
 
   astro@5.6.1:
     resolution: {integrity: sha512-aQ2TV7wIf+q2Oi6gGWMINHWEAZqoP0eH6/mihodfTJYATPWyd03JIGVfjtYUJlkNdNSKxDXwEe/r/Zx4CZ1FPg==}
@@ -3770,9 +3765,6 @@ packages:
   uhyphen@0.2.0:
     resolution: {integrity: sha512-qz3o9CHXmJJPGBdqzab7qAYuW8kQGKNEuoHFYrBwV6hWIMcpAmxDLXojcHfFr9US1Pe6zUswEIJIbLI610fuqA==}
 
-  ultrahtml@1.5.3:
-    resolution: {integrity: sha512-GykOvZwgDWZlTQMtp5jrD4BVL+gNn2NVlVafjcFUJ7taY20tqYdwdoWBFy6GBJsNTZe1GkGPkSl5knQAjtgceg==}
-
   ultrahtml@1.6.0:
     resolution: {integrity: sha512-R9fBn90VTJrqqLDwyMph+HGne8eqY1iPfYhPzZrvKpIfwkWZbcYlfpsb8B9dTvBfpy1/hqAD7Wi8EKfP9e8zdw==}
 
@@ -3948,46 +3940,6 @@ packages:
       sugarss:
         optional: true
       terser:
-        optional: true
-
-  vite@6.2.2:
-    resolution: {integrity: sha512-yW7PeMM+LkDzc7CgJuRLMW2Jz0FxMOsVJ8Lv3gpgW9WLcb9cTW+121UEr1hvmfR7w3SegR5ItvYyzVz1vxNJgQ==}
-    engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
-    hasBin: true
-    peerDependencies:
-      '@types/node': ^18.0.0 || ^20.0.0 || >=22.0.0
-      jiti: '>=1.21.0'
-      less: '*'
-      lightningcss: ^1.21.0
-      sass: '*'
-      sass-embedded: '*'
-      stylus: '*'
-      sugarss: '*'
-      terser: ^5.16.0
-      tsx: ^4.8.1
-      yaml: ^2.4.2
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-      jiti:
-        optional: true
-      less:
-        optional: true
-      lightningcss:
-        optional: true
-      sass:
-        optional: true
-      sass-embedded:
-        optional: true
-      stylus:
-        optional: true
-      sugarss:
-        optional: true
-      terser:
-        optional: true
-      tsx:
-        optional: true
-      yaml:
         optional: true
 
   vite@6.2.5:
@@ -4229,25 +4181,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.0.5(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))':
-    dependencies:
-      '@astrojs/markdown-remark': 6.0.1
-      '@mdx-js/mdx': 3.1.0(acorn@8.14.1)
-      acorn: 8.14.1
-      astro: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
-      es-module-lexer: 1.6.0
-      estree-util-visit: 2.0.0
-      hast-util-to-html: 9.0.5
-      kleur: 4.1.5
-      rehype-raw: 7.0.0
-      remark-gfm: 4.0.1
-      remark-smartypants: 3.0.2
-      source-map: 0.7.4
-      unist-util-visit: 5.0.0
-      vfile: 6.0.3
-    transitivePeerDependencies:
-      - supports-color
-
   '@astrojs/mdx@4.0.5(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))':
     dependencies:
       '@astrojs/markdown-remark': 6.0.1
@@ -4277,16 +4210,16 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.24.2
 
-  '@astrojs/starlight@0.32.4(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))':
+  '@astrojs/starlight@0.32.4(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))':
     dependencies:
-      '@astrojs/mdx': 4.0.5(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+      '@astrojs/mdx': 4.0.5(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       '@astrojs/sitemap': 3.2.1
       '@pagefind/default-ui': 1.3.0
       '@types/hast': 3.0.4
       '@types/js-yaml': 4.0.9
       '@types/mdast': 4.0.4
-      astro: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
-      astro-expressive-code: 0.40.2(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2))
+      astro: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
+      astro-expressive-code: 0.40.2(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2))
       bcp-47: 2.1.0
       hast-util-from-html: 2.0.3
       hast-util-select: 6.0.3
@@ -5280,110 +5213,10 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-expressive-code@0.40.2(astro@5.5.4(rollup@4.34.8)(typescript@5.7.2)):
-    dependencies:
-      astro: 5.5.4(rollup@4.34.8)(typescript@5.7.2)
-      rehype-expressive-code: 0.40.2
-
   astro-expressive-code@0.40.2(astro@5.6.1(rollup@4.34.8)(typescript@5.7.2)):
     dependencies:
       astro: 5.6.1(rollup@4.34.8)(typescript@5.7.2)
       rehype-expressive-code: 0.40.2
-
-  astro@5.5.4(rollup@4.34.8)(typescript@5.7.2):
-    dependencies:
-      '@astrojs/compiler': 2.11.0
-      '@astrojs/internal-helpers': 0.6.1
-      '@astrojs/markdown-remark': 6.3.1
-      '@astrojs/telemetry': 3.2.0
-      '@oslojs/encoding': 1.1.0
-      '@rollup/pluginutils': 5.1.4(rollup@4.34.8)
-      acorn: 8.14.1
-      aria-query: 5.3.2
-      axobject-query: 4.1.0
-      boxen: 8.0.1
-      ci-info: 4.2.0
-      clsx: 2.1.1
-      common-ancestor-path: 1.0.1
-      cookie: 1.0.2
-      cssesc: 3.0.0
-      debug: 4.4.0
-      deterministic-object-hash: 2.0.2
-      devalue: 5.1.1
-      diff: 5.2.0
-      dlv: 1.1.3
-      dset: 3.1.4
-      es-module-lexer: 1.6.0
-      esbuild: 0.25.1
-      estree-walker: 3.0.3
-      flattie: 1.1.1
-      github-slugger: 2.0.0
-      html-escaper: 3.0.3
-      http-cache-semantics: 4.1.1
-      js-yaml: 4.1.0
-      kleur: 4.1.5
-      magic-string: 0.30.17
-      magicast: 0.3.5
-      mrmime: 2.0.1
-      neotraverse: 0.6.18
-      p-limit: 6.2.0
-      p-queue: 8.1.0
-      package-manager-detector: 1.1.0
-      picomatch: 4.0.2
-      prompts: 2.4.2
-      rehype: 13.0.2
-      semver: 7.7.1
-      shiki: 3.2.1
-      tinyexec: 0.3.2
-      tinyglobby: 0.2.12
-      tsconfck: 3.1.5(typescript@5.7.2)
-      ultrahtml: 1.5.3
-      unist-util-visit: 5.0.0
-      unstorage: 1.15.0
-      vfile: 6.0.3
-      vite: 6.2.2
-      vitefu: 1.0.6(vite@6.2.2)
-      xxhash-wasm: 1.1.0
-      yargs-parser: 21.1.1
-      yocto-spinner: 0.2.1
-      zod: 3.24.2
-      zod-to-json-schema: 3.24.5(zod@3.24.2)
-      zod-to-ts: 1.2.0(typescript@5.7.2)(zod@3.24.2)
-    optionalDependencies:
-      sharp: 0.33.5
-    transitivePeerDependencies:
-      - '@azure/app-configuration'
-      - '@azure/cosmos'
-      - '@azure/data-tables'
-      - '@azure/identity'
-      - '@azure/keyvault-secrets'
-      - '@azure/storage-blob'
-      - '@capacitor/preferences'
-      - '@deno/kv'
-      - '@netlify/blobs'
-      - '@planetscale/database'
-      - '@types/node'
-      - '@upstash/redis'
-      - '@vercel/blob'
-      - '@vercel/kv'
-      - aws4fetch
-      - db0
-      - idb-keyval
-      - ioredis
-      - jiti
-      - less
-      - lightningcss
-      - rollup
-      - sass
-      - sass-embedded
-      - stylus
-      - sugarss
-      - supports-color
-      - terser
-      - tsx
-      - typescript
-      - uploadthing
-      - yaml
 
   astro@5.6.1(rollup@4.34.8)(typescript@5.7.2):
     dependencies:
@@ -7764,8 +7597,6 @@ snapshots:
 
   uhyphen@0.2.0: {}
 
-  ultrahtml@1.5.3: {}
-
   ultrahtml@1.6.0: {}
 
   uncrypto@0.1.3: {}
@@ -7918,14 +7749,6 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  vite@6.2.2:
-    dependencies:
-      esbuild: 0.25.1
-      postcss: 8.5.3
-      rollup: 4.34.8
-    optionalDependencies:
-      fsevents: 2.3.3
-
   vite@6.2.5:
     dependencies:
       esbuild: 0.25.1
@@ -7933,10 +7756,6 @@ snapshots:
       rollup: 4.34.8
     optionalDependencies:
       fsevents: 2.3.3
-
-  vitefu@1.0.6(vite@6.2.2):
-    optionalDependencies:
-      vite: 6.2.2
 
   vitefu@1.0.6(vite@6.2.5):
     optionalDependencies:
