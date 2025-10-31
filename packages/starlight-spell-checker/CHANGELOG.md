@@ -1,5 +1,13 @@
 # starlight-spell-checker
 
+## 0.2.1
+
+### Patch Changes
+
+- [#38](https://github.com/trueberryless-org/starlight-spell-checker/pull/38) [`603e30c`](https://github.com/trueberryless-org/starlight-spell-checker/commit/603e30c4cc5a6416aa5ea06e3a055280dacb14b7) Thanks [@trueberryless-org](https://github.com/apps/trueberryless-org)! - Setups trusted publishing using OpenID Connect (OIDC) authentication — no code changes.
+
+- [#36](https://github.com/trueberryless-org/starlight-spell-checker/pull/36) [`c7b0a7b`](https://github.com/trueberryless-org/starlight-spell-checker/commit/c7b0a7bbdc3c177e8a1aec153a91b7d4c661ab97) Thanks [@renovate](https://github.com/apps/renovate)! - Update dependencies
+
 ## 0.2.0
 
 ### Minor Changes
