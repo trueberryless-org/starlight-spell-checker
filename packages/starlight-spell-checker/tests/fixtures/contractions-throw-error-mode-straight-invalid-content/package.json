@@ -2,8 +2,8 @@
   "name": "@starlight-spell-checker-tests/contractions-throw-error-mode-straight-invalid-content",
   "version": "0.0.0",
   "dependencies": {
-    "@astrojs/starlight": "^0.32.1",
-    "astro": "^5.3.0",
+    "@astrojs/starlight": "^0.36.2",
+    "astro": "^5.15.3",
     "starlight-spell-checker": "workspace:*"
   },
   "private": true
