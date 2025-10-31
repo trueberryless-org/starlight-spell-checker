@@ -1,5 +1,11 @@
 # starlight-spell-checker
 
+## 0.2.2
+
+### Patch Changes
+
+- [`bbe0d82`](https://github.com/trueberryless-org/starlight-spell-checker/commit/bbe0d8242e8a75a14db2d0fc220f0c00181d320c) Thanks [@trueberryless](https://github.com/trueberryless)! - Try trusted publishing without `NPM_TOKEN`
+
 ## 0.2.1
 
 ### Patch Changes
