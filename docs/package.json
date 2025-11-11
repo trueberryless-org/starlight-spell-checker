@@ -22,10 +22,10 @@
   },
   "dependencies": {
     "@astrojs/starlight": "^0.36.2",
-    "@trueberryless-org/starlight-plugins-docs-components": "^0.4.2",
-    "astro": "^5.15.3",
-    "sharp": "^0.34.4",
-    "starlight-contributor-list": "^0.3.0",
+    "@trueberryless-org/starlight-plugins-docs-components": "^0.4.3",
+    "astro": "^5.15.5",
+    "sharp": "^0.34.5",
+    "starlight-contributor-list": "^0.3.1",
     "starlight-spell-checker": "workspace:*"
   },
   "packageManager": "pnpm@10.10.0",
