@@ -1,3 +1,7 @@
+> [!warning]
+> **Deprecation Notice:** This project will be **archived and unpublished from NPM on January 1, 2026** and will no longer receive updates or support.  
+> Please **do not use this package for new projects**.
+
 # `starlight-spell-checker`
 
 Check your documentation for spelling mistakes; multilingual support.
