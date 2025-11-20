@@ -28,19 +28,19 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       '@trueberryless-org/starlight-plugins-docs-components':
-        specifier: ^0.4.2
-        version: 0.4.2(@astrojs/starlight@0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2)))(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        specifier: ^0.4.3
+        version: 0.4.3(@astrojs/starlight@0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2)))(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       sharp:
-        specifier: ^0.34.4
-        version: 0.34.4
+        specifier: ^0.34.5
+        version: 0.34.5
       starlight-contributor-list:
-        specifier: ^0.3.0
-        version: 0.3.0(@astrojs/starlight@0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2)))
+        specifier: ^0.3.1
+        version: 0.3.1(@astrojs/starlight@0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2)))
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../packages/starlight-spell-checker
@@ -170,7 +170,7 @@ importers:
     devDependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       '@vitest/coverage-v8':
         specifier: ^2.1.9
         version: 2.1.9(vitest@2.1.9)
@@ -178,8 +178,8 @@ importers:
         specifier: ^2.1.9
         version: 2.1.9(vitest@2.1.9)
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       vitest:
         specifier: ^2.1.9
         version: 2.1.9(@vitest/ui@2.1.9)
@@ -188,10 +188,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -200,10 +200,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -212,10 +212,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -224,10 +224,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -236,10 +236,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -248,10 +248,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -260,10 +260,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -272,10 +272,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -284,10 +284,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -296,10 +296,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -308,10 +308,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -320,10 +320,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -332,10 +332,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -344,10 +344,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -356,10 +356,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -368,10 +368,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -380,10 +380,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -392,10 +392,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -404,10 +404,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -416,10 +416,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -428,10 +428,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -440,10 +440,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -452,10 +452,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -464,10 +464,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -476,10 +476,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -488,10 +488,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -500,10 +500,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -512,10 +512,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -524,10 +524,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -536,10 +536,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -548,10 +548,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -560,10 +560,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -572,10 +572,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -584,10 +584,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -596,10 +596,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -608,10 +608,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -620,10 +620,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -632,10 +632,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -644,10 +644,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -656,10 +656,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -668,10 +668,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -680,10 +680,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -692,10 +692,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -704,10 +704,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -716,10 +716,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -728,10 +728,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -740,10 +740,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -752,10 +752,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -764,10 +764,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -776,10 +776,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -788,10 +788,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -800,10 +800,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -812,10 +812,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -824,10 +824,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -836,10 +836,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -848,10 +848,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -860,10 +860,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -872,10 +872,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -884,10 +884,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -896,10 +896,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -908,10 +908,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -920,10 +920,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -932,10 +932,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -944,10 +944,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -956,10 +956,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -968,10 +968,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -980,10 +980,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -992,10 +992,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -1004,10 +1004,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -1016,10 +1016,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -1028,10 +1028,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -1040,10 +1040,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -1052,10 +1052,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.36.2
-        version: 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+        version: 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       astro:
-        specifier: ^5.15.3
-        version: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+        specifier: ^5.16.0
+        version: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       starlight-spell-checker:
         specifier: workspace:*
         version: link:../../..
@@ -1095,11 +1095,17 @@ packages:
   '@astrojs/internal-helpers@0.7.4':
     resolution: {integrity: sha512-lDA9MqE8WGi7T/t2BMi+EAXhs4Vcvr94Gqx3q15cFEz8oFZMO4/SFBqYr/UcmNlvW+35alowkVj+w9VhLvs5Cw==}
 
+  '@astrojs/internal-helpers@0.7.5':
+    resolution: {integrity: sha512-vreGnYSSKhAjFJCWAwe/CNhONvoc5lokxtRoZims+0wa3KbHBdPHSSthJsKxPd8d/aic6lWKpRTYGY/hsgK6EA==}
+
   '@astrojs/markdown-remark@6.3.1':
     resolution: {integrity: sha512-c5F5gGrkczUaTVgmMW9g1YMJGzOtRvjjhw6IfGuxarM6ct09MpwysP10US729dy07gg8y+ofVifezvP3BNsWZg==}
 
   '@astrojs/markdown-remark@6.3.8':
     resolution: {integrity: sha512-uFNyFWadnULWK2cOw4n0hLKeu+xaVWeuECdP10cQ3K2fkybtTlhb7J7TcScdjmS8Yps7oje9S/ehYMfZrhrgCg==}
+
+  '@astrojs/markdown-remark@6.3.9':
+    resolution: {integrity: sha512-hX2cLC/KW74Io1zIbn92kI482j9J7LleBLGCVU9EP3BeH5MVrnFawOnqD0t/q6D1Z+ZNeQG2gNKMslCcO36wng==}
 
   '@astrojs/mdx@4.3.9':
     resolution: {integrity: sha512-80LHiM4z3FxAjATHNgFpa8nlTNSprAWB4UUKnr/QG56Pwk7uRnJWrXlok4wSCi/3fg8kTZ98A408Q91M+iqJdw==}
@@ -1139,12 +1145,25 @@ packages:
     resolution: {integrity: sha512-4A/SCr/2KLd5jrtOMFzaKjVtAei3+2r/NChoBNoZ3EyP/+GlhoaEGoWOZUmFmoITP7zOJyHIMm+DYRd8o3PvHA==}
     engines: {node: '>=6.9.0'}
 
+  '@babel/helper-string-parser@7.27.1':
+    resolution: {integrity: sha512-qMlSxKbpRlAridDExk92nSobyDdpPijUq2DW6oDnUqd0iOGxmQjyqhMIihI9+zv4LPyZdRje2cavWPbCbWm3eA==}
+    engines: {node: '>=6.9.0'}
+
   '@babel/helper-validator-identifier@7.25.9':
     resolution: {integrity: sha512-Ed61U6XJc3CVRfkERJWDz4dJwKe7iLmmJsbOGu9wSloNSFttHV0I8g6UAgb7qnK5ly5bGLPd4oXZlxCdANBOWQ==}
     engines: {node: '>=6.9.0'}
 
+  '@babel/helper-validator-identifier@7.28.5':
+    resolution: {integrity: sha512-qSs4ifwzKJSV39ucNjsvc6WVHs6b7S03sOh2OcHF9UHfVPqWWALUsNUVzhSBiItjRZoLHx7nIarVjqKVusUZ1Q==}
+    engines: {node: '>=6.9.0'}
+
   '@babel/parser@7.27.0':
     resolution: {integrity: sha512-iaepho73/2Pz7w2eMS0Q5f83+0RKI7i4xmiYeBmDzfRVbQtTOG7Ts0S4HzJVsTMGI9keU8rNfuZr8DKfSt7Yyg==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+
+  '@babel/parser@7.28.5':
+    resolution: {integrity: sha512-KKBU1VGYR7ORr3At5HAtUQ+TV3SzRCXmA/8OdDZiLDBIZxVyzXuztPjfLd3BV1PRAQGCMWWSHYhL0F8d5uHBDQ==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -1164,11 +1183,15 @@ packages:
     resolution: {integrity: sha512-H45s8fVLYjbhFH62dIJ3WtmJ6RSPt/3DRO0ZcT2SUiYiQyz3BLVb9ADEnLl91m74aQPS3AzzeajZHYOalWe3bg==}
     engines: {node: '>=6.9.0'}
 
+  '@babel/types@7.28.5':
+    resolution: {integrity: sha512-qQ5m48eI/MFLQ5PxQj4PFaprjyCTLI37ElWMmNs0K8Lk3dVeOdNpB3ks8jc7yM5CDmVC73eMVk/trk3fgmrUpA==}
+    engines: {node: '>=6.9.0'}
+
   '@bcoe/v8-coverage@0.2.3':
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
 
-  '@capsizecss/unpack@3.0.0':
-    resolution: {integrity: sha512-+ntATQe1AlL7nTOYjwjj6w3299CgRot48wL761TUGYpYgAou3AaONZazp0PKZyCyWhudWsjhq1nvRHOvbMzhTA==}
+  '@capsizecss/unpack@3.0.1':
+    resolution: {integrity: sha512-8XqW8xGn++Eqqbz3e9wKuK7mxryeRjs4LOHLxbh2lwKeSbuNR4NFifDZT4KzvjU6HMOPbiNTsWpniK5EJfTWkg==}
     engines: {node: '>=18'}
 
   '@changesets/apply-release-plan@7.0.13':
@@ -1236,8 +1259,8 @@ packages:
     resolution: {integrity: sha512-WyOx8cJQ+FQus4Mm4uPIZA64gbk3Wxh0so5Lcii0aJifqwoVOlfFtorjLE0Hen4OYyHZMXDWqMmaQemBhgxFRQ==}
     engines: {node: '>=14'}
 
-  '@emnapi/runtime@1.6.0':
-    resolution: {integrity: sha512-obtUmAHTMjll499P+D9A3axeJFlhdjOWdKUNs/U6QIGT7V5RjcUW1xToAzjvmgTSQhDbYn/NwfTRoJcQ2rNBxA==}
+  '@emnapi/runtime@1.7.1':
+    resolution: {integrity: sha512-PVtJr5CmLwYAU9PZDMITZoR5iAOShYREoR45EyyLrbntV50mdePTgUn4AmOw90Ifcj+x2kRjdzr1HP3RrNiHGA==}
 
   '@esbuild/aix-ppc64@0.21.5':
     resolution: {integrity: sha512-1SDgH6ZSPTlggy1yI6+Dbkiz8xzpHJEVAlF/AM1tHPLsf5STom9rwtjE4hKAF20FfXXNTFqEYXyJNWh1GiZedQ==}
@@ -1549,124 +1572,135 @@ packages:
     resolution: {integrity: sha512-A5P/LfWGFSl6nsckYtjw9da+19jB8hkJ6ACTGcDfEJ0aE+l2n2El7dsVM7UVHZQ9s2lmYMWlrS21YLy2IR1LUw==}
     engines: {node: '>=18'}
 
-  '@img/sharp-darwin-arm64@0.34.4':
-    resolution: {integrity: sha512-sitdlPzDVyvmINUdJle3TNHl+AG9QcwiAMsXmccqsCOMZNIdW2/7S26w0LyU8euiLVzFBL3dXPwVCq/ODnf2vA==}
+  '@img/sharp-darwin-arm64@0.34.5':
+    resolution: {integrity: sha512-imtQ3WMJXbMY4fxb/Ndp6HBTNVtWCUI0WdobyheGf5+ad6xX8VIDO8u2xE4qc/fr08CKG/7dDseFtn6M6g/r3w==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [arm64]
     os: [darwin]
 
-  '@img/sharp-darwin-x64@0.34.4':
-    resolution: {integrity: sha512-rZheupWIoa3+SOdF/IcUe1ah4ZDpKBGWcsPX6MT0lYniH9micvIU7HQkYTfrx5Xi8u+YqwLtxC/3vl8TQN6rMg==}
+  '@img/sharp-darwin-x64@0.34.5':
+    resolution: {integrity: sha512-YNEFAF/4KQ/PeW0N+r+aVVsoIY0/qxxikF2SWdp+NRkmMB7y9LBZAVqQ4yhGCm/H3H270OSykqmQMKLBhBJDEw==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [x64]
     os: [darwin]
 
-  '@img/sharp-libvips-darwin-arm64@1.2.3':
-    resolution: {integrity: sha512-QzWAKo7kpHxbuHqUC28DZ9pIKpSi2ts2OJnoIGI26+HMgq92ZZ4vk8iJd4XsxN+tYfNJxzH6W62X5eTcsBymHw==}
+  '@img/sharp-libvips-darwin-arm64@1.2.4':
+    resolution: {integrity: sha512-zqjjo7RatFfFoP0MkQ51jfuFZBnVE2pRiaydKJ1G/rHZvnsrHAOcQALIi9sA5co5xenQdTugCvtb1cuf78Vf4g==}
     cpu: [arm64]
     os: [darwin]
 
-  '@img/sharp-libvips-darwin-x64@1.2.3':
-    resolution: {integrity: sha512-Ju+g2xn1E2AKO6YBhxjj+ACcsPQRHT0bhpglxcEf+3uyPY+/gL8veniKoo96335ZaPo03bdDXMv0t+BBFAbmRA==}
+  '@img/sharp-libvips-darwin-x64@1.2.4':
+    resolution: {integrity: sha512-1IOd5xfVhlGwX+zXv2N93k0yMONvUlANylbJw1eTah8K/Jtpi15KC+WSiaX/nBmbm2HxRM1gZ0nSdjSsrZbGKg==}
     cpu: [x64]
     os: [darwin]
 
-  '@img/sharp-libvips-linux-arm64@1.2.3':
-    resolution: {integrity: sha512-I4RxkXU90cpufazhGPyVujYwfIm9Nk1QDEmiIsaPwdnm013F7RIceaCc87kAH+oUB1ezqEvC6ga4m7MSlqsJvQ==}
+  '@img/sharp-libvips-linux-arm64@1.2.4':
+    resolution: {integrity: sha512-excjX8DfsIcJ10x1Kzr4RcWe1edC9PquDRRPx3YVCvQv+U5p7Yin2s32ftzikXojb1PIFc/9Mt28/y+iRklkrw==}
     cpu: [arm64]
     os: [linux]
 
-  '@img/sharp-libvips-linux-arm@1.2.3':
-    resolution: {integrity: sha512-x1uE93lyP6wEwGvgAIV0gP6zmaL/a0tGzJs/BIDDG0zeBhMnuUPm7ptxGhUbcGs4okDJrk4nxgrmxpib9g6HpA==}
+  '@img/sharp-libvips-linux-arm@1.2.4':
+    resolution: {integrity: sha512-bFI7xcKFELdiNCVov8e44Ia4u2byA+l3XtsAj+Q8tfCwO6BQ8iDojYdvoPMqsKDkuoOo+X6HZA0s0q11ANMQ8A==}
     cpu: [arm]
     os: [linux]
 
-  '@img/sharp-libvips-linux-ppc64@1.2.3':
-    resolution: {integrity: sha512-Y2T7IsQvJLMCBM+pmPbM3bKT/yYJvVtLJGfCs4Sp95SjvnFIjynbjzsa7dY1fRJX45FTSfDksbTp6AGWudiyCg==}
+  '@img/sharp-libvips-linux-ppc64@1.2.4':
+    resolution: {integrity: sha512-FMuvGijLDYG6lW+b/UvyilUWu5Ayu+3r2d1S8notiGCIyYU/76eig1UfMmkZ7vwgOrzKzlQbFSuQfgm7GYUPpA==}
     cpu: [ppc64]
     os: [linux]
 
-  '@img/sharp-libvips-linux-s390x@1.2.3':
-    resolution: {integrity: sha512-RgWrs/gVU7f+K7P+KeHFaBAJlNkD1nIZuVXdQv6S+fNA6syCcoboNjsV2Pou7zNlVdNQoQUpQTk8SWDHUA3y/w==}
+  '@img/sharp-libvips-linux-riscv64@1.2.4':
+    resolution: {integrity: sha512-oVDbcR4zUC0ce82teubSm+x6ETixtKZBh/qbREIOcI3cULzDyb18Sr/Wcyx7NRQeQzOiHTNbZFF1UwPS2scyGA==}
+    cpu: [riscv64]
+    os: [linux]
+
+  '@img/sharp-libvips-linux-s390x@1.2.4':
+    resolution: {integrity: sha512-qmp9VrzgPgMoGZyPvrQHqk02uyjA0/QrTO26Tqk6l4ZV0MPWIW6LTkqOIov+J1yEu7MbFQaDpwdwJKhbJvuRxQ==}
     cpu: [s390x]
     os: [linux]
 
-  '@img/sharp-libvips-linux-x64@1.2.3':
-    resolution: {integrity: sha512-3JU7LmR85K6bBiRzSUc/Ff9JBVIFVvq6bomKE0e63UXGeRw2HPVEjoJke1Yx+iU4rL7/7kUjES4dZ/81Qjhyxg==}
+  '@img/sharp-libvips-linux-x64@1.2.4':
+    resolution: {integrity: sha512-tJxiiLsmHc9Ax1bz3oaOYBURTXGIRDODBqhveVHonrHJ9/+k89qbLl0bcJns+e4t4rvaNBxaEZsFtSfAdquPrw==}
     cpu: [x64]
     os: [linux]
 
-  '@img/sharp-libvips-linuxmusl-arm64@1.2.3':
-    resolution: {integrity: sha512-F9q83RZ8yaCwENw1GieztSfj5msz7GGykG/BA+MOUefvER69K/ubgFHNeSyUu64amHIYKGDs4sRCMzXVj8sEyw==}
+  '@img/sharp-libvips-linuxmusl-arm64@1.2.4':
+    resolution: {integrity: sha512-FVQHuwx1IIuNow9QAbYUzJ+En8KcVm9Lk5+uGUQJHaZmMECZmOlix9HnH7n1TRkXMS0pGxIJokIVB9SuqZGGXw==}
     cpu: [arm64]
     os: [linux]
 
-  '@img/sharp-libvips-linuxmusl-x64@1.2.3':
-    resolution: {integrity: sha512-U5PUY5jbc45ANM6tSJpsgqmBF/VsL6LnxJmIf11kB7J5DctHgqm0SkuXzVWtIY90GnJxKnC/JT251TDnk1fu/g==}
+  '@img/sharp-libvips-linuxmusl-x64@1.2.4':
+    resolution: {integrity: sha512-+LpyBk7L44ZIXwz/VYfglaX/okxezESc6UxDSoyo2Ks6Jxc4Y7sGjpgU9s4PMgqgjj1gZCylTieNamqA1MF7Dg==}
     cpu: [x64]
     os: [linux]
 
-  '@img/sharp-linux-arm64@0.34.4':
-    resolution: {integrity: sha512-YXU1F/mN/Wu786tl72CyJjP/Ngl8mGHN1hST4BGl+hiW5jhCnV2uRVTNOcaYPs73NeT/H8Upm3y9582JVuZHrQ==}
+  '@img/sharp-linux-arm64@0.34.5':
+    resolution: {integrity: sha512-bKQzaJRY/bkPOXyKx5EVup7qkaojECG6NLYswgktOZjaXecSAeCWiZwwiFf3/Y+O1HrauiE3FVsGxFg8c24rZg==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [arm64]
     os: [linux]
 
-  '@img/sharp-linux-arm@0.34.4':
-    resolution: {integrity: sha512-Xyam4mlqM0KkTHYVSuc6wXRmM7LGN0P12li03jAnZ3EJWZqj83+hi8Y9UxZUbxsgsK1qOEwg7O0Bc0LjqQVtxA==}
+  '@img/sharp-linux-arm@0.34.5':
+    resolution: {integrity: sha512-9dLqsvwtg1uuXBGZKsxem9595+ujv0sJ6Vi8wcTANSFpwV/GONat5eCkzQo/1O6zRIkh0m/8+5BjrRr7jDUSZw==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [arm]
     os: [linux]
 
-  '@img/sharp-linux-ppc64@0.34.4':
-    resolution: {integrity: sha512-F4PDtF4Cy8L8hXA2p3TO6s4aDt93v+LKmpcYFLAVdkkD3hSxZzee0rh6/+94FpAynsuMpLX5h+LRsSG3rIciUQ==}
+  '@img/sharp-linux-ppc64@0.34.5':
+    resolution: {integrity: sha512-7zznwNaqW6YtsfrGGDA6BRkISKAAE1Jo0QdpNYXNMHu2+0dTrPflTLNkpc8l7MUP5M16ZJcUvysVWWrMefZquA==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [ppc64]
     os: [linux]
 
-  '@img/sharp-linux-s390x@0.34.4':
-    resolution: {integrity: sha512-qVrZKE9Bsnzy+myf7lFKvng6bQzhNUAYcVORq2P7bDlvmF6u2sCmK2KyEQEBdYk+u3T01pVsPrkj943T1aJAsw==}
+  '@img/sharp-linux-riscv64@0.34.5':
+    resolution: {integrity: sha512-51gJuLPTKa7piYPaVs8GmByo7/U7/7TZOq+cnXJIHZKavIRHAP77e3N2HEl3dgiqdD/w0yUfiJnII77PuDDFdw==}
+    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+    cpu: [riscv64]
+    os: [linux]
+
+  '@img/sharp-linux-s390x@0.34.5':
+    resolution: {integrity: sha512-nQtCk0PdKfho3eC5MrbQoigJ2gd1CgddUMkabUj+rBevs8tZ2cULOx46E7oyX+04WGfABgIwmMC0VqieTiR4jg==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [s390x]
     os: [linux]
 
-  '@img/sharp-linux-x64@0.34.4':
-    resolution: {integrity: sha512-ZfGtcp2xS51iG79c6Vhw9CWqQC8l2Ot8dygxoDoIQPTat/Ov3qAa8qpxSrtAEAJW+UjTXc4yxCjNfxm4h6Xm2A==}
+  '@img/sharp-linux-x64@0.34.5':
+    resolution: {integrity: sha512-MEzd8HPKxVxVenwAa+JRPwEC7QFjoPWuS5NZnBt6B3pu7EG2Ge0id1oLHZpPJdn3OQK+BQDiw9zStiHBTJQQQQ==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [x64]
     os: [linux]
 
-  '@img/sharp-linuxmusl-arm64@0.34.4':
-    resolution: {integrity: sha512-8hDVvW9eu4yHWnjaOOR8kHVrew1iIX+MUgwxSuH2XyYeNRtLUe4VNioSqbNkB7ZYQJj9rUTT4PyRscyk2PXFKA==}
+  '@img/sharp-linuxmusl-arm64@0.34.5':
+    resolution: {integrity: sha512-fprJR6GtRsMt6Kyfq44IsChVZeGN97gTD331weR1ex1c1rypDEABN6Tm2xa1wE6lYb5DdEnk03NZPqA7Id21yg==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [arm64]
     os: [linux]
 
-  '@img/sharp-linuxmusl-x64@0.34.4':
-    resolution: {integrity: sha512-lU0aA5L8QTlfKjpDCEFOZsTYGn3AEiO6db8W5aQDxj0nQkVrZWmN3ZP9sYKWJdtq3PWPhUNlqehWyXpYDcI9Sg==}
+  '@img/sharp-linuxmusl-x64@0.34.5':
+    resolution: {integrity: sha512-Jg8wNT1MUzIvhBFxViqrEhWDGzqymo3sV7z7ZsaWbZNDLXRJZoRGrjulp60YYtV4wfY8VIKcWidjojlLcWrd8Q==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [x64]
     os: [linux]
 
-  '@img/sharp-wasm32@0.34.4':
-    resolution: {integrity: sha512-33QL6ZO/qpRyG7woB/HUALz28WnTMI2W1jgX3Nu2bypqLIKx/QKMILLJzJjI+SIbvXdG9fUnmrxR7vbi1sTBeA==}
+  '@img/sharp-wasm32@0.34.5':
+    resolution: {integrity: sha512-OdWTEiVkY2PHwqkbBI8frFxQQFekHaSSkUIJkwzclWZe64O1X4UlUjqqqLaPbUpMOQk6FBu/HtlGXNblIs0huw==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [wasm32]
 
-  '@img/sharp-win32-arm64@0.34.4':
-    resolution: {integrity: sha512-2Q250do/5WXTwxW3zjsEuMSv5sUU4Tq9VThWKlU2EYLm4MB7ZeMwF+SFJutldYODXF6jzc6YEOC+VfX0SZQPqA==}
+  '@img/sharp-win32-arm64@0.34.5':
+    resolution: {integrity: sha512-WQ3AgWCWYSb2yt+IG8mnC6Jdk9Whs7O0gxphblsLvdhSpSTtmu69ZG1Gkb6NuvxsNACwiPV6cNSZNzt0KPsw7g==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [arm64]
     os: [win32]
 
-  '@img/sharp-win32-ia32@0.34.4':
-    resolution: {integrity: sha512-3ZeLue5V82dT92CNL6rsal6I2weKw1cYu+rGKm8fOCCtJTR2gYeUfY3FqUnIJsMUPIH68oS5jmZ0NiJ508YpEw==}
+  '@img/sharp-win32-ia32@0.34.5':
+    resolution: {integrity: sha512-FV9m/7NmeCmSHDD5j4+4pNI8Cp3aW+JvLoXcTUo0IqyjSfAZJ8dIUmijx1qaJsIiU+Hosw6xM5KijAWRJCSgNg==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [ia32]
     os: [win32]
 
-  '@img/sharp-win32-x64@0.34.4':
-    resolution: {integrity: sha512-xIyj4wpYs8J18sVN3mSQjwrw7fKUqRw+Z5rnHNCy5fYTxigBz81u5mOMPmFumwjcn8+ld1ppptMBCLic1nz6ig==}
+  '@img/sharp-win32-x64@0.34.5':
+    resolution: {integrity: sha512-+29YMsqY2/9eFEiW93eqWnuLcWcufowXewwSNIT6UwZdUUCrM3oFjMWH/Z6/TMmb4hlFenmfAVbpWeup2jryCw==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [x64]
     os: [win32]
@@ -1985,11 +2019,17 @@ packages:
   '@shikijs/core@3.14.0':
     resolution: {integrity: sha512-qRSeuP5vlYHCNUIrpEBQFO7vSkR7jn7Kv+5X3FO/zBKVDGQbcnlScD3XhkrHi/R8Ltz0kEjvFR9Szp/XMRbFMw==}
 
+  '@shikijs/core@3.15.0':
+    resolution: {integrity: sha512-8TOG6yG557q+fMsSVa8nkEDOZNTSxjbbR8l6lF2gyr6Np+jrPlslqDxQkN6rMXCECQ3isNPZAGszAfYoJOPGlg==}
+
   '@shikijs/core@3.2.1':
     resolution: {integrity: sha512-FhsdxMWYu/C11sFisEp7FMGBtX/OSSbnXZDMBhGuUDBNTdsoZlMSgQv5f90rwvzWAdWIW6VobD+G3IrazxA6dQ==}
 
   '@shikijs/engine-javascript@3.14.0':
     resolution: {integrity: sha512-3v1kAXI2TsWQuwv86cREH/+FK9Pjw3dorVEykzQDhwrZj0lwsHYlfyARaKmn6vr5Gasf8aeVpb8JkzeWspxOLQ==}
+
+  '@shikijs/engine-javascript@3.15.0':
+    resolution: {integrity: sha512-ZedbOFpopibdLmvTz2sJPJgns8Xvyabe2QbmqMTz07kt1pTzfEvKZc5IqPVO/XFiEbbNyaOpjPBkkr1vlwS+qg==}
 
   '@shikijs/engine-javascript@3.2.1':
     resolution: {integrity: sha512-eMdcUzN3FMQYxOmRf2rmU8frikzoSHbQDFH2hIuXsrMO+IBOCI9BeeRkCiBkcLDHeRKbOCtYMJK3D6U32ooU9Q==}
@@ -1997,11 +2037,17 @@ packages:
   '@shikijs/engine-oniguruma@3.14.0':
     resolution: {integrity: sha512-TNcYTYMbJyy+ZjzWtt0bG5y4YyMIWC2nyePz+CFMWqm+HnZZyy9SWMgo8Z6KBJVIZnx8XUXS8U2afO6Y0g1Oug==}
 
+  '@shikijs/engine-oniguruma@3.15.0':
+    resolution: {integrity: sha512-HnqFsV11skAHvOArMZdLBZZApRSYS4LSztk2K3016Y9VCyZISnlYUYsL2hzlS7tPqKHvNqmI5JSUJZprXloMvA==}
+
   '@shikijs/engine-oniguruma@3.2.1':
     resolution: {integrity: sha512-wZZAkayEn6qu2+YjenEoFqj0OyQI64EWsNR6/71d1EkG4sxEOFooowKivsWPpaWNBu3sxAG+zPz5kzBL/SsreQ==}
 
   '@shikijs/langs@3.14.0':
     resolution: {integrity: sha512-DIB2EQY7yPX1/ZH7lMcwrK5pl+ZkP/xoSpUzg9YC8R+evRCCiSQ7yyrvEyBsMnfZq4eBzLzBlugMyTAf13+pzg==}
+
+  '@shikijs/langs@3.15.0':
+    resolution: {integrity: sha512-WpRvEFvkVvO65uKYW4Rzxs+IG0gToyM8SARQMtGGsH4GDMNZrr60qdggXrFOsdfOVssG/QQGEl3FnJ3EZ+8w8A==}
 
   '@shikijs/langs@3.2.1':
     resolution: {integrity: sha512-If0iDHYRSGbihiA8+7uRsgb1er1Yj11pwpX1c6HLYnizDsKAw5iaT3JXj5ZpaimXSWky/IhxTm7C6nkiYVym+A==}
@@ -2009,11 +2055,17 @@ packages:
   '@shikijs/themes@3.14.0':
     resolution: {integrity: sha512-fAo/OnfWckNmv4uBoUu6dSlkcBc+SA1xzj5oUSaz5z3KqHtEbUypg/9xxgJARtM6+7RVm0Q6Xnty41xA1ma1IA==}
 
+  '@shikijs/themes@3.15.0':
+    resolution: {integrity: sha512-8ow2zWb1IDvCKjYb0KiLNrK4offFdkfNVPXb1OZykpLCzRU6j+efkY+Y7VQjNlNFXonSw+4AOdGYtmqykDbRiQ==}
+
   '@shikijs/themes@3.2.1':
     resolution: {integrity: sha512-k5DKJUT8IldBvAm8WcrDT5+7GA7se6lLksR+2E3SvyqGTyFMzU2F9Gb7rmD+t+Pga1MKrYFxDIeyWjMZWM6uBQ==}
 
   '@shikijs/types@3.14.0':
     resolution: {integrity: sha512-bQGgC6vrY8U/9ObG1Z/vTro+uclbjjD/uG58RvfxKZVD5p9Yc1ka3tVyEFy7BNJLzxuWyHH5NWynP9zZZS59eQ==}
+
+  '@shikijs/types@3.15.0':
+    resolution: {integrity: sha512-BnP+y/EQnhihgHy4oIAN+6FFtmfTekwOLsQbRw9hOKwqgNy8Bdsjq8B05oAt/ZgvIWWFrshV71ytOrlPfYjIJw==}
 
   '@shikijs/types@3.2.1':
     resolution: {integrity: sha512-/NTWAk4KE2M8uac0RhOsIhYQf4pdU0OywQuYDGIGAJ6Mjunxl2cGiuLkvu4HLCMn+OTTLRWkjZITp+aYJv60yA==}
@@ -2053,8 +2105,8 @@ packages:
   '@trueberryless-org/retext-usage@0.1.3':
     resolution: {integrity: sha512-4A00uhd3rCD3afrP3mD5v+Elv0BImTbuI6RFYshkaFkhggiNK/WglZvcVkD1wtAHx5XHkgR2DP/CEjhj3AQK2g==}
 
-  '@trueberryless-org/starlight-plugins-docs-components@0.4.2':
-    resolution: {integrity: sha512-21+ohQXAcOgkWfaoVTN69LZVP4gqjcBFd9/lVfGKjL2rpPi45lvdg+mUb3PX9tFA6M/Rdk6JFOajGSQ/7Pws9Q==}
+  '@trueberryless-org/starlight-plugins-docs-components@0.4.3':
+    resolution: {integrity: sha512-CA7oZiy67p1/IWucjueyftbT+eo/Q+TWU7/6+v5c31aGZBIkYVsqCj0OKnpzO6n6T05ZuP8RdCudatplVTJvHA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
     peerDependencies:
       '@astrojs/starlight': '>=0.32'
@@ -2239,8 +2291,8 @@ packages:
     peerDependencies:
       astro: ^4.0.0-beta || ^5.0.0-beta || ^3.3.0
 
-  astro@5.15.3:
-    resolution: {integrity: sha512-wUO/isJrcUoduRoKacKB9jpO6TxTlPV1zw8UqQx39jSNY7z9IxusJAiib3AiNvqK+dCWhqXx+OnExCCwELmcUw==}
+  astro@5.16.0:
+    resolution: {integrity: sha512-GaDRs2Mngpw3dr2vc085GnORh98NiXxwIjg/EoQQQl/icZt3Z7s0BRsYHDZ8swkZbOA6wZsqWJdrNirl+iKcDg==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2378,6 +2430,10 @@ packages:
   comma-separated-tokens@2.0.3:
     resolution: {integrity: sha512-Fu4hJdvzeylCfQPp9SGWidpzrMs7tTrlu6Vb8XGaRGck8QSNZJJp538Wrb60Lax4fPwR64ViY468OIUTbRlGZg==}
 
+  commander@11.1.0:
+    resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
+    engines: {node: '>=16'}
+
   common-ancestor-path@1.0.1:
     resolution: {integrity: sha512-L3sHRo1pXXEqX8VU28kfgUY+YGsk09hPqZiZmLacNib6XNTCM8ubYeT7ryXQw8asB1sKgcU5lkB7ONug08aB8w==}
 
@@ -2404,6 +2460,10 @@ packages:
   css-selector-parser@3.0.5:
     resolution: {integrity: sha512-3itoDFbKUNx1eKmVpYMFyqKX04Ww9osZ+dLgrk6GEv6KMVeXUhUnp4I5X+evw+u3ZxVU6RFXSSRxlTeMh8bA+g==}
 
+  css-tree@2.2.1:
+    resolution: {integrity: sha512-OA0mILzGc1kCOCSJerOeqDxDQ4HOh+G8NbOJFOTgOCzpw7fCBubk0fEyxp8AgOL/jvLgYA/uV0cMbe43ElF1JA==}
+    engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0, npm: '>=7.0.0'}
+
   css-tree@3.1.0:
     resolution: {integrity: sha512-0eW44TGN5SQXU1mWSkKwFstI/22X2bG1nYzZTYMAWjylYURhse752YgbE4Cx46AC+bAvI+/dYTPRk1LqSUnu6w==}
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0}
@@ -2416,6 +2476,10 @@ packages:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
     engines: {node: '>=4'}
     hasBin: true
+
+  csso@5.0.5:
+    resolution: {integrity: sha512-0LrrStPOdJj+SPCCrGhzryycLjwcgUSHBtxNA8aIDxf0GLsRh1cKYhB00Gd1lDOS4yGH69+SNn13+TWbVHETFQ==}
+    engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0, npm: '>=7.0.0'}
 
   cssom@0.5.0:
     resolution: {integrity: sha512-iKuQcq+NdHqlAcwUY0o/HL69XQrUaQdMjmStJ8JFmUaiiQErlhrmuigkg/CU4E2J0IyUKUrMAgl36TvN67MqTw==}
@@ -2464,9 +2528,6 @@ packages:
     resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==}
     engines: {node: '>=6'}
 
-  destr@2.0.3:
-    resolution: {integrity: sha512-2N3BOUU4gYMpTP24s5rF5iP7BDr7uNTCs4ozw3kf/eKfvWSIu93GEBi5m427YoyJoeOzQ5smuu4nNAPGb8idSQ==}
-
   destr@2.0.5:
     resolution: {integrity: sha512-ugFTXCtDZunbzasqBxrK93Ik/DRYsO6S/fedkWEMKqt04xZ4csmnmwGDBAb07QWNaGMAmnTIemsYZCksjATwsA==}
 
@@ -2482,8 +2543,8 @@ packages:
     resolution: {integrity: sha512-KxektNH63SrbfUyDiwXqRb1rLwKt33AmMv+5Nhsw1kqZ13SJBRTgZHtGbE+hH3a1mVW1cz+4pqSWVPAtLVXTzQ==}
     engines: {node: '>=18'}
 
-  devalue@5.4.2:
-    resolution: {integrity: sha512-MwPZTKEPK2k8Qgfmqrd48ZKVvzSQjgW0lXLxiIBA8dQjtf/6mw6pggHNLcyDKyf+fI6eXxlQwPsfaCMTU5U+Bw==}
+  devalue@5.5.0:
+    resolution: {integrity: sha512-69sM5yrHfFLJt0AZ9QqZXGCPfJ7fQjvpln3Rq5+PS03LD32Ost1Q9N+eEnaQwGRIriKkMImXD56ocjQmfjbV3w==}
 
   devlop@1.1.0:
     resolution: {integrity: sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA==}
@@ -2579,9 +2640,6 @@ packages:
   entities@4.5.0:
     resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
     engines: {node: '>=0.12'}
-
-  es-module-lexer@1.6.0:
-    resolution: {integrity: sha512-qqnD1yMU6tk/jnaMosogGySTZP8YtUgAffA9nMN+E/rjxcfRQ6IEk7IiozUjgxKoFHBGjTLnrHB/YC45r/59EQ==}
 
   es-module-lexer@1.7.0:
     resolution: {integrity: sha512-jEQoCwk8hyb2AZziIOLhDqpm5+2ww5uIE6lkO/6jcOCusfk6LhMHpXXfBLXTZ7Ydyt0j4VoUQv6uGNYbdW+kBA==}
@@ -2996,6 +3054,10 @@ packages:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
     hasBin: true
 
+  js-yaml@4.1.1:
+    resolution: {integrity: sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==}
+    hasBin: true
+
   jsesc@3.1.0:
     resolution: {integrity: sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA==}
     engines: {node: '>=6'}
@@ -3059,6 +3121,9 @@ packages:
 
   magicast@0.3.5:
     resolution: {integrity: sha512-L0WhttDl+2BOsybvEOLK7fW3UA0OQ0IQ2d6Zl2x/a6vVRs3bAY0ECOSHHeL5jD+SbOpOCUEi0y1DgHEn9Qn1AQ==}
+
+  magicast@0.5.1:
+    resolution: {integrity: sha512-xrHS24IxaLrvuo613F719wvOIv9xPHFWQHuvGUBmPnCA/3MQxKI3b+r7n1jAoDHmsbC5bRhTZYR77invLAxVnw==}
 
   make-dir@4.0.0:
     resolution: {integrity: sha512-hXdUTZYIVOt1Ex//jAQi+wTZZpUpwBj/0QsOzqegb3rGMMeJiSEu5xLHnYfBrRV4RH2+OCSOO95Is/7x1WJ4bw==}
@@ -3131,6 +3196,9 @@ packages:
   mdast@3.0.0:
     resolution: {integrity: sha512-xySmf8g4fPKMeC07jXGz971EkLbWAJ83s4US2Tj9lEdnZ142UP5grN73H1Xd3HzrdbU5o9GYYP/y8F9ZSwLE9g==}
     deprecated: '`mdast` was renamed to `remark`'
+
+  mdn-data@2.0.28:
+    resolution: {integrity: sha512-aylIc7Z9y4yzHYAJNuESG3hfhC+0Ibp/MAMiaOZgNv4pmEdFyfZhhhny4MNiAfWdBQ1RQ2mfDWmM1x8SvGyp8g==}
 
   mdn-data@2.12.2:
     resolution: {integrity: sha512-IEn+pegP1aManZuckezWCO+XZQDplx1366JoVhTpMpBB1sPey/SbveZQUosKiKiGYjg1wH4pMlNgXbCiYgihQA==}
@@ -3329,9 +3397,6 @@ packages:
     resolution: {tarball: https://codeload.github.com/dunckr/no-cliches/tar.gz/d636504d5f927e684db325760caeb53264790d09}
     version: 0.1.0
 
-  node-fetch-native@1.6.6:
-    resolution: {integrity: sha512-8Mc2HhqPdlIfedsuZoc3yioPuzp6b+L5jRCRY1QzuWZh2EGJVQrGppC6V6cF0bLdbW0+O2YpqCA25aF/1lvipQ==}
-
   node-fetch-native@1.6.7:
     resolution: {integrity: sha512-g9yhqoedzIUm0nTnTqAQvueMPVOuIY16bqgAJJC8XOOubYFNwz6IER9qs0Gq2Xd0+CecCKFjtdDTMA4u4xG06Q==}
 
@@ -3366,9 +3431,6 @@ packages:
   object-keys@1.1.1:
     resolution: {integrity: sha512-NuAESUOUMrlIXOfHKzD6bpPu3tYt3xvjNdRIQ+FeT0lNb4K8WR70CaDxhuNguS2XG+GjkyMwOzsN5ZktImfhLA==}
     engines: {node: '>= 0.4'}
-
-  ofetch@1.4.1:
-    resolution: {integrity: sha512-QZj2DfGplQAr2oj9KzceK9Hwz6Whxazmn85yYeVuS3u9XTMOGMRx0kO95MQ+vLsj/S/NwBDMMLU5hpxvI6Tklw==}
 
   ofetch@1.5.0:
     resolution: {integrity: sha512-A7llJ7eZyziA5xq9//3ZurA8OhFqtS99K5/V1sLBJ5j137CM/OAjlbA/TEJXBuOWwOfLqih+oH5U3ran4za1FQ==}
@@ -3422,8 +3484,8 @@ packages:
     resolution: {integrity: sha512-RwFpb72c/BhQLEXIZ5K2e+AhgNVmIejGlTgiB9MzZ0e93GRvqZ7uSi0dvRF7/XIXDeNkra2fNHBxTyPDGySpjQ==}
     engines: {node: '>=8'}
 
-  p-queue@8.1.0:
-    resolution: {integrity: sha512-mxLDbbGIBEXTJL0zEx8JIylaj3xQ7Z/7eEVjcF9fJX4DBiH9oqe+oahYnlKKxm0Ci9TlWTyhSHgygxMxjIB2jw==}
+  p-queue@8.1.1:
+    resolution: {integrity: sha512-aNZ+VfjobsWryoiPnEApGGmf5WmNsCo9xu8dfaYamG5qaLP7ClhLN6NgsFe6SwJ2UbLEBK5dv9x8Mn5+RVhMWQ==}
     engines: {node: '>=18'}
 
   p-timeout@3.2.0:
@@ -3489,6 +3551,9 @@ packages:
   pathval@2.0.0:
     resolution: {integrity: sha512-vE7JKRyES09KiunauX7nd2Q9/L7lhok4smP9RZTDeD4MVs72Dp2qNFVz39Nz5a0FVEW0BJR6C0DYrq6unoziZA==}
     engines: {node: '>= 14.16'}
+
+  piccolore@0.1.3:
+    resolution: {integrity: sha512-o8bTeDWjE086iwKrROaDf31K0qC/BENdm15/uH9usSC/uZjJOKb2YGiVHfLY4GhwsERiPI1jmwI2XrA7ACOxVw==}
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
@@ -3754,8 +3819,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  sharp@0.34.4:
-    resolution: {integrity: sha512-FUH39xp3SBPnxWvd5iib1X8XY7J0K0X7d93sie9CJg2PO8/7gmg89Nve6OjItK53/MlAushNNxteBYfM6DEuoA==}
+  sharp@0.34.5:
+    resolution: {integrity: sha512-Ou9I5Ft9WNcCbXrU9cMgPBcCK8LiwLqcbywW3t4oDV37n1pzpuNLsYiAV8eODnjbtQlSDwZ2cUEeQz4E54Hltg==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
 
   shebang-command@2.0.0:
@@ -3768,6 +3833,9 @@ packages:
 
   shiki@3.14.0:
     resolution: {integrity: sha512-J0yvpLI7LSig3Z3acIuDLouV5UCKQqu8qOArwMx+/yPVC3WRMgrP67beaG8F+j4xfEWE0eVC4GeBCIXeOPra1g==}
+
+  shiki@3.15.0:
+    resolution: {integrity: sha512-kLdkY6iV3dYbtPwS9KXU7mjfmDm25f5m0IPNFnaXO7TBPcvbUOY72PYXSuSqDzwp+vlH/d7MXpHlKO/x+QoLXw==}
 
   shiki@3.2.1:
     resolution: {integrity: sha512-VML/2o1/KGYkEf/stJJ+s9Ypn7jUKQPomGLGYso4JJFMFxVDyPNsjsI3MB3KLjlMOeH44gyaPdXC6rik2WXvUQ==}
@@ -3807,6 +3875,10 @@ packages:
     resolution: {integrity: sha512-rInDH6lCNiEyn3+hH8KVGFdbjc099j47+OSgbMrfDYX1CmXLfdKd7qi6IfcWj2wFxvSVkuI46M+wPGYfEOEj6g==}
     engines: {node: '>= 18'}
 
+  smol-toml@1.5.2:
+    resolution: {integrity: sha512-QlaZEqcAH3/RtNyet1IPIYPsEWAaYyXXv1Krsi+1L/QHppjX4Ifm8MQsBISz9vE8cHicIq3clogsheili5vhaQ==}
+    engines: {node: '>= 18'}
+
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
@@ -3833,8 +3905,8 @@ packages:
   stackback@0.0.2:
     resolution: {integrity: sha512-1XMJE5fQo1jGH6Y/7ebnwPOBEkIEnT4QF32d5R1+VXdXveM0IBMJt8zfaxX1P3QhVwrYe+576+jkANtSS2mBbw==}
 
-  starlight-contributor-list@0.3.0:
-    resolution: {integrity: sha512-mkSQKRQGe0jSRWvXSo1TPvtwhCyRESLXIcnw+ruCKVql0gdguB9hfEuz8LlBtmvK3GfZLmwyH8XML1o2trRweg==}
+  starlight-contributor-list@0.3.1:
+    resolution: {integrity: sha512-8F3BcnqeCgvI/OcagJCBsp71/XU9/zDiuSmsgAkWrRTxql0H2bG9Z9VXvmwzB/569QVlAsOwK7StAxDxqG6Myw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
     peerDependencies:
       '@astrojs/starlight': '>=0.30'
@@ -3907,6 +3979,11 @@ packages:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
     engines: {node: '>=8'}
 
+  svgo@4.0.0:
+    resolution: {integrity: sha512-VvrHQ+9uniE+Mvx3+C9IEe/lWasXCU0nXMY2kZeLrHNICuRiC8uMPyM14UEaMOFA5mhyQqEkB02VoQ16n3DLaw==}
+    engines: {node: '>=16'}
+    hasBin: true
+
   syllable@5.0.1:
     resolution: {integrity: sha512-HWtNCp6v7J8H0lrT8j1HHjfOLltRoDcC7QRFVu25p4BE52JqetXG65nqC7CsatT8WQRfY4Qvh93BWJIUxbmXFg==}
     hasBin: true
@@ -3931,8 +4008,9 @@ packages:
   tinyexec@0.3.2:
     resolution: {integrity: sha512-KQQR9yN7R5+OSwaK0XQoj22pwHoTlgYqmUscPYoknOoWCWfj/5/ABTMRi69FrKU5ffPVh5QcFikpWJI/P1ocHA==}
 
-  tinyexec@1.0.1:
-    resolution: {integrity: sha512-5uC6DDlmeqiOwCPmK9jMSdOuZTh8bU39Ys6yidB+UTt5hfZUPGAypSgFRiEp+jbi9qH40BLDvy85jIU88wKSqw==}
+  tinyexec@1.0.2:
+    resolution: {integrity: sha512-W/KYk+NFhkmsYpuHq5JykngiOCnxeVL8v8dFnqxSD8qEEdRfXk1SDM6JzNqcERbcGYj9tMrDQBYV9cjgnunFIg==}
+    engines: {node: '>=18'}
 
   tinyglobby@0.2.12:
     resolution: {integrity: sha512-qkf4trmKSIiMTs/E63cxH+ojC2unam7rJ0WrauAzpT3ECNTxGRMlaXxVbfxMUC/w0LaYk6jQ4y/nGR9uBO3tww==}
@@ -3992,9 +4070,6 @@ packages:
     resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
     engines: {node: '>=14.17'}
     hasBin: true
-
-  ufo@1.5.4:
-    resolution: {integrity: sha512-UsUk3byDzKd04EyoZ7U4DOlxQaD14JUKQl6/P7wiX4FNvUfm3XL246n9W5AmqwW5RSFJ27NAuM0iLscAOYUiGQ==}
 
   ufo@1.6.1:
     resolution: {integrity: sha512-9a4/uxlTWJ4+a5i0ooc1rU7C7YOw3wT+UGqdeNNHWnOF9qcMBgLRS+4IYUqbczewFx4mLEig6gawh7X6mFlEkA==}
@@ -4067,6 +4142,9 @@ packages:
 
   unist-util-visit-parents@6.0.1:
     resolution: {integrity: sha512-L/PqWzfTP9lzzEa6CKs0k2nARxTdZduw3zyh8d2NVBnsyvHjSX4TWse388YrrQKbvI8w20fGjGlhgT96WwKykw==}
+
+  unist-util-visit-parents@6.0.2:
+    resolution: {integrity: sha512-goh1s1TBrqSqukSc8wrjwWhL0hiJxgA8m4kFxGlQ+8FYQ3C/m11FcTs4YYem7V664AhHVvgoQLk890Ssdsr2IQ==}
 
   unist-util-visit@1.4.1:
     resolution: {integrity: sha512-AvGNk7Bb//EmJZyhtRUnNMEpId/AZ5Ph/KUpTI09WHQuDZHKovQ1oEv3mfmKpWKtoMzyMC4GLBm1Zy5k12fjIw==}
@@ -4349,7 +4427,7 @@ snapshots:
 
   '@11ty/eleventy-fetch@4.0.1':
     dependencies:
-      debug: 4.4.0
+      debug: 4.4.3
       flat-cache: 3.2.0
       node-fetch: 2.7.0
       p-queue: 6.6.2
@@ -4362,18 +4440,18 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@astro-community/astro-embed-twitter@0.5.8(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))':
+  '@astro-community/astro-embed-twitter@0.5.8(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))':
     dependencies:
       '@astro-community/astro-embed-utils': 0.1.3
-      astro: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+      astro: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
 
   '@astro-community/astro-embed-utils@0.1.3':
     dependencies:
       linkedom: 0.14.26
 
-  '@astro-community/astro-embed-youtube@0.5.6(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))':
+  '@astro-community/astro-embed-youtube@0.5.6(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))':
     dependencies:
-      astro: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+      astro: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       lite-youtube-embed: 0.3.3
 
   '@astrojs/compiler@2.11.0': {}
@@ -4383,6 +4461,8 @@ snapshots:
   '@astrojs/internal-helpers@0.6.1': {}
 
   '@astrojs/internal-helpers@0.7.4': {}
+
+  '@astrojs/internal-helpers@0.7.5': {}
 
   '@astrojs/markdown-remark@6.3.1':
     dependencies:
@@ -4436,12 +4516,38 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.3.9(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))':
+  '@astrojs/markdown-remark@6.3.9':
+    dependencies:
+      '@astrojs/internal-helpers': 0.7.5
+      '@astrojs/prism': 3.3.0
+      github-slugger: 2.0.0
+      hast-util-from-html: 2.0.3
+      hast-util-to-text: 4.0.2
+      import-meta-resolve: 4.2.0
+      js-yaml: 4.1.1
+      mdast-util-definitions: 6.0.0
+      rehype-raw: 7.0.0
+      rehype-stringify: 10.0.1
+      remark-gfm: 4.0.1
+      remark-parse: 11.0.0
+      remark-rehype: 11.1.2
+      remark-smartypants: 3.0.2
+      shiki: 3.15.0
+      smol-toml: 1.5.2
+      unified: 11.0.5
+      unist-util-remove-position: 5.0.0
+      unist-util-visit: 5.0.0
+      unist-util-visit-parents: 6.0.2
+      vfile: 6.0.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@astrojs/mdx@4.3.9(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))':
     dependencies:
       '@astrojs/markdown-remark': 6.3.8
       '@mdx-js/mdx': 3.1.1
       acorn: 8.15.0
-      astro: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+      astro: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       es-module-lexer: 1.7.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -4469,17 +4575,17 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.25.76
 
-  '@astrojs/starlight@0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))':
+  '@astrojs/starlight@0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))':
     dependencies:
       '@astrojs/markdown-remark': 6.3.1
-      '@astrojs/mdx': 4.3.9(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+      '@astrojs/mdx': 4.3.9(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       '@astrojs/sitemap': 3.6.0
       '@pagefind/default-ui': 1.3.0
       '@types/hast': 3.0.4
       '@types/js-yaml': 4.0.9
       '@types/mdast': 4.0.4
-      astro: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
-      astro-expressive-code: 0.41.3(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+      astro: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
+      astro-expressive-code: 0.41.3(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       bcp-47: 2.1.0
       hast-util-from-html: 2.0.3
       hast-util-select: 6.0.3
@@ -4530,11 +4636,19 @@ snapshots:
 
   '@babel/helper-string-parser@7.25.9': {}
 
+  '@babel/helper-string-parser@7.27.1': {}
+
   '@babel/helper-validator-identifier@7.25.9': {}
+
+  '@babel/helper-validator-identifier@7.28.5': {}
 
   '@babel/parser@7.27.0':
     dependencies:
       '@babel/types': 7.27.0
+
+  '@babel/parser@7.28.5':
+    dependencies:
+      '@babel/types': 7.28.5
 
   '@babel/runtime@7.26.0':
     dependencies:
@@ -4563,9 +4677,14 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
+  '@babel/types@7.28.5':
+    dependencies:
+      '@babel/helper-string-parser': 7.27.1
+      '@babel/helper-validator-identifier': 7.28.5
+
   '@bcoe/v8-coverage@0.2.3': {}
 
-  '@capsizecss/unpack@3.0.0':
+  '@capsizecss/unpack@3.0.1':
     dependencies:
       fontkit: 2.0.4
 
@@ -4730,7 +4849,7 @@ snapshots:
 
   '@ctrl/tinycolor@4.1.0': {}
 
-  '@emnapi/runtime@1.6.0':
+  '@emnapi/runtime@1.7.1':
     dependencies:
       tslib: 2.8.1
     optional: true
@@ -4904,100 +5023,108 @@ snapshots:
     dependencies:
       '@expressive-code/core': 0.41.3
 
-  '@hideoo/starlight-plugins-docs-components@0.4.0(@astrojs/starlight@0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2)))(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))':
+  '@hideoo/starlight-plugins-docs-components@0.4.0(@astrojs/starlight@0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2)))(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))':
     dependencies:
-      '@astrojs/starlight': 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
-      starlight-package-managers: 0.8.1(@astrojs/starlight@0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2)))
-      starlight-showcases: 0.3.0(@astrojs/starlight@0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2)))(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+      '@astrojs/starlight': 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
+      starlight-package-managers: 0.8.1(@astrojs/starlight@0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2)))
+      starlight-showcases: 0.3.0(@astrojs/starlight@0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2)))(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
     transitivePeerDependencies:
       - astro
 
   '@img/colour@1.0.0': {}
 
-  '@img/sharp-darwin-arm64@0.34.4':
+  '@img/sharp-darwin-arm64@0.34.5':
     optionalDependencies:
-      '@img/sharp-libvips-darwin-arm64': 1.2.3
+      '@img/sharp-libvips-darwin-arm64': 1.2.4
     optional: true
 
-  '@img/sharp-darwin-x64@0.34.4':
+  '@img/sharp-darwin-x64@0.34.5':
     optionalDependencies:
-      '@img/sharp-libvips-darwin-x64': 1.2.3
+      '@img/sharp-libvips-darwin-x64': 1.2.4
     optional: true
 
-  '@img/sharp-libvips-darwin-arm64@1.2.3':
+  '@img/sharp-libvips-darwin-arm64@1.2.4':
     optional: true
 
-  '@img/sharp-libvips-darwin-x64@1.2.3':
+  '@img/sharp-libvips-darwin-x64@1.2.4':
     optional: true
 
-  '@img/sharp-libvips-linux-arm64@1.2.3':
+  '@img/sharp-libvips-linux-arm64@1.2.4':
     optional: true
 
-  '@img/sharp-libvips-linux-arm@1.2.3':
+  '@img/sharp-libvips-linux-arm@1.2.4':
     optional: true
 
-  '@img/sharp-libvips-linux-ppc64@1.2.3':
+  '@img/sharp-libvips-linux-ppc64@1.2.4':
     optional: true
 
-  '@img/sharp-libvips-linux-s390x@1.2.3':
+  '@img/sharp-libvips-linux-riscv64@1.2.4':
     optional: true
 
-  '@img/sharp-libvips-linux-x64@1.2.3':
+  '@img/sharp-libvips-linux-s390x@1.2.4':
     optional: true
 
-  '@img/sharp-libvips-linuxmusl-arm64@1.2.3':
+  '@img/sharp-libvips-linux-x64@1.2.4':
     optional: true
 
-  '@img/sharp-libvips-linuxmusl-x64@1.2.3':
+  '@img/sharp-libvips-linuxmusl-arm64@1.2.4':
     optional: true
 
-  '@img/sharp-linux-arm64@0.34.4':
+  '@img/sharp-libvips-linuxmusl-x64@1.2.4':
+    optional: true
+
+  '@img/sharp-linux-arm64@0.34.5':
     optionalDependencies:
-      '@img/sharp-libvips-linux-arm64': 1.2.3
+      '@img/sharp-libvips-linux-arm64': 1.2.4
     optional: true
 
-  '@img/sharp-linux-arm@0.34.4':
+  '@img/sharp-linux-arm@0.34.5':
     optionalDependencies:
-      '@img/sharp-libvips-linux-arm': 1.2.3
+      '@img/sharp-libvips-linux-arm': 1.2.4
     optional: true
 
-  '@img/sharp-linux-ppc64@0.34.4':
+  '@img/sharp-linux-ppc64@0.34.5':
     optionalDependencies:
-      '@img/sharp-libvips-linux-ppc64': 1.2.3
+      '@img/sharp-libvips-linux-ppc64': 1.2.4
     optional: true
 
-  '@img/sharp-linux-s390x@0.34.4':
+  '@img/sharp-linux-riscv64@0.34.5':
     optionalDependencies:
-      '@img/sharp-libvips-linux-s390x': 1.2.3
+      '@img/sharp-libvips-linux-riscv64': 1.2.4
     optional: true
 
-  '@img/sharp-linux-x64@0.34.4':
+  '@img/sharp-linux-s390x@0.34.5':
     optionalDependencies:
-      '@img/sharp-libvips-linux-x64': 1.2.3
+      '@img/sharp-libvips-linux-s390x': 1.2.4
     optional: true
 
-  '@img/sharp-linuxmusl-arm64@0.34.4':
+  '@img/sharp-linux-x64@0.34.5':
     optionalDependencies:
-      '@img/sharp-libvips-linuxmusl-arm64': 1.2.3
+      '@img/sharp-libvips-linux-x64': 1.2.4
     optional: true
 
-  '@img/sharp-linuxmusl-x64@0.34.4':
+  '@img/sharp-linuxmusl-arm64@0.34.5':
     optionalDependencies:
-      '@img/sharp-libvips-linuxmusl-x64': 1.2.3
+      '@img/sharp-libvips-linuxmusl-arm64': 1.2.4
     optional: true
 
-  '@img/sharp-wasm32@0.34.4':
+  '@img/sharp-linuxmusl-x64@0.34.5':
+    optionalDependencies:
+      '@img/sharp-libvips-linuxmusl-x64': 1.2.4
+    optional: true
+
+  '@img/sharp-wasm32@0.34.5':
     dependencies:
-      '@emnapi/runtime': 1.6.0
+      '@emnapi/runtime': 1.7.1
     optional: true
 
-  '@img/sharp-win32-arm64@0.34.4':
+  '@img/sharp-win32-arm64@0.34.5':
     optional: true
 
-  '@img/sharp-win32-ia32@0.34.4':
+  '@img/sharp-win32-ia32@0.34.5':
     optional: true
 
-  '@img/sharp-win32-x64@0.34.4':
+  '@img/sharp-win32-x64@0.34.5':
     optional: true
 
   '@inquirer/external-editor@1.0.2':
@@ -5119,7 +5246,7 @@ snapshots:
 
   '@rollup/pluginutils@5.3.0(rollup@4.52.5)':
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       estree-walker: 2.0.2
       picomatch: 4.0.3
     optionalDependencies:
@@ -5255,6 +5382,13 @@ snapshots:
       '@types/hast': 3.0.4
       hast-util-to-html: 9.0.5
 
+  '@shikijs/core@3.15.0':
+    dependencies:
+      '@shikijs/types': 3.15.0
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.4
+      hast-util-to-html: 9.0.5
+
   '@shikijs/core@3.2.1':
     dependencies:
       '@shikijs/types': 3.2.1
@@ -5265,6 +5399,12 @@ snapshots:
   '@shikijs/engine-javascript@3.14.0':
     dependencies:
       '@shikijs/types': 3.14.0
+      '@shikijs/vscode-textmate': 10.0.2
+      oniguruma-to-es: 4.3.3
+
+  '@shikijs/engine-javascript@3.15.0':
+    dependencies:
+      '@shikijs/types': 3.15.0
       '@shikijs/vscode-textmate': 10.0.2
       oniguruma-to-es: 4.3.3
 
@@ -5279,6 +5419,11 @@ snapshots:
       '@shikijs/types': 3.14.0
       '@shikijs/vscode-textmate': 10.0.2
 
+  '@shikijs/engine-oniguruma@3.15.0':
+    dependencies:
+      '@shikijs/types': 3.15.0
+      '@shikijs/vscode-textmate': 10.0.2
+
   '@shikijs/engine-oniguruma@3.2.1':
     dependencies:
       '@shikijs/types': 3.2.1
@@ -5288,6 +5433,10 @@ snapshots:
     dependencies:
       '@shikijs/types': 3.14.0
 
+  '@shikijs/langs@3.15.0':
+    dependencies:
+      '@shikijs/types': 3.15.0
+
   '@shikijs/langs@3.2.1':
     dependencies:
       '@shikijs/types': 3.2.1
@@ -5296,11 +5445,20 @@ snapshots:
     dependencies:
       '@shikijs/types': 3.14.0
 
+  '@shikijs/themes@3.15.0':
+    dependencies:
+      '@shikijs/types': 3.15.0
+
   '@shikijs/themes@3.2.1':
     dependencies:
       '@shikijs/types': 3.2.1
 
   '@shikijs/types@3.14.0':
+    dependencies:
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.4
+
+  '@shikijs/types@3.15.0':
     dependencies:
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.4
@@ -5358,18 +5516,18 @@ snapshots:
       object-keys: 1.1.1
       quotation: 1.1.3
 
-  '@trueberryless-org/starlight-plugins-docs-components@0.4.2(@astrojs/starlight@0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2)))(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))':
+  '@trueberryless-org/starlight-plugins-docs-components@0.4.3(@astrojs/starlight@0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2)))(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))':
     dependencies:
-      '@astrojs/starlight': 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
-      '@hideoo/starlight-plugins-docs-components': 0.4.0(@astrojs/starlight@0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2)))(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+      '@astrojs/starlight': 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
+      '@hideoo/starlight-plugins-docs-components': 0.4.0(@astrojs/starlight@0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2)))(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
       change-case: 5.4.4
-      starlight-showcases: 0.2.0(@astrojs/starlight@0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2)))(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+      starlight-showcases: 0.2.0(@astrojs/starlight@0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2)))(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
     transitivePeerDependencies:
       - astro
 
   '@types/acorn@4.0.6':
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
 
   '@types/debug@4.1.12':
     dependencies:
@@ -5456,7 +5614,7 @@ snapshots:
     dependencies:
       '@vitest/spy': 2.1.9
       estree-walker: 3.0.3
-      magic-string: 0.30.17
+      magic-string: 0.30.21
     optionalDependencies:
       vite: 5.4.11
 
@@ -5472,7 +5630,7 @@ snapshots:
   '@vitest/snapshot@2.1.9':
     dependencies:
       '@vitest/pretty-format': 2.1.9
-      magic-string: 0.30.17
+      magic-string: 0.30.21
       pathe: 1.1.2
 
   '@vitest/spy@2.1.9':
@@ -5543,18 +5701,18 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-expressive-code@0.41.3(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2)):
+  astro-expressive-code@0.41.3(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2)):
     dependencies:
-      astro: 5.15.3(rollup@4.52.5)(typescript@5.7.2)
+      astro: 5.16.0(rollup@4.52.5)(typescript@5.7.2)
       rehype-expressive-code: 0.41.3
 
-  astro@5.15.3(rollup@4.52.5)(typescript@5.7.2):
+  astro@5.16.0(rollup@4.52.5)(typescript@5.7.2):
     dependencies:
       '@astrojs/compiler': 2.13.0
-      '@astrojs/internal-helpers': 0.7.4
-      '@astrojs/markdown-remark': 6.3.8
+      '@astrojs/internal-helpers': 0.7.5
+      '@astrojs/markdown-remark': 6.3.9
       '@astrojs/telemetry': 3.3.0
-      '@capsizecss/unpack': 3.0.0
+      '@capsizecss/unpack': 3.0.1
       '@oslojs/encoding': 1.1.0
       '@rollup/pluginutils': 5.3.0(rollup@4.52.5)
       acorn: 8.15.0
@@ -5568,7 +5726,7 @@ snapshots:
       cssesc: 3.0.0
       debug: 4.4.3
       deterministic-object-hash: 2.0.2
-      devalue: 5.4.2
+      devalue: 5.5.0
       diff: 5.2.0
       dlv: 1.1.3
       dset: 3.1.4
@@ -5581,22 +5739,23 @@ snapshots:
       html-escaper: 3.0.3
       http-cache-semantics: 4.2.0
       import-meta-resolve: 4.2.0
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
       magic-string: 0.30.21
-      magicast: 0.3.5
+      magicast: 0.5.1
       mrmime: 2.0.1
       neotraverse: 0.6.18
       p-limit: 6.2.0
-      p-queue: 8.1.0
+      p-queue: 8.1.1
       package-manager-detector: 1.5.0
-      picocolors: 1.1.1
+      piccolore: 0.1.3
       picomatch: 4.0.3
       prompts: 2.4.2
       rehype: 13.0.2
       semver: 7.7.3
-      shiki: 3.14.0
-      smol-toml: 1.4.2
-      tinyexec: 1.0.1
+      shiki: 3.15.0
+      smol-toml: 1.5.2
+      svgo: 4.0.0
+      tinyexec: 1.0.2
       tinyglobby: 0.2.15
       tsconfck: 3.1.6(typescript@5.7.2)
       ultrahtml: 1.6.0
@@ -5613,7 +5772,7 @@ snapshots:
       zod-to-json-schema: 3.24.6(zod@3.25.76)
       zod-to-ts: 1.2.0(typescript@5.7.2)(zod@3.25.76)
     optionalDependencies:
-      sharp: 0.34.4
+      sharp: 0.34.5
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -5761,6 +5920,8 @@ snapshots:
 
   comma-separated-tokens@2.0.3: {}
 
+  commander@11.1.0: {}
+
   common-ancestor-path@1.0.1: {}
 
   concat-map@0.0.1: {}
@@ -5789,6 +5950,11 @@ snapshots:
 
   css-selector-parser@3.0.5: {}
 
+  css-tree@2.2.1:
+    dependencies:
+      mdn-data: 2.0.28
+      source-map-js: 1.2.1
+
   css-tree@3.1.0:
     dependencies:
       mdn-data: 2.12.2
@@ -5797,6 +5963,10 @@ snapshots:
   css-what@6.1.0: {}
 
   cssesc@3.0.0: {}
+
+  csso@5.0.5:
+    dependencies:
+      css-tree: 2.2.1
 
   cssom@0.5.0: {}
 
@@ -5826,8 +5996,6 @@ snapshots:
 
   dequal@2.0.3: {}
 
-  destr@2.0.3: {}
-
   destr@2.0.5: {}
 
   detect-indent@6.1.0: {}
@@ -5838,7 +6006,7 @@ snapshots:
     dependencies:
       base-64: 1.0.0
 
-  devalue@5.4.2: {}
+  devalue@5.5.0: {}
 
   devlop@1.1.0:
     dependencies:
@@ -5914,8 +6082,6 @@ snapshots:
       strip-ansi: 6.0.1
 
   entities@4.5.0: {}
-
-  es-module-lexer@1.6.0: {}
 
   es-module-lexer@1.7.0: {}
 
@@ -5993,7 +6159,7 @@ snapshots:
 
   estree-util-attach-comments@3.0.0:
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
 
   estree-util-build-jsx@3.0.1:
     dependencies:
@@ -6006,7 +6172,7 @@ snapshots:
 
   estree-util-scope@1.0.0:
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       devlop: 1.1.0
 
   estree-util-to-js@2.0.0:
@@ -6024,7 +6190,7 @@ snapshots:
 
   estree-walker@3.0.3:
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
 
   eventemitter3@4.0.7: {}
 
@@ -6298,7 +6464,7 @@ snapshots:
 
   hast-util-to-estree@3.1.1:
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       '@types/estree-jsx': 1.0.5
       '@types/hast': 3.0.4
       comma-separated-tokens: 2.0.3
@@ -6333,7 +6499,7 @@ snapshots:
 
   hast-util-to-jsx-runtime@2.3.2:
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       '@types/hast': 3.0.4
       '@types/unist': 3.0.3
       comma-separated-tokens: 2.0.3
@@ -6486,7 +6652,7 @@ snapshots:
   istanbul-lib-source-maps@5.0.6:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
-      debug: 4.4.0
+      debug: 4.4.3
       istanbul-lib-coverage: 3.2.2
     transitivePeerDependencies:
       - supports-color
@@ -6512,6 +6678,10 @@ snapshots:
       esprima: 4.0.1
 
   js-yaml@4.1.0:
+    dependencies:
+      argparse: 2.0.1
+
+  js-yaml@4.1.1:
     dependencies:
       argparse: 2.0.1
 
@@ -6573,9 +6743,15 @@ snapshots:
       '@babel/types': 7.27.0
       source-map-js: 1.2.1
 
+  magicast@0.5.1:
+    dependencies:
+      '@babel/parser': 7.28.5
+      '@babel/types': 7.28.5
+      source-map-js: 1.2.1
+
   make-dir@4.0.0:
     dependencies:
-      semver: 7.7.1
+      semver: 7.7.3
 
   markdown-extensions@2.0.0: {}
 
@@ -6767,6 +6943,8 @@ snapshots:
 
   mdast@3.0.0: {}
 
+  mdn-data@2.0.28: {}
+
   mdn-data@2.12.2: {}
 
   merge2@1.4.1: {}
@@ -6860,7 +7038,7 @@ snapshots:
 
   micromark-extension-mdx-expression@3.0.0:
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       devlop: 1.1.0
       micromark-factory-mdx-expression: 2.0.2
       micromark-factory-space: 2.0.1
@@ -6872,7 +7050,7 @@ snapshots:
   micromark-extension-mdx-jsx@3.0.1:
     dependencies:
       '@types/acorn': 4.0.6
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       devlop: 1.1.0
       estree-util-is-identifier-name: 3.0.0
       micromark-factory-mdx-expression: 2.0.2
@@ -6889,7 +7067,7 @@ snapshots:
 
   micromark-extension-mdxjs-esm@3.0.0:
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       devlop: 1.1.0
       micromark-core-commonmark: 2.0.2
       micromark-util-character: 2.1.1
@@ -6925,7 +7103,7 @@ snapshots:
 
   micromark-factory-mdx-expression@2.0.2:
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       devlop: 1.1.0
       micromark-factory-space: 2.0.1
       micromark-util-character: 2.1.1
@@ -6990,7 +7168,7 @@ snapshots:
   micromark-util-events-to-acorn@2.0.2:
     dependencies:
       '@types/acorn': 4.0.6
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       '@types/unist': 3.0.3
       devlop: 1.1.0
       estree-util-visit: 2.0.0
@@ -7028,7 +7206,7 @@ snapshots:
   micromark@4.0.1:
     dependencies:
       '@types/debug': 4.1.12
-      debug: 4.4.0
+      debug: 4.4.3
       decode-named-character-reference: 1.0.2
       devlop: 1.1.0
       micromark-core-commonmark: 2.0.2
@@ -7139,8 +7317,6 @@ snapshots:
 
   no-cliches@https://codeload.github.com/dunckr/no-cliches/tar.gz/d636504d5f927e684db325760caeb53264790d09: {}
 
-  node-fetch-native@1.6.6: {}
-
   node-fetch-native@1.6.7: {}
 
   node-fetch@2.7.0:
@@ -7164,12 +7340,6 @@ snapshots:
   number-to-words@1.2.4: {}
 
   object-keys@1.1.1: {}
-
-  ofetch@1.4.1:
-    dependencies:
-      destr: 2.0.3
-      node-fetch-native: 1.6.6
-      ufo: 1.5.4
 
   ofetch@1.5.0:
     dependencies:
@@ -7227,7 +7397,7 @@ snapshots:
       eventemitter3: 4.0.7
       p-timeout: 3.2.0
 
-  p-queue@8.1.0:
+  p-queue@8.1.1:
     dependencies:
       eventemitter3: 5.0.1
       p-timeout: 6.1.4
@@ -7295,6 +7465,8 @@ snapshots:
   pathe@1.1.2: {}
 
   pathval@2.0.0: {}
+
+  piccolore@0.1.3: {}
 
   picocolors@1.1.1: {}
 
@@ -7364,7 +7536,7 @@ snapshots:
 
   recma-build-jsx@1.0.0:
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       estree-util-build-jsx: 3.0.1
       vfile: 6.0.3
 
@@ -7380,14 +7552,14 @@ snapshots:
 
   recma-parse@1.0.0:
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       esast-util-from-js: 2.0.1
       unified: 11.0.5
       vfile: 6.0.3
 
   recma-stringify@1.0.0:
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       estree-util-to-js: 2.0.0
       unified: 11.0.5
       vfile: 6.0.3
@@ -7427,7 +7599,7 @@ snapshots:
 
   rehype-recma@1.0.0:
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.8
       '@types/hast': 3.0.4
       hast-util-to-estree: 3.1.1
     transitivePeerDependencies:
@@ -7767,34 +7939,36 @@ snapshots:
 
   semver@7.7.3: {}
 
-  sharp@0.34.4:
+  sharp@0.34.5:
     dependencies:
       '@img/colour': 1.0.0
       detect-libc: 2.1.2
       semver: 7.7.3
     optionalDependencies:
-      '@img/sharp-darwin-arm64': 0.34.4
-      '@img/sharp-darwin-x64': 0.34.4
-      '@img/sharp-libvips-darwin-arm64': 1.2.3
-      '@img/sharp-libvips-darwin-x64': 1.2.3
-      '@img/sharp-libvips-linux-arm': 1.2.3
-      '@img/sharp-libvips-linux-arm64': 1.2.3
-      '@img/sharp-libvips-linux-ppc64': 1.2.3
-      '@img/sharp-libvips-linux-s390x': 1.2.3
-      '@img/sharp-libvips-linux-x64': 1.2.3
-      '@img/sharp-libvips-linuxmusl-arm64': 1.2.3
-      '@img/sharp-libvips-linuxmusl-x64': 1.2.3
-      '@img/sharp-linux-arm': 0.34.4
-      '@img/sharp-linux-arm64': 0.34.4
-      '@img/sharp-linux-ppc64': 0.34.4
-      '@img/sharp-linux-s390x': 0.34.4
-      '@img/sharp-linux-x64': 0.34.4
-      '@img/sharp-linuxmusl-arm64': 0.34.4
-      '@img/sharp-linuxmusl-x64': 0.34.4
-      '@img/sharp-wasm32': 0.34.4
-      '@img/sharp-win32-arm64': 0.34.4
-      '@img/sharp-win32-ia32': 0.34.4
-      '@img/sharp-win32-x64': 0.34.4
+      '@img/sharp-darwin-arm64': 0.34.5
+      '@img/sharp-darwin-x64': 0.34.5
+      '@img/sharp-libvips-darwin-arm64': 1.2.4
+      '@img/sharp-libvips-darwin-x64': 1.2.4
+      '@img/sharp-libvips-linux-arm': 1.2.4
+      '@img/sharp-libvips-linux-arm64': 1.2.4
+      '@img/sharp-libvips-linux-ppc64': 1.2.4
+      '@img/sharp-libvips-linux-riscv64': 1.2.4
+      '@img/sharp-libvips-linux-s390x': 1.2.4
+      '@img/sharp-libvips-linux-x64': 1.2.4
+      '@img/sharp-libvips-linuxmusl-arm64': 1.2.4
+      '@img/sharp-libvips-linuxmusl-x64': 1.2.4
+      '@img/sharp-linux-arm': 0.34.5
+      '@img/sharp-linux-arm64': 0.34.5
+      '@img/sharp-linux-ppc64': 0.34.5
+      '@img/sharp-linux-riscv64': 0.34.5
+      '@img/sharp-linux-s390x': 0.34.5
+      '@img/sharp-linux-x64': 0.34.5
+      '@img/sharp-linuxmusl-arm64': 0.34.5
+      '@img/sharp-linuxmusl-x64': 0.34.5
+      '@img/sharp-wasm32': 0.34.5
+      '@img/sharp-win32-arm64': 0.34.5
+      '@img/sharp-win32-ia32': 0.34.5
+      '@img/sharp-win32-x64': 0.34.5
 
   shebang-command@2.0.0:
     dependencies:
@@ -7810,6 +7984,17 @@ snapshots:
       '@shikijs/langs': 3.14.0
       '@shikijs/themes': 3.14.0
       '@shikijs/types': 3.14.0
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.4
+
+  shiki@3.15.0:
+    dependencies:
+      '@shikijs/core': 3.15.0
+      '@shikijs/engine-javascript': 3.15.0
+      '@shikijs/engine-oniguruma': 3.15.0
+      '@shikijs/langs': 3.15.0
+      '@shikijs/themes': 3.15.0
+      '@shikijs/types': 3.15.0
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.4
 
@@ -7851,6 +8036,8 @@ snapshots:
 
   smol-toml@1.4.2: {}
 
+  smol-toml@1.5.2: {}
+
   source-map-js@1.2.1: {}
 
   source-map@0.7.6: {}
@@ -7870,31 +8057,31 @@ snapshots:
 
   stackback@0.0.2: {}
 
-  starlight-contributor-list@0.3.0(@astrojs/starlight@0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))):
+  starlight-contributor-list@0.3.1(@astrojs/starlight@0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))):
     dependencies:
       '@11ty/eleventy-fetch': 4.0.1
-      '@astrojs/starlight': 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+      '@astrojs/starlight': 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  starlight-package-managers@0.8.1(@astrojs/starlight@0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))):
+  starlight-package-managers@0.8.1(@astrojs/starlight@0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))):
     dependencies:
-      '@astrojs/starlight': 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+      '@astrojs/starlight': 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
 
-  starlight-showcases@0.2.0(@astrojs/starlight@0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2)))(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2)):
+  starlight-showcases@0.2.0(@astrojs/starlight@0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2)))(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2)):
     dependencies:
-      '@astro-community/astro-embed-twitter': 0.5.8(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
-      '@astro-community/astro-embed-youtube': 0.5.6(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
-      '@astrojs/starlight': 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+      '@astro-community/astro-embed-twitter': 0.5.8(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
+      '@astro-community/astro-embed-youtube': 0.5.6(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
+      '@astrojs/starlight': 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
     transitivePeerDependencies:
       - astro
 
-  starlight-showcases@0.3.0(@astrojs/starlight@0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2)))(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2)):
+  starlight-showcases@0.3.0(@astrojs/starlight@0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2)))(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2)):
     dependencies:
-      '@astro-community/astro-embed-twitter': 0.5.8(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
-      '@astro-community/astro-embed-youtube': 0.5.6(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
-      '@astrojs/starlight': 0.36.2(astro@5.15.3(rollup@4.52.5)(typescript@5.7.2))
+      '@astro-community/astro-embed-twitter': 0.5.8(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
+      '@astro-community/astro-embed-youtube': 0.5.6(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
+      '@astrojs/starlight': 0.36.2(astro@5.16.0(rollup@4.52.5)(typescript@5.7.2))
     transitivePeerDependencies:
       - astro
 
@@ -7951,6 +8138,16 @@ snapshots:
     dependencies:
       has-flag: 4.0.0
 
+  svgo@4.0.0:
+    dependencies:
+      commander: 11.1.0
+      css-select: 5.1.0
+      css-tree: 3.1.0
+      css-what: 6.1.0
+      csso: 5.0.5
+      picocolors: 1.1.1
+      sax: 1.4.1
+
   syllable@5.0.1:
     dependencies:
       '@types/pluralize': 0.0.29
@@ -7973,7 +8170,7 @@ snapshots:
 
   tinyexec@0.3.2: {}
 
-  tinyexec@1.0.1: {}
+  tinyexec@1.0.2: {}
 
   tinyglobby@0.2.12:
     dependencies:
@@ -8013,8 +8210,6 @@ snapshots:
 
   typescript@5.7.2: {}
 
-  ufo@1.5.4: {}
-
   ufo@1.6.1: {}
 
   uhyphen@0.2.0: {}
@@ -8046,7 +8241,7 @@ snapshots:
   unifont@0.6.0:
     dependencies:
       css-tree: 3.1.0
-      ofetch: 1.4.1
+      ofetch: 1.5.0
       ohash: 2.0.11
 
   unist-util-find-after@5.0.0:
@@ -8115,6 +8310,11 @@ snapshots:
       '@types/unist': 3.0.3
       unist-util-is: 6.0.0
 
+  unist-util-visit-parents@6.0.2:
+    dependencies:
+      '@types/unist': 3.0.3
+      unist-util-is: 6.0.0
+
   unist-util-visit@1.4.1:
     dependencies:
       unist-util-visit-parents: 2.1.2
@@ -8164,8 +8364,8 @@ snapshots:
   vite-node@2.1.9:
     dependencies:
       cac: 6.7.14
-      debug: 4.4.0
-      es-module-lexer: 1.6.0
+      debug: 4.4.3
+      es-module-lexer: 1.7.0
       pathe: 1.1.2
       vite: 5.4.11
     transitivePeerDependencies:
