@@ -1,6 +1,6 @@
-import { defineCollection, z } from 'astro:content'
-import { docsLoader } from '@astrojs/starlight/loaders'
-import { docsSchema } from '@astrojs/starlight/schema'
+import { docsLoader } from "@astrojs/starlight/loaders";
+import { docsSchema } from "@astrojs/starlight/schema";
+import { defineCollection, z } from "astro:content";
 
 export const collections = {
   docs: defineCollection({
@@ -8,9 +8,10 @@ export const collections = {
     schema: docsSchema({
       extend: z.object({
         banner: z.object({ content: z.string() }).default({
-          content: '⚠️ This project is depricated and will be deleted and removed from NPM in 2026. 🚨',
+          content:
+            "⚠️ This project is depricated and will be deleted and removed from NPM in 2026. 🚨",
         }),
       }),
     }),
   }),
-}
+};
