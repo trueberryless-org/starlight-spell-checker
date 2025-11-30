@@ -32,6 +32,13 @@ export default function starlightSpellChecker(
         config: starlightConfig,
         logger,
       }) {
+        logger.warn(
+          "⚠️ This project is depricated and will be deleted and removed from NPM in 2026. 🚨"
+        );
+        logger.warn(
+          "Please use other methods of spell checking your content (eg VS Code plugin: Code Spell Checker)."
+        );
+
         addIntegration({
           name: "starlight-spell-checker-integration",
           hooks: {
