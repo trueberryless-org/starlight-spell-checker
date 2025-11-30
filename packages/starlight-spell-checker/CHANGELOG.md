@@ -1,5 +1,11 @@
 # starlight-spell-checker
 
+## 0.2.3
+
+### Patch Changes
+
+- [`b600997`](https://github.com/trueberryless-org/starlight-spell-checker/commit/b600997a2aa17f92dae504b04f63e08910543ddd) Thanks [@trueberryless](https://github.com/trueberryless)! - Add deprication notice in plugin
+
 ## 0.2.2
 
 ### Patch Changes
