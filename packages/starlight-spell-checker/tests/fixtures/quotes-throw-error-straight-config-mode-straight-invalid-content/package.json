@@ -2,8 +2,8 @@
   "name": "@starlight-spell-checker-tests/quotes-throw-error-straight-config-mode-straight-invalid-content",
   "version": "0.0.0",
   "dependencies": {
-    "@astrojs/starlight": "^0.36.2",
-    "astro": "^5.15.3",
+    "@astrojs/starlight": "^0.37.1",
+    "astro": "^5.16.6",
     "starlight-spell-checker": "workspace:*"
   },
   "private": true
